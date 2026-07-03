@@ -16,4 +16,12 @@ The following fields are not included in the STAC schema but are included in att
 - source_data_url
 - source_version_number
 - units_metadata
-- 
+
+The following fields are not included in the CV directories currently where they are listed in the CMOR tables:
+- required_global_attributes (presumably handled separately to CVs)
+- table_id
+- site_id
+- aux_uncertainty_id
+- has_aux_unc
+
+It is unclear how the `aux_uncertainty` fields should be dealt with via the `000_context.jsonld` files as these fields do not exist in the main `WCRP-universe` context at all.
