@@ -1,0 +1,158 @@
+version: v1.0.2
+
+catalog_properties:
+  name: stac
+  url_template: "https://stac-extensions.github.io/{extension_name}/{extension_version}/schema.json"
+  extensions:
+    - name: file
+      version: v2.1.0
+    - name: alternate-assets
+      version: v1.2.0
+  regex_id: '^obs4MIPs(\.[A-Za-z0-9-]+){5}\.v[0-9]{8}$'
+  regex_base_id: '^obs4MIPs(\.[A-Za-z0-9-]+){5}$'
+
+dataset_properties:
+  - source_collection: aux_uncertainty_id
+    catalog_field_value_type: boolean
+    is_required: false
+
+  - source_collection: activity_id
+    catalog_field_value_type: string_array
+    is_required: true
+
+  - source_collection: citation_url
+    catalog_field_value_type: string
+    is_required: true
+
+  - source_collection: conventions
+    catalog_field_value_type: string_array
+    is_required: false
+
+  - source_collection: data_specs_version
+    catalog_field_value_type: string
+    is_required: true
+
+  - source_collection: external_variables
+    catalog_field_value_type: string_array
+    is_required: false
+
+  - source_collection: null
+    catalog_field_name: experiment
+    catalog_field_value_type: string
+    is_required: false
+
+  - source_collection: frequency
+    catalog_field_value_type: string
+    is_required: true
+
+  - source_collection: grid_label
+    source_collection_key: description
+    catalog_field_name: grid
+    catalog_field_value_type: string
+    is_required: false
+
+  - source_collection: grid_label
+    catalog_field_value_type: string
+    is_required: true
+
+  - source_collection: has_aux_unc
+    catalog_field_value_type: boolean
+    is_required: true
+
+  - source_collection: institution_id
+    catalog_field_value_type: string
+    is_required: true
+
+  - source_collection: license
+    catalog_field_value_type: string
+    is_required: false
+
+  - source_collection: nominal_resolution
+    catalog_field_value_type: string
+    is_required: true
+
+  - source_collection: processing_code_location
+    catalog_field_value_type: string
+    is_required: true
+
+  - source_collection: product
+    catalog_field_value_type: string
+    is_required: true
+
+  - source_collection: realm
+    catalog_field_value_type: string_array
+    is_required: true
+
+  - source_collection: region
+    catalog_field_value_type: string
+    is_required: true
+
+  - source_collection: site_id
+    catalog_field_value_type: string
+    is_required: false
+
+  - source_collection: site_location
+    catalog_field_value_type: string
+    is_required: false
+
+  - source_collection: source_id
+    catalog_field_value_type: string
+    is_required: true
+
+  - source_collection: source_label
+    catalog_field_value_type: string
+    is_required: true
+
+  - source_collection: source_type
+    catalog_field_value_type: string_array
+    is_required: true
+
+  - source_collection: title
+    catalog_field_value_type: string
+    is_required: false
+
+  - source_collection: variable_id
+    source_collection_key: standard_name
+    catalog_field_name: variable_cf_standard_name
+    catalog_field_value_type: string
+    is_required: true
+
+  - source_collection: variable_id
+    catalog_field_value_type: string
+    is_required: true
+
+  - source_collection: variable_id
+    source_collection_key: long_name
+    catalog_field_name: variable_long_name
+    catalog_field_value_type: string
+    is_required: true
+
+  - source_collection: variable_id
+    source_collection_key: units
+    catalog_field_name: variable_units
+    catalog_field_value_type: string
+    is_required: true
+
+  - source_collection: variable_id
+    source_collection_key: units
+    catalog_field_name: variable_units
+    catalog_field_value_type: string
+    is_required: true
+
+  - source_collection: variant_label
+    catalog_field_value_type: string
+    is_required: true
+
+  - source_collection: variant_info
+    catalog_field_value_type: string
+    is_required: false
+
+  - source_collection: version
+    source_collection_term: creationdatenb
+    catalog_field_value_type: string
+    is_required: true
+
+file_properties:
+  - source_collection: tracking_id
+    catalog_field_value_type: string
+    is_required: true
