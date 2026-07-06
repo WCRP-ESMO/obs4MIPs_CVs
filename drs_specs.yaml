@@ -5,25 +5,15 @@ directory:
   parts:
     - source_collection: activity_id
       is_required: true
-    - source_collection: realm
-      is_required: true
-    - source_collection: frequency
-      is_required: true
-    - source_collection: product
-      is_required: true
     - source_collection: institution_id
       is_required: true
     - source_collection: source_id
       is_required: true
-    - source_collection: source_label
+    - source_collection: frequency
       is_required: true
     - source_collection: variable_id
       is_required: true
-    - source_collection: region
-      is_required: true
-    - source_collection: grid_label
-      is_required: true
-    - source_collection: variant_label
+    - source_collection: nominal_resolution
       is_required: true
     - source_collection: version
       is_required: true
