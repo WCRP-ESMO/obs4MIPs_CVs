@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "noaa-ncei-lai-4-0", "type": "source_id"}
+{"@context": "000_context.jsonld", "id": "noaa-ncei-lai-4-0", "type": "source_id", "drs_name": "NOAA-NCEI-LAI-4-0", "description": {"institution_id": "NOAA-NCEI", "region": ["global_land"], "release_year": "2014", "source_description": "AVHRR Leaf Area Index", "source_id": "NOAA-NCEI-LAI-4-0", "source_label": "NOAA-NCEI-LAI", "source_name": "NOAA NCEI LAI", "source_type": "satellite_retrieval", "source_variables": ["lai"], "source_version_number": "4.0"}}

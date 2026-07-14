@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "contiguous_united_states", "type": "region"}
+{"@context": "000_context.jsonld", "id": "contiguous_united_states", "type": "region", "drs_name": "contiguous_united_states"}

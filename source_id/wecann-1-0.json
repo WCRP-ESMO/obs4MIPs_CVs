@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "wecann-1-0", "type": "source_id"}
+{"@context": "000_context.jsonld", "id": "wecann-1-0", "type": "source_id", "drs_name": "WECANN-1-0", "description": {"institution_id": "ColumbiaU", "region": ["global_land"], "release_year": "2018", "source_description": "Water, Energy, and Carbon with Artificial Neural Networks", "source_label": "WECANN", "source_name": "WECANN", "source_type": "satellite_retrieval", "source_variables": ["gpp", "hfls", "hfss"], "source_version_number": "1.0"}}

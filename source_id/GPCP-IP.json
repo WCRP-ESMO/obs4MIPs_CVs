@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "gpcp-ip", "type": "source_id"}
+{"@context": "000_context.jsonld", "id": "gpcp-ip", "type": "source_id", "drs_name": "GPCP-IP", "description": {"institution_id": "NASA-GSFC", "region": ["global"], "release_year": "N/A", "source_description": "NASA GPCP prepared for FROGS", "source_id": "GPCP-IP", "source_label": "GPCP", "source_name": "GPCP", "source_type": "satellite_blended", "source_variables": ["pr"], "source_version_number": "1.3"}}

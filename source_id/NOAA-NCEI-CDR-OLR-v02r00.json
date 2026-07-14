@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "noaa-ncei-cdr-olr-v02r00", "type": "source_id"}
+{"@context": "000_context.jsonld", "id": "noaa-ncei-cdr-olr-v02r00", "type": "source_id", "drs_name": "NOAA-NCEI-CDR-OLR-v02r00", "description": {"institution_id": "NOAA-NCEI", "region": ["global"], "release_year": "2014", "source_description": "NOAA-NCEI CDR Outgoing Longwave Radiation", "source_label": "NOAA-NCEI CDR OLR", "source_name": "NOAA-NCEI CDR OLR", "source_type": "satellite_blended", "source_variables": ["rlut"], "source_version_number": "v02r00"}}

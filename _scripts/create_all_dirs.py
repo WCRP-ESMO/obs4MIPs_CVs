@@ -5,7 +5,8 @@ import json
 for file in glob.glob('obs4MIPs-cmor-tables/obs4MIPs_*'):
     fname = file.split('/')[-1].replace('obs4MIPs_','').replace('.json','')
     if not os.path.isfile(f'obs4MIPs_CVs/{fname}/000_context.jsonld'):
-        continue
+        print(fname, 'missing')
+    continue
 
     with open(file) as f:
         refs = json.load(f)[fname]

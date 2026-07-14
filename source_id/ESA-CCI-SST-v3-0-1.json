@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "esa-cci-sst-v3-0-1", "type": "source_id"}
+{"@context": "000_context.jsonld", "id": "esa-cci-sst-v3-0-1", "type": "source_id", "drs_name": "ESA-CCI-SST-v3-0-1", "description": {"institution_id": "UReading", "region": ["global_ocean"], "release_year": "2024", "source_description": "Sea Surface Temperature (SST) from the ESA SST CCI Climate Data Record version 3.0", "source_label": "ESA CCI SST", "source_name": "ESA CCI SST", "source_type": "satellite_retrieval", "source_variables": ["tos"], "source_version_number": "3.0.1"}}

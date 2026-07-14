@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "bering_sea", "type": "region"}
+{"@context": "000_context.jsonld", "id": "bering_sea", "type": "region", "drs_name": "bering_sea"}

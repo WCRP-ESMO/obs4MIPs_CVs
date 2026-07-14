@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "gr8z", "type": "grid_label"}
+{"@context": "000_context.jsonld", "id": "gr8z", "type": "grid_label", "drs_name": "gr8z", "description": "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid"}

@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "yr", "type": "frequency"}
+{"@context": "000_context.jsonld", "id": "yr", "type": "frequency", "drs_name": "yr", "description": "annual mean samples"}

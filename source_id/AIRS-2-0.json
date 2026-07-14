@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "airs-2-0", "type": "source_id"}
+{"@context": "000_context.jsonld", "id": "airs-2-0", "type": "source_id", "drs_name": "AIRS-2-0", "description": {"institution_id": "NASA-JPL", "region": ["global"], "release_year": "2011", "source_description": "Atmospheric Infrared Sounder", "source_label": "AIRS", "source_name": "AIRS", "source_type": "satellite_retrieval", "source_variables": ["hus", "ta"], "source_version_number": "2.0"}}

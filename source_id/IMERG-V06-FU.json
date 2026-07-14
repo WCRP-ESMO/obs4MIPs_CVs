@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "imerg-v06-fu", "type": "source_id"}
+{"@context": "000_context.jsonld", "id": "imerg-v06-fu", "type": "source_id", "drs_name": "IMERG-V06-FU", "description": {"institution_id": "NASA-GSFC", "region": ["global"], "release_year": "2017", "source_description": "NASA IMERG prepared for FROGS", "source_id": "IMERG-V06-FU", "source_label": "IMERG-V06-FU", "source_name": "IMERG-V06-FU", "source_type": "satellite_blended", "source_variables": ["pr"], "source_version_number": "V06-FU"}}

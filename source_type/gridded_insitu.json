@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "gridded_insitu", "type": "source_type"}
+{"@context": "000_context.jsonld", "id": "gridded_insitu", "type": "source_type", "drs_name": "gridded_insitu", "description": "gridded product based on measurements collected from in-situ instruments"}

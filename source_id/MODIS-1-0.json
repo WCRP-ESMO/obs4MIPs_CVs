@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "modis-1-0", "type": "source_id"}
+{"@context": "000_context.jsonld", "id": "modis-1-0", "type": "source_id", "drs_name": "MODIS-1-0", "description": {"institution_id": "NASA-GSFC", "region": ["global"], "release_year": "2011", "source_description": "Atmospheric Infrared Sounder", "source_label": "MODIS", "source_name": "MODIS", "source_type": "satellite_retrieval", "source_variables": ["clt"], "source_version_number": "1.0"}}

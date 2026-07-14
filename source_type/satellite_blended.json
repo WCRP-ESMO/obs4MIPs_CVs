@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "satellite_blended", "type": "source_type"}
+{"@context": "000_context.jsonld", "id": "satellite_blended", "type": "source_type", "drs_name": "satellite_blended", "description": "gridded product based on both in-situ instruments and satellite measurements"}

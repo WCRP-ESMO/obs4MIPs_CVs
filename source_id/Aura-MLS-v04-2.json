@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "aura-mls-v04-2", "type": "source_id"}
+{"@context": "000_context.jsonld", "id": "aura-mls-v04-2", "type": "source_id", "drs_name": "Aura-MLS-v04-2", "description": {"institution_id": "NASA-JPL", "region": ["global"], "release_year": "2018", "source_description": "EOS Aura Microwave Limb Sounder", "source_label": "Aura-MLS", "source_name": "Aura MLS", "source_type": "satellite_retrieval", "source_variables": ["cli", "hus", "ta"], "source_version_number": "v04.2"}}

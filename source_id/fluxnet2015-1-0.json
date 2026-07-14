@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "fluxnet2015-1-0", "type": "source_id"}
+{"@context": "000_context.jsonld", "id": "fluxnet2015-1-0", "type": "source_id", "drs_name": "FLUXNET2015-1-0", "description": {"institution_id": "FLUXNET", "region": ["global_land"], "release_year": "2020", "source_description": "FLUXNET Community Product", "source_label": "FLUXNET2015", "source_name": "FLUXNET2015", "source_type": "gridded_insitu", "source_variables": ["gpp"], "source_version_number": "1.0"}}

@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "taiwan_luzon_straits", "type": "region"}
+{"@context": "000_context.jsonld", "id": "taiwan_luzon_straits", "type": "region", "drs_name": "taiwan_luzon_straits"}

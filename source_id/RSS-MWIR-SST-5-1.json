@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "rss-mwir-sst-5-1", "type": "source_id"}
+{"@context": "000_context.jsonld", "id": "rss-mwir-sst-5-1", "type": "source_id", "drs_name": "RSS-MWIR-SST-5-1", "description": {"institution_id": "RSS", "region": ["global"], "release_year": "2022", "source_description": "RSS MWIR v5.1 Foundation OISST", "source_id": "RSS-MWIR-SST-5-1", "source_label": "RSS-MWIR-SST", "source_name": "RSS-MWIR-SST", "source_type": "satellite_blended", "source_variables": ["tos"], "source_version_number": "5.1"}}

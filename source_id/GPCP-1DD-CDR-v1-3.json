@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "gpcp-1dd-cdr-v1-3", "type": "source_id"}
+{"@context": "000_context.jsonld", "id": "gpcp-1dd-cdr-v1-3", "type": "source_id", "drs_name": "GPCP-1DD-CDR-v1-3", "description": {"institution_id": "NASA-GSFC", "region": ["global"], "release_year": "2017", "source_description": "Daily GPCP CDR prepared for FROGS", "source_id": "GPCP-1DD-CDR-v1-3", "source_label": "GPCP", "source_name": "GPCP", "source_type": "satellite_blended", "source_variables": ["pr"], "source_version_number": "1.3"}}

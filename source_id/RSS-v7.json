@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "rss-v7", "type": "source_id"}
+{"@context": "000_context.jsonld", "id": "rss-v7", "type": "source_id", "drs_name": "RSS-v7", "description": {"institution_id": "RSS", "region": ["global_ocean"], "release_year": "2011", "source_description": "Satellite derived fields produced by RSS", "source_id": "RSS-v7", "source_label": "RSS-v7", "source_name": "Satellite derived fields", "source_type": "satellite_retrieval", "source_variables": ["prw", "sfcWind", "tos"], "source_version_number": "v7"}}

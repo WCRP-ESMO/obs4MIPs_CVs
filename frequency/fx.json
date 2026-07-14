@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "fx", "type": "frequency"}
+{"@context": "000_context.jsonld", "id": "fx", "type": "frequency", "drs_name": "fx", "description": "fixed (time invariant) field"}

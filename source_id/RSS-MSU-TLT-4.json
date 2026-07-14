@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "rss-msu-tlt-4", "type": "source_id"}
+{"@context": "000_context.jsonld", "id": "rss-msu-tlt-4", "type": "source_id", "drs_name": "RSS-MSU-TLT-4", "description": {"institution_id": "RSS", "region": ["global"], "release_year": "2016", "source_description": "RSS MSU Temperature Lower Troposphere v4.0", "source_id": "RSS-MSU-TLT-4", "source_label": "RSS-MSU-TLT", "source_name": "RSS-MSU-TLT", "source_type": "satellite_blended", "source_variables": ["tlt"], "source_version_number": "4.0"}}

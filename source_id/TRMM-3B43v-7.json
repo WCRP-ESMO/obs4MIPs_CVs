@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "trmm-3b43v-7", "type": "source_id"}
+{"@context": "000_context.jsonld", "id": "trmm-3b43v-7", "type": "source_id", "drs_name": "TRMM-3B43v-7", "description": {"institution_id": "NASA-GSFC", "region": ["global"], "release_year": "N/A", "source_description": "NASA-TRMM (observation 2000-2009)", "source_id": "TRMM-3B43v-7", "source_label": "TRMM", "source_name": "TRMM", "source_type": "satellite_blended", "source_variables": ["pr"], "source_version_number": "3B43v.7"}}

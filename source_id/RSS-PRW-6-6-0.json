@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "rss-prw-6-6-0", "type": "source_id"}
+{"@context": "000_context.jsonld", "id": "rss-prw-6-6-0", "type": "source_id", "drs_name": "RSS-PRW-6-6-0", "description": {"institution_id": "RSS", "region": ["global"], "release_year": "2017", "source_description": "RSS-PRW 6.6.0 (2017): Water Vapor Path", "source_id": "RSS-PRW-6-6-0", "source_label": "RSS-PRW", "source_name": "RSS-PRW", "source_type": "satellite_blended", "source_variables": ["prw"], "source_version_number": "6.6.0"}}

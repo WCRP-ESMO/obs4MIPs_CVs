@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "gm", "type": "grid_label"}
+{"@context": "000_context.jsonld", "id": "gm", "type": "grid_label", "drs_name": "gm", "description": "global mean data"}

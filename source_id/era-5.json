@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "era-5", "type": "source_id"}
+{"@context": "000_context.jsonld", "id": "era-5", "type": "source_id", "drs_name": "ERA-5", "description": {"institution_id": "ECMWF", "region": ["global"], "release_year": "2019", "source_description": "ECMWF - ERA5 (European ReAnalysis)", "source_id": "ERA-5", "source_label": "ECMWF-ERA-5", "source_name": "ECMWF ERA-5", "source_type": "reanalysis", "source_variables": ["psl", "ta", "tas", "ua", "va", "zg"], "source_version_number": "1.0"}}

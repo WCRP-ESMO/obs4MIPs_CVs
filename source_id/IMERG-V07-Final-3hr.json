@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "imerg-v07-final-3hr", "type": "source_id"}
+{"@context": "000_context.jsonld", "id": "imerg-v07-final-3hr", "type": "source_id", "drs_name": "IMERG-V07-Final-3hr", "description": {"institution_id": "NASA-GSFC", "region": ["global"], "release_year": "2023", "source_description": "NASA IMERG averaged to 3-hourly maps", "source_id": "IMERG-V07-Final-3hr", "source_label": "IMERG-V07-Final-3hr", "source_name": "IMERG-V07-Final-3hr", "source_type": "satellite_blended", "source_variables": ["pr"], "source_version_number": "V07"}}

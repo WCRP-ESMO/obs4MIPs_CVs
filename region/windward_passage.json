@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "windward_passage", "type": "region"}
+{"@context": "000_context.jsonld", "id": "windward_passage", "type": "region", "drs_name": "windward_passage"}

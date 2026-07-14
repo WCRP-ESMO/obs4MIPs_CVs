@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "rapid-v2023-1", "type": "source_id"}
+{"@context": "000_context.jsonld", "id": "rapid-v2023-1", "type": "source_id", "drs_name": "RAPID-v2023-1", "description": {"institution_id": "NERC-NSF-NOAA", "region": ["atlantic_ocean"], "release_year": "2024", "source_description": "Atlantic Meridional Overturning Transport -In-situ", "source_label": "RAPID", "source_name": "RAPID", "source_type": "gridded_insitu", "source_variables": ["amoc"], "source_version_number": "v2023.1"}}

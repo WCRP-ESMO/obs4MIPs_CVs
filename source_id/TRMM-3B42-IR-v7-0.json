@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "trmm-3b42-ir-v7-0", "type": "source_id"}
+{"@context": "000_context.jsonld", "id": "trmm-3b42-ir-v7-0", "type": "source_id", "drs_name": "TRMM-3B42-IR-v7-0", "description": {"institution_id": "NASA-GSFC", "region": ["global"], "release_year": "2017", "source_description": "NASA-TRMM prepared for FROGS", "source_id": "TRMM-3B42-IR-v7-0", "source_label": "TRMM", "source_name": "TRMM", "source_type": "satellite_blended", "source_variables": ["pr"], "source_version_number": "3B42.IR.v7.0"}}

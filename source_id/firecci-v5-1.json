@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "firecci-v5-1", "type": "source_id"}
+{"@context": "000_context.jsonld", "id": "firecci-v5-1", "type": "source_id", "drs_name": "FireCCI-v5-1", "description": {"institution_id": "UAH", "region": ["global_land"], "release_year": "2024", "source_description": "MODIS FireCCI Burned Area product", "source_label": "FireCCI", "source_name": "FireCCI", "source_type": "satellite_retrieval", "source_variables": ["burntFractionAll"], "source_version_number": "5.1"}}

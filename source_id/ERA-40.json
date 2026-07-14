@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "era-40", "type": "source_id"}
+{"@context": "000_context.jsonld", "id": "era-40", "type": "source_id", "drs_name": "ERA-40", "description": {"institution_id": "ECMWF", "region": ["global"], "release_year": "2005", "source_description": "ECMWF - ERA-40 (European ReAnalysis 1957-2002)", "source_id": "ERA-40", "source_label": "ECMWF-ERA-40", "source_name": "ECMWF ERA-40", "source_type": "reanalysis", "source_variables": ["ta", "ua", "va"], "source_version_number": "1.0"}}

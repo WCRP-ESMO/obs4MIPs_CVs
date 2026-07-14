@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "gr", "type": "grid_label"}
+{"@context": "000_context.jsonld", "id": "gr", "type": "grid_label", "drs_name": "gr", "description": "regridded data reported on the data provider's preferred target grid"}

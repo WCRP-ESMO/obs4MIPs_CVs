@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "gnz", "type": "grid_label"}
+{"@context": "000_context.jsonld", "id": "gnz", "type": "grid_label", "drs_name": "gnz", "description": "zonal mean data reported on a model's native latitude grid"}

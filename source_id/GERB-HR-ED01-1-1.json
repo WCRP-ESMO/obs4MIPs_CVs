@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "gerb-hr-ed01-1-1", "type": "source_id"}
+{"@context": "000_context.jsonld", "id": "gerb-hr-ed01-1-1", "type": "source_id", "drs_name": "GERB-HR-ED01-1-1", "description": {"institution_id": "ImperialCollege", "region": ["global"], "release_year": "2018", "source_description": "Geostationary Earth Radiation Budget", "source_label": "GERB", "source_name": "GERB", "source_type": "satellite_blended", "source_variables": ["rlut", "rsut"], "source_version_number": "HR_ED01_1.1"}}

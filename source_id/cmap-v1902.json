@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "cmap-v1902", "type": "source_id"}
+{"@context": "000_context.jsonld", "id": "cmap-v1902", "type": "source_id", "drs_name": "CMAP-V1902", "description": {"institution_id": "NOAA-NCEI", "region": ["global"], "release_year": "N/A", "source_description": "CMAP Precipitation", "source_id": "CMAP-V1902", "source_label": "CMAP", "source_name": "CMAP", "source_type": "satellite_blended", "source_variables": ["pr"], "source_version_number": "V1902"}}

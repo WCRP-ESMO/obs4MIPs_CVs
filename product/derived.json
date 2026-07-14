@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "derived", "type": "product"}
+{"@context": "000_context.jsonld", "id": "derived", "type": "product", "drs_name": "derived"}

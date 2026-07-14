@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "noaa-ncei-ersstv6", "type": "source_id"}
+{"@context": "000_context.jsonld", "id": "noaa-ncei-ersstv6", "type": "source_id", "drs_name": "NOAA-NCEI-ERSSTv6", "description": {"institution_id": "NOAA-NCEI", "region": ["global_ocean"], "release_year": "2025", "source_description": "NOAA-NCEI Extended Reconstructed Sea Surface Temperature (ERSST)", "source_label": "NOAA-NCEI ERSSTv6", "source_name": "NOAA-NCEI ERSSTv6", "source_type": "satellite_blended", "source_variables": ["tos"], "source_version_number": "v6"}}

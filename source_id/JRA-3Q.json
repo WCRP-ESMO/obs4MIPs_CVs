@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "jra-3q", "type": "source_id"}
+{"@context": "000_context.jsonld", "id": "jra-3q", "type": "source_id", "drs_name": "JRA-3Q", "description": {"institution_id": "JMA", "region": ["global"], "release_year": "2025", "source_description": "Japanese Reanalysis for Three Quarters of a Century", "source_label": "JRA", "source_name": "JRA", "source_type": "reanalysis", "source_variables": ["hus", "huss", "psl", "ta", "tas", "ua", "uas", "va", "vas", "zg"], "source_version_number": "3Q"}}

@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "mswep-1-0", "type": "source_id"}
+{"@context": "000_context.jsonld", "id": "mswep-1-0", "type": "source_id", "drs_name": "MSWEP-1-0", "description": {"institution_id": "GloH2O", "region": ["global"], "release_year": "2021", "source_description": "Multi-Source Weighted-Ensemble Precipitation", "source_label": "MSWEP", "source_name": "MSWEP", "source_type": "gridded_insitu", "source_variables": ["pr"], "source_version_number": "1.0"}}

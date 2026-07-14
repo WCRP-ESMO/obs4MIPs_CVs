@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "gn", "type": "grid_label"}
+{"@context": "000_context.jsonld", "id": "gn", "type": "grid_label", "drs_name": "gn", "description": "data reported on a model's native grid"}

@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "reanalysis", "type": "source_type"}
+{"@context": "000_context.jsonld", "id": "reanalysis", "type": "source_type", "drs_name": "reanalysis", "description": "gridded product generated from a model reanalysis based on in-situ instruments and possibly satellite measurements"}

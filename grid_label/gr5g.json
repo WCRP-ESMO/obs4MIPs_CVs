@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "gr5g", "type": "grid_label"}
+{"@context": "000_context.jsonld", "id": "gr5g", "type": "grid_label", "drs_name": "gr5g", "description": "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid"}
