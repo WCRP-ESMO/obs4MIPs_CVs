@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "chirps-v3", "type": "source_id", "drs_name": "CHIRPS-V3", "description": {"institution_id": "UCSB-CHC", "region": ["global_land"], "release_year": "2025", "source_description": "CHIRPS Version 3.0", "source_label": "CHIRPS", "source_name": "CHIRPS", "source_type": "satellite_blended", "source_variables": ["pr"], "source_version_number": "V3"}}
+{"@context": "000_context.jsonld", "id": "chirps-v3", "type": "source_id", "drs_name": "CHIRPS-V3", "description": "CHIRPS Version 3.0"}

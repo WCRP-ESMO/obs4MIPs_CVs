@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "cmorph-1-0", "type": "source_id", "drs_name": "CMORPH-1-0", "description": {"institution_id": "NOAA", "region": ["global"], "release_year": "N/A", "source_description": "CMORPH", "source_id": "CMORPH-1-0", "source_label": "CMORPH", "source_name": "CMORPH", "source_type": "satellite_blended", "source_variables": ["pr"], "source_version_number": "1.0"}}
+{"@context": "000_context.jsonld", "id": "cmorph-1-0", "type": "source_id", "drs_name": "CMORPH-1-0", "description": "CMORPH"}

@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "gsmap-v5", "type": "source_id", "drs_name": "GSMaP-v5", "description": {"institution_id": "JAXA", "region": ["global"], "release_year": "2017", "source_description": "JAXA GSMAP", "source_id": "GSMaP-v5", "source_label": "GSMAP", "source_name": "GSMAP", "source_type": "satellite_blended", "source_variables": ["pr"], "source_version_number": "v5"}}
+{"@context": "000_context.jsonld", "id": "gsmap-v5", "type": "source_id", "drs_name": "GSMaP-v5", "description": "JAXA GSMAP"}

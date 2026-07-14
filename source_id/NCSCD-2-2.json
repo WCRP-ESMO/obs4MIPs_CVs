@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "ncscd-2-2", "type": "source_id", "drs_name": "NCSCD-2-2", "description": {"institution_id": "BCCR", "region": ["north_polar"], "release_year": "2013", "source_description": "Northern Circumpolar Soil Carbon Database", "source_label": "NCSCD", "source_name": "NCSCD", "source_type": "gridded_insitu", "source_variables": ["cSoil"], "source_version_number": "2.2"}}
+{"@context": "000_context.jsonld", "id": "ncscd-2-2", "type": "source_id", "drs_name": "NCSCD-2-2", "description": "Northern Circumpolar Soil Carbon Database"}

@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "hwsd-2-0", "type": "source_id", "drs_name": "HWSD-2-0", "description": {"institution_id": "FAO", "region": ["global_land"], "release_year": "2023", "source_description": "Harmonized World Soil Database version 2", "source_label": "HWSD", "source_name": "HWSD", "source_type": "gridded_insitu", "source_variables": ["cSoil"], "source_version_number": "2.0"}}
+{"@context": "000_context.jsonld", "id": "hwsd-2-0", "type": "source_id", "drs_name": "HWSD-2-0", "description": "Harmonized World Soil Database version 2"}

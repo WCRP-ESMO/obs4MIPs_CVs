@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "gpcp-2-3", "type": "source_id", "drs_name": "GPCP-2-3", "description": {"institution_id": "NOAA-NCEI", "region": ["global"], "release_year": "N/A", "source_description": "Merged Precipitation", "source_id": "GPCP-2-3", "source_label": "GPCP", "source_name": "GPCP", "source_type": "satellite_blended", "source_variables": ["pr"], "source_version_number": "2.3"}}
+{"@context": "000_context.jsonld", "id": "gpcp-2-3", "type": "source_id", "drs_name": "GPCP-2-3", "description": "Merged Precipitation"}

@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "woa2023", "type": "source_id", "drs_name": "WOA2023", "description": {"institution_id": "NOAA-NCEI", "region": ["global_ocean"], "release_year": "2024", "source_description": "World Ocean Atlas", "source_label": "WOA", "source_name": "WOA", "source_type": "gridded_insitu", "source_variables": ["so", "thetao"], "source_version_number": "2023"}}
+{"@context": "000_context.jsonld", "id": "woa2023", "type": "source_id", "drs_name": "WOA2023", "description": "World Ocean Atlas"}
