@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
+    "type": "activity",
     "id": "obs4mips",
-    "type": "activity"
+    "name": "obs4MIPs",
+    "cmip_acronym": "obs4MIPs",
+    "long_name": "Observations datasets for Model Intercomparison Projects",
+    "url": "https://climserv.ipsl.polytechnique.fr/cfmip-obs/",
+    "drs_name": "obs4MIPs"
 }
