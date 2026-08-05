@@ -27,7 +27,6 @@ jobs:
       - name: Run required steps
         run: |
           python3 -m pip install --upgrade pip
-          pip3 install poetry
-          poetry install
+          pip3 install esgvoc
           which esgvoc
           # esgvoc admin validate --schema-only .
