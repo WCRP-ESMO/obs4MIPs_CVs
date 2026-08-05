@@ -1,13 +1,11 @@
-[project]
+[tool.poetry]
 name = "obs4mips-cvs"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = [
-    "esgvoc",
-    "requests>=2.32.3",
-]
+package-mode = false
 
-[tool.uv.sources]
+[tool.poetry.dependencies]
+python = ">=3.12"
+requests = ">=2.32.3"
 esgvoc = { git = "https://github.com/ESGF/esgf-vocab.git", branch = "integration" }
