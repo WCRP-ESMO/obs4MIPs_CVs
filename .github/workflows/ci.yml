@@ -24,13 +24,9 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       # Install dependencies
-      - name: Install Python dependencies
+      - name: Run required steps
         run: |
           python3 -m pip install --upgrade pip
           pip3 install poetry
           poetry install
-          
-      # Test with pytest
-      - name: Run ESGVOC Validation
-        run: |
           esgvoc admin validate --schema-only .
