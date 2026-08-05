@@ -82,7 +82,7 @@
 - source_collection: site_id
   value_type: string
   is_required: false
-- source_colelction: site_location
+- source_collection: site_location
   value_type: string
   is_required: false
 - source_collection: source_id
