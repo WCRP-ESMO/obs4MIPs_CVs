@@ -28,5 +28,4 @@ jobs:
         run: |
           python3 -m pip install --upgrade pip
           pip3 install esgvoc
-          which esgvoc
-          # esgvoc admin validate --schema-only .
+          esgvoc admin validate --schema-only .
