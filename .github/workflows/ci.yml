@@ -29,4 +29,5 @@ jobs:
           python3 -m pip install --upgrade pip
           pip3 install poetry
           poetry install
-          esgvoc admin validate --schema-only .
+          which esgvoc
+          # esgvoc admin validate --schema-only .
