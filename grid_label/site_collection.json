@@ -1,7 +1,0 @@
-{
-  "@context": "000_context.jsonld",
-  "id": "site-collection",
-  "type": "grid",
-  "drs_name":"site-collection",
-  "description":"Grid identifier used in filename."
-}
