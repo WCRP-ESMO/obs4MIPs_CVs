@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sitimefrac",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sitimefrac", "type": "variable", "drs_name": "sitimefrac", "description": "Fraction of time steps of the averaging period during which sea ice is present (siconc > 0) in a grid cell."}

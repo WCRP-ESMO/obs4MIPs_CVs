@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "rlut",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "rlut", "type": "variable", "drs_name": "rlut", "description": "at the top of the atmosphere (to be compared with satellite measurements)"}

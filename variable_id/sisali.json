@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sisali",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sisali", "type": "variable", "drs_name": "sisali", "description": "Mean sea-ice salinity of all sea ice in grid cell. Sometimes, models implicitly or explicitly assume a different salinity of the ice for thermodynamic considerations than they do for closing the salt budget with the ocean. In these cases, the mean salinity used in the calculation of the salt budget should be reported."}

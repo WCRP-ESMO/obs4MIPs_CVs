@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "msftbarot",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "msftbarot", "type": "variable", "drs_name": "msftbarot", "description": "Streamfunction or its approximation for free surface models. See OMDP document for details."}

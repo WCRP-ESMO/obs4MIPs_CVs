@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "pfull",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "pfull", "type": "variable", "drs_name": "pfull", "description": "Air pressure on model levels"}

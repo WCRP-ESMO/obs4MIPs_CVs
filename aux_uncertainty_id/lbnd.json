@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "lbnd",
-    "type": "aux_uncertainty_id"
-}
+{"@context": "000_context.jsonld", "id": "lbnd", "type": "aux_uncertainty_id", "drs_name": "lbnd", "description": "lower bound of asymmetrical uncertainty information"}

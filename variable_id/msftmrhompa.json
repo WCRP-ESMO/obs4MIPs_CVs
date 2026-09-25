@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "msftmrhompa",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "msftmrhompa", "type": "variable", "drs_name": "msftmrhompa", "description": "CMIP5 called this \"due to Bolus Advection\".  Name change respects the more general physics of the mesoscale parameterizations."}

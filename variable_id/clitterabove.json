@@ -1,5 +1,1 @@
-{
-  "@context": "000_context.jsonld",
-  "id": "clitterabove",
-  "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "clitterabove", "type": "variable", "drs_name": "clitterabove", "description": ""}

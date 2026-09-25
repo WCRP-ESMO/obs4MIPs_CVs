@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "phos",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "phos", "type": "variable", "drs_name": "phos", "description": "Negative log10 of hydrogen ion concentration with the concentration expressed as mol H kg-1.\nEvaluated at the upper boundary of the liquid ocean, including at the lower boundary of sea-ice and floating ice shelves."}

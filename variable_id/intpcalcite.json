@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "intpcalcite",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "intpcalcite", "type": "variable", "drs_name": "intpcalcite", "description": "Vertically integrated calcite production"}

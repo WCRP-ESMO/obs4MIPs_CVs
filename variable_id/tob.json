@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "tob",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "tob", "type": "variable", "drs_name": "tob", "description": "Potential temperature at the ocean bottom-most grid cell."}

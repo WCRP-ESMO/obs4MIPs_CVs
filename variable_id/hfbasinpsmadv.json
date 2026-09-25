@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "hfbasinpsmadv",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "hfbasinpsmadv", "type": "variable", "drs_name": "hfbasinpsmadv", "description": "Contributions to heat transport from parameterized mesoscale eddy-induced advective transport. Diagnosed here as a function of latitude and basin.  Use Celsius for temperature scale."}

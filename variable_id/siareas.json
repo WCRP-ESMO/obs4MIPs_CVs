@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "siareas",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "siareas", "type": "variable", "drs_name": "siareas", "description": "Total integrated area of sea ice in the Southern Hemisphere (where siconc > 0). Does not include grid cells partially covered by land."}

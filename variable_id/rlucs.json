@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "rlucs",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "rlucs", "type": "variable", "drs_name": "rlucs", "description": "Upwelling clear-sky longwave radiation  (includes the fluxes at the surface and TOA)"}

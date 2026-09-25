@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "rv850",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "rv850", "type": "variable", "drs_name": "rv850", "description": "Relative vorticity is the upward component of the vorticity vector i.e. the component which arises from horizontal velocity."}

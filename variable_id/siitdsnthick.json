@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "siitdsnthick",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "siitdsnthick", "type": "variable", "drs_name": "siitdsnthick", "description": "Actual thickness of snow in each ice thickness category, NOT snow volume divided by grid area (vector with one entry for each ice thickness category starting from the thinnest category, netcdf file should use thickness bounds of categories as third coordinate axis). It can also be derived by dividing the volume of snow by the area of snow in each thickness category."}

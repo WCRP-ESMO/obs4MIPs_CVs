@@ -1,5 +1,1 @@
-{
-  "@context": "000_context.jsonld",
-  "id": "residualfrac",
-  "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "residualfrac", "type": "variable", "drs_name": "residualfrac", "description": "Percentage of entire grid cell  that is land and is covered by  neither vegetation nor bare-soil (e.g., urban, ice, lakes, etc.)"}

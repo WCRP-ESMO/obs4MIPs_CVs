@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "agessc",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "agessc", "type": "variable", "drs_name": "agessc", "description": "Time elapsed since water was last in surface layer of the ocean."}

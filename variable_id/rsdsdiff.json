@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "rsdsdiff",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "rsdsdiff", "type": "variable", "drs_name": "rsdsdiff", "description": "Surface downwelling solar irradiance from diffuse radiation for UV calculations."}

@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "intpoc",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "intpoc", "type": "variable", "drs_name": "intpoc", "description": "Vertically integrated POC"}

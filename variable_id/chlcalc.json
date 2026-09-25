@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "chlcalc",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "chlcalc", "type": "variable", "drs_name": "chlcalc", "description": "chlorophyll concentration from the calcite-producing phytoplankton component alone"}

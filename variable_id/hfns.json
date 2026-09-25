@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "hfns",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "hfns", "type": "variable", "drs_name": "hfns", "description": "Net surface heat flux, including radiative and turbulent components."}

@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "intppnitrate",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "intppnitrate", "type": "variable", "drs_name": "intppnitrate", "description": "Vertically integrated primary (organic carbon) production by phytoplankton based on nitrate uptake alone"}

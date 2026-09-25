@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "talk",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "talk", "type": "variable", "drs_name": "talk", "description": "total alkalinity equivalent concentration (including carbonate, nitrogen, silicate, and borate components)"}

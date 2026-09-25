@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "msftmzsmpa",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "msftmzsmpa", "type": "variable", "drs_name": "msftmzsmpa", "description": "Report only if there is a submesoscale eddy parameterization."}

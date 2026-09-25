@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "wfcorr",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "wfcorr", "type": "variable", "drs_name": "wfcorr", "description": "Computed as the water flux into the ocean due to flux correction divided by the area of the ocean portion of the grid cell."}

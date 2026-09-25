@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "ps",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "ps", "type": "variable", "drs_name": "ps", "description": "surface pressure (not mean sea-level pressure), 2-D field to calculate the 3-D pressure field from hybrid coordinates"}

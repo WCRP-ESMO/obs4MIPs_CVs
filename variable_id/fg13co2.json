@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "fg13co2",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "fg13co2", "type": "variable", "drs_name": "fg13co2", "description": "Gas exchange flux of carbon-13 as CO2 (positive into ocean)"}

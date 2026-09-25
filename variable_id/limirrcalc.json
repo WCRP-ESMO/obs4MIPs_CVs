@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "limirrcalc",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "limirrcalc", "type": "variable", "drs_name": "limirrcalc", "description": "Growth limitation of calcareous phytoplankton due to solar irradiance. \"Growth limitation due to solar irradiance\" means the ratio of the growth rate of a species population in the environment (where the amount of sunlight reaching a location may be limited) to the theoretical growth rate if there were no such limit on solar irradiance."}

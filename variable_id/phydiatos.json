@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "phydiatos",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "phydiatos", "type": "variable", "drs_name": "phydiatos", "description": "carbon from the diatom phytoplankton component concentration alone"}

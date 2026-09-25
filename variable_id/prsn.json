@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "prsn",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "prsn", "type": "variable", "drs_name": "prsn", "description": "Rate of change of snow mass due to solid precipitation (i.e. snowfall) falling onto sea ice divided by grid-cell area. Always positive or zero."}

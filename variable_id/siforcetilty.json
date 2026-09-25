@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "siforcetilty",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "siforcetilty", "type": "variable", "drs_name": "siforcetilty", "description": "Y-component of the force on sea ice caused by sea-surface tilt divided by grid-cell area."}

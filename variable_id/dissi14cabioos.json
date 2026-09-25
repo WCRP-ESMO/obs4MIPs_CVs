@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "dissi14cabioos",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "dissi14cabioos", "type": "variable", "drs_name": "dissi14cabioos", "description": "Abiotic Dissolved inorganic carbon-14 (CO3+HCO3+H2CO3) concentration"}

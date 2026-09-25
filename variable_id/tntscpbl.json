@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "tntscpbl",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "tntscpbl", "type": "variable", "drs_name": "tntscpbl", "description": "Tendency of Air Temperature Due to Stratiform Cloud and Precipitation and Boundary Layer Mixing (to be specified only in  models which do not separate cloud, precipitation and boundary layer terms.  Includes all boundary layer terms including diffusive ones.)"}

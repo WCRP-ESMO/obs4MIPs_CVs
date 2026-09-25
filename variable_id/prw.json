@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "prw",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "prw", "type": "variable", "drs_name": "prw", "description": "vertically integrated through the atmospheric column"}

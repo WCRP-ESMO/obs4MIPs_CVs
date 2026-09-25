@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "dmsos",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "dmsos", "type": "variable", "drs_name": "dmsos", "description": "Mole concentration of dimethyl sulphide in water in the near surface layer"}

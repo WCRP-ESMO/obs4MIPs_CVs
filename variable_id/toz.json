@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "toz",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "toz", "type": "variable", "drs_name": "toz", "description": "Total ozone column calculated at 0 degrees C and 1 bar, such that 1m = 1e5 DU."}

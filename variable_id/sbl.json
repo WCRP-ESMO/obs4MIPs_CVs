@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sbl",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sbl", "type": "variable", "drs_name": "sbl", "description": "Rate of change of snow mass through sublimation divided by grid-cell area. If a model does not differentiate between the sublimation of snow and sea ice, we recommend to report all sublimation within sisndmasssubl as long as the ice is snow covered."}

@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "limfediaz",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "limfediaz", "type": "variable", "drs_name": "limfediaz", "description": "In ocean modelling, diazotrophs are phytoplankton of the phylum cyanobacteria distinct from other phytoplankton groups in their ability to fix nitrogen gas in addition to nitrate and ammonium. Phytoplankton are algae that grow where there is sufficient light to support photosynthesis. \"Iron growth limitation\" means the ratio of the growth rate of a species population in the environment (where there is a finite availability of iron) to the theoretical growth rate if there were no such limit on iron availability."}

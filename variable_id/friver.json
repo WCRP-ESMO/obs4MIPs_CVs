@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "friver",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "friver", "type": "variable", "drs_name": "friver", "description": "computed as the river flux of water into the ocean divided by the area of the ocean portion of the grid cell."}

@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "baccos",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "baccos", "type": "variable", "drs_name": "baccos", "description": "Sum of bacterial carbon component concentrations"}

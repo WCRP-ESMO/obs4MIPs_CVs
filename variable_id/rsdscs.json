@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "rsdscs",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "rsdscs", "type": "variable", "drs_name": "rsdscs", "description": "Surface solar irradiance clear sky for UV calculations"}

@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "prc",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "prc", "type": "variable", "drs_name": "prc", "description": "Convective precipitation at surface; includes both liquid and solid phases."}

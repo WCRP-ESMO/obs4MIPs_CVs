@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "rsut",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "rsut", "type": "variable", "drs_name": "rsut", "description": "Outgoing shortwave radiation at the top of the atmosphere."}

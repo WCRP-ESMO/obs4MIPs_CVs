@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sftgif",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sftgif", "type": "variable", "drs_name": "sftgif", "description": "Percentage of grid cell covered by land ice (ice sheet, ice shelf, ice cap, glacier)"}

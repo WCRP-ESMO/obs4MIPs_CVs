@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "tntc",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "tntc", "type": "variable", "drs_name": "tntc", "description": "Tendencies from cumulus convection scheme."}

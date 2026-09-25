@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "evspsblsoi",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "evspsblsoi", "type": "variable", "drs_name": "evspsblsoi", "description": "Water evaporation from soil (including sublimation)."}

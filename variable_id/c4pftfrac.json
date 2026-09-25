@@ -1,5 +1,1 @@
-{
-  "@context": "000_context.jsonld",
-  "id": "c4pftfrac",
-  "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "c4pftfrac", "type": "variable", "drs_name": "c4pftfrac", "description": "Percentage of entire grid cell  that is covered by C4 PFTs (including grass and crops)."}

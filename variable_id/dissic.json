@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "dissic",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "dissic", "type": "variable", "drs_name": "dissic", "description": "Dissolved inorganic carbon (CO3+HCO3+H2CO3) concentration"}

@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sivol",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sivol", "type": "variable", "drs_name": "sivol", "description": "Total volume of sea ice divided by grid-cell area, also known as the equivalent thickness of sea ice."}

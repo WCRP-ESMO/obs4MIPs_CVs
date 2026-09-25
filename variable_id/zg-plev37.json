@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "zg-plev37",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "zg-plev37", "type": "variable", "drs_name": "zg-plev37", "description": "Geopotential height interpolated to 37 pressure levels."}

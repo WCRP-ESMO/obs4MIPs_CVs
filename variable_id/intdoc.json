@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "intdoc",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "intdoc", "type": "variable", "drs_name": "intdoc", "description": "Vertically integrated DOC (explicit pools only)"}

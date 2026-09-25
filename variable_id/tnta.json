@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "tnta",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "tnta", "type": "variable", "drs_name": "tnta", "description": "Tendency of Air Temperature due to Advection"}

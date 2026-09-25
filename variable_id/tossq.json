@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "tossq",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "tossq", "type": "variable", "drs_name": "tossq", "description": "Square of temperature of liquid ocean.\nEvaluated at the upper boundary of the liquid ocean, including at the lower boundary of sea-ice and floating ice shelves."}

@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "hfrunoffds",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "hfrunoffds", "type": "variable", "drs_name": "hfrunoffds", "description": "Heat flux associated with liquid water which drains from land. It is calculated relative to the heat that would be transported by runoff water entering the sea at zero degrees Celsius."}

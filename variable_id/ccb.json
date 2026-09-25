@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "ccb",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "ccb", "type": "variable", "drs_name": "ccb", "description": "Where convective cloud is present in the grid cell, the instantaneous cloud base altitude should be that of the bottom of the lowest level containing convective cloud. Missing data should be reported in the absence of convective cloud. The time mean should be calculated from these quantities averaging over occasions when convective cloud is present only, and should contain missing data for occasions when no convective cloud is present during the meaning period."}

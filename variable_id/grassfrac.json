@@ -1,5 +1,1 @@
-{
-  "@context": "000_context.jsonld",
-  "id": "grassfrac",
-  "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "grassfrac", "type": "variable", "drs_name": "grassfrac", "description": "Percentage of entire grid cell that is covered by natural grass."}

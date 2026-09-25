@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "rsds",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "rsds", "type": "variable", "drs_name": "rsds", "description": "Surface Downwelling Shortwave Radiation over the portion of a land grid cell covered by snow but not by ice. Can be used for computation of surface albedo."}

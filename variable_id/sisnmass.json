@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sisnmass",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sisnmass", "type": "variable", "drs_name": "sisnmass", "description": "Total mass of snow on sea ice divided by grid-cell area. This then allows one to analyse the storage of latent heat in the snow, and to calculate the snow-water equivalent."}

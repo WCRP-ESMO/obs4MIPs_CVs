@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "zoocos",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "zoocos", "type": "variable", "drs_name": "zoocos", "description": "sum of zooplankton carbon component concentrations"}

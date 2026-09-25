@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "siforcecoriolx",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "siforcecoriolx", "type": "variable", "drs_name": "siforcecoriolx", "description": "X-component of the force on sea ice caused by the Coriolis force divided by grid-cell area."}

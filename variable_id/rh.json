@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "rh",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "rh", "type": "variable", "drs_name": "rh", "description": "Carbon mass flux per unit area into atmosphere due to heterotrophic respiration on land (respiration by consumers)"}

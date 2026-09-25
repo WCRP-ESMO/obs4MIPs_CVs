@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "siflfwdrain",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "siflfwdrain", "type": "variable", "drs_name": "siflfwdrain", "description": "Total flux of fresh water from sea-ice surface into underlying ocean divided by grid-cell area. This combines both surface meltwater that drains directly into the ocean and the drainage of surface melt ponds. By definition, this flux is always positive."}

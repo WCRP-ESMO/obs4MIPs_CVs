@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "evs",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "evs", "type": "variable", "drs_name": "evs", "description": "computed as the total mass of water vapor evaporating from the ice-free portion of the ocean  divided by the area of the ocean portion of the grid cell."}

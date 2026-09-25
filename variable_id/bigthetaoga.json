@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "bigthetaoga",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "bigthetaoga", "type": "variable", "drs_name": "bigthetaoga", "description": "Diagnostic should be contributed only for models using conservative temperature as prognostic field."}

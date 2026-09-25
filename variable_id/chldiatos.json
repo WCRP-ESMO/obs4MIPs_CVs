@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "chldiatos",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "chldiatos", "type": "variable", "drs_name": "chldiatos", "description": "chlorophyll from diatom phytoplankton component concentration alone"}

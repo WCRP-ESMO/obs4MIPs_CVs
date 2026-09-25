@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "tran",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "tran", "type": "variable", "drs_name": "tran", "description": "Transpiration (may include dew formation as a negative flux)."}

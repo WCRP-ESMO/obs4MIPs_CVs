@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "hfsnthermds2d",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "hfsnthermds2d", "type": "variable", "drs_name": "hfsnthermds2d", "description": ""}

@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sidmassmeltbot",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sidmassmeltbot", "type": "variable", "drs_name": "sidmassmeltbot", "description": "Rate of change of sea-ice mass through melting/dissolution at the ice bottom divided by grid-cell area. Note that this number is always zero or negative since sea-ice growth is collected in sidmassgrowthbot. This is to account for differential growth and melt in models with a sub-grid scale ice thickness distribution."}

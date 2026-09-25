@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sithick",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sithick", "type": "variable", "drs_name": "sithick", "description": "Actual (floe) thickness of sea ice averaged over the ice-covered part of a given grid cell, NOT volume divided by grid area."}

@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "tasmin",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "tasmin", "type": "variable", "drs_name": "tasmin", "description": "minimum near-surface (usually, 2 meter) air temperature (add cell_method attribute \"time: min\")"}

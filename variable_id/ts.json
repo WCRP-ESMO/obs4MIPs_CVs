@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "ts",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "ts", "type": "variable", "drs_name": "ts", "description": "Mean surface temperature of the sea-ice covered part of the grid cell. Wherever snow covers the ice, the surface temperature of the snow is used for the averaging, otherwise the surface temperature of the ice is used."}

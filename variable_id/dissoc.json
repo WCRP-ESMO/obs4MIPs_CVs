@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "dissoc",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "dissoc", "type": "variable", "drs_name": "dissoc", "description": "Sum of dissolved carbon component concentrations explicitly represented (i.e. not ~40 uM refractory unless explicit)"}

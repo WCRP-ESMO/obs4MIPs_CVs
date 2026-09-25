@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "obvfsq",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "obvfsq", "type": "variable", "drs_name": "obvfsq", "description": "The phrase \"square_of_X\" means X*X. Frequency is the number of oscillations of a wave per unit time. Brunt-Vaisala frequency is also sometimes called \"buoyancy frequency\" and is a measure of the vertical stratification of the medium."}

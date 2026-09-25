@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "fsfe",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "fsfe", "type": "variable", "drs_name": "fsfe", "description": "Iron supply through deposition flux onto sea surface, runoff, coasts, sediments, etc"}

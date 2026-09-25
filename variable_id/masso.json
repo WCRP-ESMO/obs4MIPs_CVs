@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "masso",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "masso", "type": "variable", "drs_name": "masso", "description": "Total mass of liquid sea water. For Boussinesq models, report this diagnostic as Boussinesq reference density times total volume."}

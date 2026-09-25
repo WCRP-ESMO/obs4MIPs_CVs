@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "fco2nat",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "fco2nat", "type": "variable", "drs_name": "fco2nat", "description": "This is what the atmosphere sees (on its own grid). This field should be equivalent to the combined natural fluxes of carbon that account for natural exchanges between the atmosphere and land (nep) or ocean (fgco2) reservoirs."}

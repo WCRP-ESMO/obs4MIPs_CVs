@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "dpo2",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "dpo2", "type": "variable", "drs_name": "dpo2", "description": "The partial pressure of a dissolved gas in sea water is the partial pressure in air with which it would be in equilibrium.  The partial pressure of a gaseous constituent of air is the pressure which it alone would exert with unchanged temperature and number of moles per unit volume.  The surface called \"surface\" means the lower boundary of the atmosphere."}

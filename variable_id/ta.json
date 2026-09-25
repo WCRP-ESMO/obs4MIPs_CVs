@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "ta",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "ta", "type": "variable", "drs_name": "ta", "description": "6 hourly instantaneous temperature at 5 pressure levels in the UTLS region (150, 175, 200, 225, and 250 hPa)"}

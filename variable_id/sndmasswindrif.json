@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sndmasswindrif",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sndmasswindrif", "type": "variable", "drs_name": "sndmasswindrif", "description": ""}

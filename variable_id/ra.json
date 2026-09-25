@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "ra",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "ra", "type": "variable", "drs_name": "ra", "description": "Carbon mass flux per unit area into atmosphere due to autotrophic respiration on land (respiration by producers) [see rh for heterotrophic production]"}

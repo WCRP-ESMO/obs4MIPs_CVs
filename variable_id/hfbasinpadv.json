@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "hfbasinpadv",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "hfbasinpadv", "type": "variable", "drs_name": "hfbasinpadv", "description": "Contributions to heat transport from parameterized eddy-induced advective transport due to any subgrid advective process. Diagnosed here as a function of latitude and basin.  Use Celsius for temperature scale."}

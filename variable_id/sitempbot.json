@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sitempbot",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sitempbot", "type": "variable", "drs_name": "sitempbot", "description": "Mean temperature at the base of the sea ice, NOT the temperature within lowermost sea-ice model layer."}

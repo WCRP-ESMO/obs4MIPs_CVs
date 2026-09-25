@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "intpn2",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "intpn2", "type": "variable", "drs_name": "intpn2", "description": "Vertically integrated nitrogen fixation"}

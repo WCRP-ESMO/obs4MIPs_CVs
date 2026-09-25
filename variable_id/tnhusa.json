@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "tnhusa",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "tnhusa", "type": "variable", "drs_name": "tnhusa", "description": "Tendency of Specific Humidity due to Advection"}

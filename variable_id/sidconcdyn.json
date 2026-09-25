@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sidconcdyn",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sidconcdyn", "type": "variable", "drs_name": "sidconcdyn", "description": "Total change in sea-ice area fraction through dynamics-related processes (advection, divergence, etc.)."}

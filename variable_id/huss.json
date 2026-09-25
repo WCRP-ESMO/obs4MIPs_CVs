@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "huss",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "huss", "type": "variable", "drs_name": "huss", "description": "Near-surface (usually, 2 meter) specific humidity."}

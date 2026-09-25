@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "mlotst",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "mlotst", "type": "variable", "drs_name": "mlotst", "description": "Sigma T is potential density referenced to ocean surface. Defined by Sigma T of 0.03 kg m-3 wrt to model level closest to 10 m depth."}

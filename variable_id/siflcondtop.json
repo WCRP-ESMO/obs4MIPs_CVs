@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "siflcondtop",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "siflcondtop", "type": "variable", "drs_name": "siflcondtop", "description": "Net heat conduction flux at the ice surface, i.e. the conductive heat flux from the centre of the uppermost vertical sea-ice grid box to the surface of the sea ice\u00a0(energy flow per sea ice area). Positive for a downward heat flux."}

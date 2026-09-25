@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "wo",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "wo", "type": "variable", "drs_name": "wo", "description": "A velocity is a vector quantity. \"Upward\" indicates a vector component which is positive when directed upward (negative downward)."}

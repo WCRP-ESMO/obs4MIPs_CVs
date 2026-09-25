@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sidmassgrowthwat",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sidmassgrowthwat", "type": "variable", "drs_name": "sidmassgrowthwat", "description": "Rate of change of sea-ice mass due to sea ice formation in supercooled water (often through frazil formation) divided by grid-cell area. Always positive or zero."}

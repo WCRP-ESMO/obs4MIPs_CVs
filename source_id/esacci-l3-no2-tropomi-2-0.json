@@ -1,0 +1,1 @@
+{"@context": "000_context.jsonld", "id": "esacci-l3-no2-tropomi-2-0", "type": "source", "drs_name": "ESACCI-L3-NO2-TROPOMI-2-0", "description": "Monthly tropospheric nitrogen dioxide (NO2) column number density in the context of ESA CCI+ precursors for aerosols and ozone project"}

@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "tmt",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "tmt", "type": "variable", "drs_name": "tmt", "description": "MSU/AMSU mid-troposphere brightness temperature (TMT)."}

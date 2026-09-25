@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "tauu",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "tauu", "type": "variable", "drs_name": "tauu", "description": "Downward eastward wind stress at the surface"}

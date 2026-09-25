@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "hus",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "hus", "type": "variable", "drs_name": "hus", "description": "Specific humidity is the mass fraction of water vapor in (moist) air."}

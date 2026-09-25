@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "zmicro",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "zmicro", "type": "variable", "drs_name": "zmicro", "description": "carbon  concentration from the microzooplankton (<20 um) component alone"}

@@ -1,5 +1,1 @@
-{
-  "@context": "000_context.jsonld",
-  "id": "nppleaf",
-  "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "nppleaf", "type": "variable", "drs_name": "nppleaf", "description": "This is the rate of carbon uptake by leaves due to NPP"}

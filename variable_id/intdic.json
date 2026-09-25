@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "intdic",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "intdic", "type": "variable", "drs_name": "intdic", "description": "Vertically integrated DIC"}

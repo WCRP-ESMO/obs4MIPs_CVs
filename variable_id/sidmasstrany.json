@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sidmasstrany",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sidmasstrany", "type": "variable", "drs_name": "sidmasstrany", "description": "Y-component of the sea-ice drift-induced transport of snow and sea ice mass."}

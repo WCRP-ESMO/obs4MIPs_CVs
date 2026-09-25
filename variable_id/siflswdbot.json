@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "siflswdbot",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "siflswdbot", "type": "variable", "drs_name": "siflswdbot", "description": "Downwelling shortwave flux underneath sea ice, i.e. the amount of shortwave radiation that penetrates the sea ice and reaches the sea ice-ocean interface\u00a0(energy flow per sea ice area). Always positive or zero."}

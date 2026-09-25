@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "phycos",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "phycos", "type": "variable", "drs_name": "phycos", "description": "sum of phytoplankton organic carbon component concentrations at the sea surface"}

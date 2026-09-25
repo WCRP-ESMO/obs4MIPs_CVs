@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sistrxdtop",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sistrxdtop", "type": "variable", "drs_name": "sistrxdtop", "description": "X-component of the atmospheric stress on the surface of sea ice divided by grid-cell area."}

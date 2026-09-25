@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sidragtop",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sidragtop", "type": "variable", "drs_name": "sidragtop", "description": "Atmospheric drag coefficient that is used to calculate the atmospheric momentum drag on sea ice."}

@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "vsfsit",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "vsfsit", "type": "variable", "drs_name": "vsfsit", "description": "This variable measures the virtual salt flux into sea water due to the melting of sea ice. It is set to zero in models which receive a real water flux."}

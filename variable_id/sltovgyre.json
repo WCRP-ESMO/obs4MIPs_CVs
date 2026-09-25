@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sltovgyre",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sltovgyre", "type": "variable", "drs_name": "sltovgyre", "description": "From all advective mass transport processes, resolved and parameterized."}

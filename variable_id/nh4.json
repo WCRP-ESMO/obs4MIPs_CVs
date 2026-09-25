@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "nh4",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "nh4", "type": "variable", "drs_name": "nh4", "description": "Mole concentration means moles (amount of substance) per unit volume and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y."}

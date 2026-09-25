@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "hfevapds",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "hfevapds", "type": "variable", "drs_name": "hfevapds", "description": "This is defined as \"where ice_free_sea over sea\""}

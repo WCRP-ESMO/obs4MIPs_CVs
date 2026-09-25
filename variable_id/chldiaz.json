@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "chldiaz",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "chldiaz", "type": "variable", "drs_name": "chldiaz", "description": "Chlorophyll concentration from the diazotrophic phytoplankton component alone"}

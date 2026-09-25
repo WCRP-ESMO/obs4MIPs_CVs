@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "zossq",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "zossq", "type": "variable", "drs_name": "zossq", "description": "Surface ocean geoid defines z=0.\nThe is the square if the effective dynamic sea level.\nThe effective dynamic sea level as if sea ice (and snow) at a grid cell were converted to liquid seawater. \u00a0The liquid-water equivalent sea surface which the liquid would have if the ice were replaced by an equal mass of sea water of the density of the surface water in its vicinity. Inverse barometer responses from sea-ice (and snow) loading are removed using equation H3 of Griffies et al, 2016 (<https://doi.org/10.5194/gmd-9-3231-2016>). zos is a dynamic sea level should have zero global area mean.\nOcean dynamic sea level is defined by Gregory et al. (2019: [doi.org/10.1007/s10712-019-09525-z](https://airtable.com/appqRFkdpwAitEZNY/tblxLKbWgySWunrpw/viwbU6qCVpl4wgk1q/doi.org/10.1007/s10712-019-09525-z) )"}

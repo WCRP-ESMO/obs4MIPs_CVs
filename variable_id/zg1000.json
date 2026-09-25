@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "zg1000",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "zg1000", "type": "variable", "drs_name": "zg1000", "description": "Geopotential height on the 1000 hPa surface"}

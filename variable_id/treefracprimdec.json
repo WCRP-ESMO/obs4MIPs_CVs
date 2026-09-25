@@ -1,5 +1,1 @@
-{
-  "@context": "000_context.jsonld",
-  "id": "treefracprimdec",
-  "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "treefracprimdec", "type": "variable", "drs_name": "treefracprimdec", "description": ""}
