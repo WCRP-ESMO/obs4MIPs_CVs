@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "fsn",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "fsn", "type": "variable", "drs_name": "fsn", "description": "Flux of nitrogen into the ocean due to deposition (sum of dry and wet deposition), fixation (the production of ammonia from nitrogen gas by diazotrophs) and runoff (liquid water which drains from land)."}

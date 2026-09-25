@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "basin",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "basin", "type": "variable", "drs_name": "basin", "description": "A variable with the standard name of region contains strings which indicate geographical regions. These strings must be chosen from the standard region list."}

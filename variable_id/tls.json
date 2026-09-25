@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "tls",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "tls", "type": "variable", "drs_name": "tls", "description": "MSU/AMSU lower stratosphere brightness temperature (TLS)."}

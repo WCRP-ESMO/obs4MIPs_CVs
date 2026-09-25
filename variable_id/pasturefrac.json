@@ -1,5 +1,1 @@
-{
-  "@context": "000_context.jsonld",
-  "id": "pasturefrac",
-  "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "pasturefrac", "type": "variable", "drs_name": "pasturefrac", "description": "Percentage of entire grid cell  that is covered by anthropogenic pasture."}

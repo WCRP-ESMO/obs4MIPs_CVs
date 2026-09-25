@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "ta-plev37",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "ta-plev37", "type": "variable", "drs_name": "ta-plev37", "description": "Air temperature interpolated to 37 pressure levels."}

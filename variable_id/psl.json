@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "psl",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "psl", "type": "variable", "drs_name": "psl", "description": "Sea Level Pressure"}

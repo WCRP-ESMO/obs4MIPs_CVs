@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sisaltmass",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sisaltmass", "type": "variable", "drs_name": "sisaltmass", "description": "Total mass of all salt in sea ice divided by grid-cell area. Sometimes, models implicitly or explicitly assume a different salinity of the ice for thermodynamic considerations than they do for closing the salt budget with the ocean. In these cases, the total mass of all salt in sea ice should be calculated from the salinity value used in the calculation of the salt budget."}

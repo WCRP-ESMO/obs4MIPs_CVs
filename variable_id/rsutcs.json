@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "rsutcs",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "rsutcs", "type": "variable", "drs_name": "rsutcs", "description": "Calculated in the absence of clouds."}

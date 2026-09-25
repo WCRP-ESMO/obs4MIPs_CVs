@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "evu",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "evu", "type": "variable", "drs_name": "evu", "description": "Vertical diffusion coefficient for momentum due to parametrised eddies"}

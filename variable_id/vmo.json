@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "vmo",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "vmo", "type": "variable", "drs_name": "vmo", "description": "Y-ward mass transport from resolved and parameterized advective transport."}

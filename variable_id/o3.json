@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "o3",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "o3", "type": "variable", "drs_name": "o3", "description": "This is the mole fraction of ozone in air, sampled on the first day of the month as an instantaneous field."}

@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sidmassdyn",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sidmassdyn", "type": "variable", "drs_name": "sidmassdyn", "description": "Total change in sea-ice mass through dynamics-related processes (advection, divergence, etc.) divided by grid-cell area."}

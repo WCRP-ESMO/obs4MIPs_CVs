@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "volo",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "volo", "type": "variable", "drs_name": "volo", "description": "Total volume of liquid sea water."}

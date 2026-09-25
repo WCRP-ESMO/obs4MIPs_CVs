@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "fco2fos",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "fco2fos", "type": "variable", "drs_name": "fco2fos", "description": "This is requested only for the emission-driven coupled carbon climate model runs. This is the prescribed anthropogenic CO2 flux from fossil fuel use, including cement production, and flaring (but not from land-use changes, agricultural burning, forest regrowth, etc.)"}

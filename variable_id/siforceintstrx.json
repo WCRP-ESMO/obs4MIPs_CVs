@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "siforceintstrx",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "siforceintstrx", "type": "variable", "drs_name": "siforceintstrx", "description": "X-component of the force on sea ice caused by internal stress (divergence of sigma) divided by grid-cell area."}

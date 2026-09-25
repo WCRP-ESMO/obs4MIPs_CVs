@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sidmassmelttop",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sidmassmelttop", "type": "variable", "drs_name": "sidmassmelttop", "description": "Rate of change of sea-ice mass through melting at the ice surface divided by grid-cell area. This number is independent of the actual fate of the meltwater, and will hence include all sea-ice meltwater that drains into the ocean and all sea-ice meltwater that is collected by a melt-pond parameterisation. Always negative or zero."}

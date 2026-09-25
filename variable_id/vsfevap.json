@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "vsfevap",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "vsfevap", "type": "variable", "drs_name": "vsfevap", "description": "zero for models using real water fluxes."}

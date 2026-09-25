@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "icfriver",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "icfriver", "type": "variable", "drs_name": "icfriver", "description": "Inorganic Carbon supply to ocean through runoff (separate from gas exchange)"}

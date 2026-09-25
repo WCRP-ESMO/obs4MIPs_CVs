@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "hfgeou",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "hfgeou", "type": "variable", "drs_name": "hfgeou", "description": "Upward geothermal heat flux per unit area on the sea floor"}

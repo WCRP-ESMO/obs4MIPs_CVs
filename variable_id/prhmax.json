@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "prhmax",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "prhmax", "type": "variable", "drs_name": "prhmax", "description": "In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics."}

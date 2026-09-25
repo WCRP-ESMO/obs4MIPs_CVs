@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "co2mass",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "co2mass", "type": "variable", "drs_name": "co2mass", "description": "Total atmospheric mass of Carbon Dioxide"}

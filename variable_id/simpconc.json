@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "simpconc",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "simpconc", "type": "variable", "drs_name": "simpconc", "description": "Area fraction of sea-ice surface that is covered by melt ponds."}

@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "n2oglobal",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "n2oglobal", "type": "variable", "drs_name": "n2oglobal", "description": "Global mean Nitrous Oxide (N2O)"}

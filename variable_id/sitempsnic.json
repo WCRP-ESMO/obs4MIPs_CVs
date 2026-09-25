@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sitempsnic",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sitempsnic", "type": "variable", "drs_name": "sitempsnic", "description": "Mean temperature at the snow-ice interface. This is the surface temperature of ice where snow thickness is zero."}

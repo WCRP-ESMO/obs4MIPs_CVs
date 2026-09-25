@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "phycalc",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "phycalc", "type": "variable", "drs_name": "phycalc", "description": "carbon concentration from calcareous (calcite-producing) phytoplankton component alone"}

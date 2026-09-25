@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "intpbn",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "intpbn", "type": "variable", "drs_name": "intpbn", "description": "Vertically integrated biogenic nitrogen production"}

@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "mc",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "mc", "type": "variable", "drs_name": "mc", "description": "The net mass flux should represent the difference between the updraft and downdraft components.  The flux is computed as the mass divided by the area of the grid cell."}

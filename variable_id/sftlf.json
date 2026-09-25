@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sftlf",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sftlf", "type": "variable", "drs_name": "sftlf", "description": "Percentage of horizontal area occupied by land."}

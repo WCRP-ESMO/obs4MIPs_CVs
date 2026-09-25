@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "rt",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "rt", "type": "variable", "drs_name": "rt", "description": "Net downward radiative flux at the top of the atmosphere."}

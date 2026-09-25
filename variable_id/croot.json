@@ -1,5 +1,1 @@
-{
-  "@context": "000_context.jsonld",
-  "id": "croot",
-  "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "croot", "type": "variable", "drs_name": "croot", "description": "Carbon mass per unit area in roots, including fine and coarse roots."}

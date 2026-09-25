@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sci",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sci", "type": "variable", "drs_name": "sci", "description": "Fraction of time that shallow convection occurs in the grid cell."}

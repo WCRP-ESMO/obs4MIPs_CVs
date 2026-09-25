@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "fco2antt",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "fco2antt", "type": "variable", "drs_name": "fco2antt", "description": "This is requested only for the emission-driven coupled carbon climate model runs. Does not include natural fire sources but, includes all anthropogenic sources, including fossil fuel use, cement production, agricultural burning, and sources associated with anthropogenic land use change excluding forest regrowth."}

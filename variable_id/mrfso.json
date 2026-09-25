@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "mrfso",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "mrfso", "type": "variable", "drs_name": "mrfso", "description": "The mass per unit area (summed over all model layers) of frozen water."}

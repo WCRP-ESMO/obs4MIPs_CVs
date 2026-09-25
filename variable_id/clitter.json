@@ -1,5 +1,1 @@
-{
-  "@context": "000_context.jsonld",
-  "id": "clitter",
-  "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "clitter", "type": "variable", "drs_name": "clitter", "description": "\"Litter\" is dead plant material in or above the soil. It is distinct from coarse wood debris. The precise distinction between \"fine\" and \"coarse\" is model dependent. \"Content\" indicates a quantity per unit area. The sum of the quantities with standard names surface_litter_mass_content_of_carbon and subsurface_litter_mass_content_of_carbon has the standard name litter_mass_content_of_carbon."}

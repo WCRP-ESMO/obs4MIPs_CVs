@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "fsitherm",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "fsitherm", "type": "variable", "drs_name": "fsitherm", "description": "computed as the sea ice thermodynamic water flux into the ocean divided by the area of the ocean portion of the grid cell."}

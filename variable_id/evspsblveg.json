@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "evspsblveg",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "evspsblveg", "type": "variable", "drs_name": "evspsblveg", "description": "The canopy evaporation and sublimation (if present in model); may include dew formation as a negative flux."}

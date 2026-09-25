@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "siage",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "siage", "type": "variable", "drs_name": "siage", "description": "Age of sea ice since its formation in open water."}

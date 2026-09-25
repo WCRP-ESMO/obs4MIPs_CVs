@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "siconc",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "siconc", "type": "variable", "drs_name": "siconc", "description": "Areal fraction of a given grid cell that is covered by sea ice on the ocean grid, independent of the thickness of that ice."}

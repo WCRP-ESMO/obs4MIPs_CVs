@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "zfullo",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "zfullo", "type": "variable", "drs_name": "zfullo", "description": "Depth below geoid"}

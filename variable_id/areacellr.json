@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "areacellr",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "areacellr", "type": "variable", "drs_name": "areacellr", "description": "For river routing model, if grid differs from the atmospheric grid."}

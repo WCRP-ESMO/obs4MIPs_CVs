@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sispeed",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sispeed", "type": "variable", "drs_name": "sispeed", "description": "Speed of ice (i.e. mean absolute velocity) to account for back-and-forth movement of the ice."}

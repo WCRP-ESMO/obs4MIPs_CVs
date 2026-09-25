@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "simprefrozen",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "simprefrozen", "type": "variable", "drs_name": "simprefrozen", "description": "Volume of refrozen ice on melt ponds divided by melt pond covered area."}

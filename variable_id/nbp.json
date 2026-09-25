@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "nbp",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "nbp", "type": "variable", "drs_name": "nbp", "description": "This is the net mass flux of carbon from atmosphere into land, calculated as photosynthesis MINUS the sum of  plant and soil respiration, carbon fluxes from fire, harvest, grazing  and land use change. Positive flux is into the land."}

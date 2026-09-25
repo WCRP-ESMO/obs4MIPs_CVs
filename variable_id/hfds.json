@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "hfds",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "hfds", "type": "variable", "drs_name": "hfds", "description": "This is the net flux of heat entering the liquid water column through its upper surface (excluding any \"flux adjustment\") ."}

@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "intparag",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "intparag", "type": "variable", "drs_name": "intparag", "description": "Vertically integrated aragonite production"}

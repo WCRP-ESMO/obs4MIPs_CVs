@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "fgdms",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "fgdms", "type": "variable", "drs_name": "fgdms", "description": "Gas exchange flux of DMS (positive into atmosphere)"}

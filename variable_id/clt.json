@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "clt",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "clt", "type": "variable", "drs_name": "clt", "description": "Total cloud area fraction (reported as a percentage) for the whole atmospheric column, as seen from the surface or the top of the atmosphere. Includes both large-scale and convective cloud."}

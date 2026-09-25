@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "intppcalc",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "intppcalc", "type": "variable", "drs_name": "intppcalc", "description": "Vertically integrated primary (organic carbon) production by the calcareous phytoplankton component alone"}

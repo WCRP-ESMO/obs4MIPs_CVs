@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "siextentn",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "siextentn", "type": "variable", "drs_name": "siextentn", "description": "Total integrated area of all Northern Hemisphere grid cells that are covered by at least 15% areal fraction of sea ice (siconc >= 0.15). Does not include grid cells partially covered by land."}

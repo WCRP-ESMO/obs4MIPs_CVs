@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "masscello",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "masscello", "type": "variable", "drs_name": "masscello", "description": "Tracer grid-cell mass per unit area used for computing tracer budgets. For Boussinesq models with static ocean grid cell thickness, masscello = rhozero*thickcello, where thickcello is static cell thickness and rhozero is constant Boussinesq reference density. More generally, masscello is time dependent and reported as part of Omon."}

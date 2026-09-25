@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "calcos",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "calcos", "type": "variable", "drs_name": "calcos", "description": "sum of particulate calcite component concentrations (e.g. Phytoplankton, Detrital, etc.)"}

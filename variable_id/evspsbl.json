@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "evspsbl",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "evspsbl", "type": "variable", "drs_name": "evspsbl", "description": "Rate of change of sea-ice mass change through evaporation and sublimation divided by grid-cell area. If a model does not differentiate between the sublimation of snow and sea ice, we recommend to report sidmassevapsubl as zero as long as the ice is snow covered, and to report any sublimation within the variable sisndmasssubl."}

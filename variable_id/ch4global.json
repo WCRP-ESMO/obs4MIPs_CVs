@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "ch4global",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "ch4global", "type": "variable", "drs_name": "ch4global", "description": "Global Mean Mole Fraction of CH4"}

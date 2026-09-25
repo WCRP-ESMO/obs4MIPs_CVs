@@ -1,5 +1,1 @@
-{
-  "@context": "000_context.jsonld",
-  "id": "landcoverfrac",
-  "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "landcoverfrac", "type": "variable", "drs_name": "landcoverfrac", "description": "Percentage of grid cell area occupied by different model vegetation/land cover categories. The categories may differ from model to model, depending on each model's subgrid land cover category definitions. Categories may include natural vegetation, anthropogenic vegetation, bare soil, lakes, urban areas, glaciers, etc. Sum of all should equal the percentage of the grid cell that is land."}

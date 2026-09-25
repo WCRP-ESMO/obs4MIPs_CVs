@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "ppos",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "ppos", "type": "variable", "drs_name": "ppos", "description": "total primary (organic carbon) production by phytoplankton"}

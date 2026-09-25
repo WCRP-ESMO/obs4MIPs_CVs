@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "wap",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "wap", "type": "variable", "drs_name": "wap", "description": "Omega (vertical velocity in pressure coordinates, positive downwards) at 500hPa level;"}

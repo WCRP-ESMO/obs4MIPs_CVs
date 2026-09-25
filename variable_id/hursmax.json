@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "hursmax",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "hursmax", "type": "variable", "drs_name": "hursmax", "description": "The relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C."}

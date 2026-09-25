@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "tntr",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "tntr", "type": "variable", "drs_name": "tntr", "description": "Tendency of Air Temperature due to Radiative Heating"}

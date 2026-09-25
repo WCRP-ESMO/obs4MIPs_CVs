@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sivoln",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sivoln", "type": "variable", "drs_name": "sivoln", "description": "Total integrated volume of sea ice in the Northern Hemisphere."}

@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "hfy",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "hfy", "type": "variable", "drs_name": "hfy", "description": "Contains all contributions to \"y-ward\" heat transport from resolved and parameterized processes. Use Celsius for temperature scale."}

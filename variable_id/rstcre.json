@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "rstcre",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "rstcre", "type": "variable", "drs_name": "rstcre", "description": "TOA shortwave cloud radiative effect, computed as the difference between all-sky and clear-sky outgoing shortwave radiation."}

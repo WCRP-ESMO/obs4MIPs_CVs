@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "zostoga",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "zostoga", "type": "variable", "drs_name": "zostoga", "description": "There is no CMIP6 request for zosga nor zossga."}

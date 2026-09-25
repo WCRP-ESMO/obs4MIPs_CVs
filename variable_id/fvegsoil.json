@@ -1,5 +1,1 @@
-{
-  "@context": "000_context.jsonld",
-  "id": "fvegsoil",
-  "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "fvegsoil", "type": "variable", "drs_name": "fvegsoil", "description": "Carbon mass flux per unit area from vegetation directly into soil, without intermediate conversion to litter."}

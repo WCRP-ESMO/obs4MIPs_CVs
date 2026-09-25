@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "arag",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "arag", "type": "variable", "drs_name": "arag", "description": "Sum of particulate aragonite components (e.g. Phytoplankton, Detrital, etc.)"}

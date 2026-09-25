@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "intpp",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "intpp", "type": "variable", "drs_name": "intpp", "description": "Vertically integrated total primary (organic carbon) production by phytoplankton.  This should equal the sum of intpdiat+intpphymisc, but those individual components may be unavailable in some models."}

@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "zmiscos",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "zmiscos", "type": "variable", "drs_name": "zmiscos", "description": "carbon from additional zooplankton component concentrations alone (e.g. Micro, meso).  Since the models all have different numbers of components, this variable has been included to provide a check for intercomparison between models since some phytoplankton groups are supersets."}

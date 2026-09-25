@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "graz",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "graz", "type": "variable", "drs_name": "graz", "description": "Total grazing of phytoplankton by zooplankton defined as tendency of moles of carbon per cubic metre."}

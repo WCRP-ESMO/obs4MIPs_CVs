@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sifllwutop",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sifllwutop", "type": "variable", "drs_name": "sifllwutop", "description": "Upward longwave flux from the sea-ice surface to the atmosphere\u00a0(energy flow per sea ice area). Always positive or zero."}

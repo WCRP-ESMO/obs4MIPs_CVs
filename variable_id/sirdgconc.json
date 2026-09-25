@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sirdgconc",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sirdgconc", "type": "variable", "drs_name": "sirdgconc", "description": "Area fraction of sea-ice surface that is ridged sea ice."}

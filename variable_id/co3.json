@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "co3",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "co3", "type": "variable", "drs_name": "co3", "description": "Near surface mole concentration (number of moles per unit volume: molarity) of the carbonate anion (CO3)."}

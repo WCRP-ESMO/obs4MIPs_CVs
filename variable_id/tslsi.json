@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "tslsi",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "tslsi", "type": "variable", "drs_name": "tslsi", "description": "Surface temperature of all surfaces except open ocean."}

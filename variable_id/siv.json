@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "siv",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "siv", "type": "variable", "drs_name": "siv", "description": "Y-component of sea-ice velocity on native model grid."}

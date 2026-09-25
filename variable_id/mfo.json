@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "mfo",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "mfo", "type": "variable", "drs_name": "mfo", "description": "Transport across_line means that which crosses a particular line on the Earth's surface; formally this means the integral along the line of the normal component of the transport."}

@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "simass",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "simass", "type": "variable", "drs_name": "simass", "description": "Total mass of sea ice divided by grid-cell area."}

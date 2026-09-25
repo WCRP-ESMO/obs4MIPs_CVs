@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "phypicoos",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "phypicoos", "type": "variable", "drs_name": "phypicoos", "description": "carbon concentration from the picophytoplankton (<2 um) component alone"}

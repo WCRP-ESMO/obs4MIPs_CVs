@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "mrso",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "mrso", "type": "variable", "drs_name": "mrso", "description": "the mass per unit area  (summed over all soil layers) of water in all phases."}

@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "rlutcs",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "rlutcs", "type": "variable", "drs_name": "rlutcs", "description": "Upwelling clear-sky longwave radiation at top of atmosphere"}

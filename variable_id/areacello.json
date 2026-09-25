@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "areacello",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "areacello", "type": "variable", "drs_name": "areacello", "description": "Horizontal area of ocean grid cells"}

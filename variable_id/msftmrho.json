@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "msftmrho",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "msftmrho", "type": "variable", "drs_name": "msftmrho", "description": "Overturning mass streamfunction arising from all advective mass transport processes, resolved and parameterized."}

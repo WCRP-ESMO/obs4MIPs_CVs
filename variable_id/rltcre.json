@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "rltcre",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "rltcre", "type": "variable", "drs_name": "rltcre", "description": "TOA longwave cloud radiative effect, computed as the difference between all-sky and clear-sky outgoing longwave radiation."}

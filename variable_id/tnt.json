@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "tnt",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "tnt", "type": "variable", "drs_name": "tnt", "description": "Tendency of Air Temperature"}

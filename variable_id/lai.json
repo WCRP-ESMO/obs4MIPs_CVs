@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "lai",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "lai", "type": "variable", "drs_name": "lai", "description": "A ratio obtained by dividing the total upper leaf surface area of vegetation by the (horizontal) surface area of the land on which it grows."}

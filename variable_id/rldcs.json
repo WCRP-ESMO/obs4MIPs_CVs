@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "rldcs",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "rldcs", "type": "variable", "drs_name": "rldcs", "description": "Downwelling clear-sky longwave radiation (includes the fluxes at the surface and TOA)"}

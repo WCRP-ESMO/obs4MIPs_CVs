@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "co3natos",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "co3natos", "type": "variable", "drs_name": "co3natos", "description": ""}

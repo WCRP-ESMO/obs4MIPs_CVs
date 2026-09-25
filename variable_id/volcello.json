@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "volcello",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "volcello", "type": "variable", "drs_name": "volcello", "description": "grid-cell volume ca. 2000."}

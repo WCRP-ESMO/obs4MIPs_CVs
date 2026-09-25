@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "rtmt",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "rtmt", "type": "variable", "drs_name": "rtmt", "description": "Net Downward Radiative Flux at Top of Model : I.e., at the top of that portion of the atmosphere where dynamics are explicitly treated by the model. This is reported only if it differs from the net downward radiative flux at the top of the atmosphere."}

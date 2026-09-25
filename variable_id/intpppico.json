@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "intpppico",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "intpppico", "type": "variable", "drs_name": "intpppico", "description": "Vertically integrated primary (organic carbon) production by the picophytoplankton component alone"}

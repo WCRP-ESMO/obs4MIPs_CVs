@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "wsgmax100m",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "wsgmax100m", "type": "variable", "drs_name": "wsgmax100m", "description": "Wind speed gust maximum at 100m above surface"}

@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "froc",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "froc", "type": "variable", "drs_name": "froc", "description": "Organic Carbon loss to sediments"}

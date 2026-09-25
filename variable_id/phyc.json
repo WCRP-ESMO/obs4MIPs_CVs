@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "phyc",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "phyc", "type": "variable", "drs_name": "phyc", "description": "sum of phytoplankton carbon component concentrations.  In most (all?) cases this is the sum of phycdiat and phycmisc (i.e., \"Diatom Carbon Concentration\" and \"Non-Diatom Phytoplankton Carbon Concentration\""}

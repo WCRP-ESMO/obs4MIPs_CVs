@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "hfbasinpmdiff",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "hfbasinpmdiff", "type": "variable", "drs_name": "hfbasinpmdiff", "description": "Contributions to heat transport from parameterized mesoscale eddy-induced diffusive transport (i.e., neutral diffusion). Diagnosed here as a function of latitude and basin."}

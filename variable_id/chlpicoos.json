@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "chlpicoos",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "chlpicoos", "type": "variable", "drs_name": "chlpicoos", "description": "chlorophyll concentration from the picophytoplankton (<2 um) component alone"}

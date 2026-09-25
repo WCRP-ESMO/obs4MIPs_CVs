@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sidconcth",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sidconcth", "type": "variable", "drs_name": "sidconcth", "description": "Total change in sea-ice area fraction through thermodynamic processes."}

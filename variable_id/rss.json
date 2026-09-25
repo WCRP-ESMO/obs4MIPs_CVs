@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "rss",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "rss", "type": "variable", "drs_name": "rss", "description": "Net downward shortwave radiation at the surface"}

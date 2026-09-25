@@ -1,5 +1,1 @@
-{
-  "@context": "000_context.jsonld",
-  "id": "flittersoil",
-  "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "flittersoil", "type": "variable", "drs_name": "flittersoil", "description": "Carbon mass flux per unit area into soil from litter (dead plant material in or above the soil)."}

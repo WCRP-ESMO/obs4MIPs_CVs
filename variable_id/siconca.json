@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "siconca",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "siconca", "type": "variable", "drs_name": "siconca", "description": "Areal fraction of a given grid cell that is covered by sea ice on the atmosphere grid, independent of the thickness of that ice."}

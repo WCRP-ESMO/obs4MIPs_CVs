@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "tosga",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "tosga", "type": "variable", "drs_name": "tosga", "description": "Temperature of upper boundary of the liquid ocean, including temperatures below sea-ice and floating ice shelves."}

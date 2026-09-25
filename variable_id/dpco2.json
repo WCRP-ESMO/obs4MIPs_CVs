@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "dpco2",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "dpco2", "type": "variable", "drs_name": "dpco2", "description": "Difference in partial pressure of carbon dioxide between sea water and air.  The partial pressure of a dissolved gas in sea water is the partial pressure in air with which it would be in equilibrium."}

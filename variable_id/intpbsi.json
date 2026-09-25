@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "intpbsi",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "intpbsi", "type": "variable", "drs_name": "intpbsi", "description": "Vertically integrated biogenic silica production"}

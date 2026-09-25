@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "vsfcorr",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "vsfcorr", "type": "variable", "drs_name": "vsfcorr", "description": "It is set to zero in models which receive a real water flux."}

@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "detoc",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "detoc", "type": "variable", "drs_name": "detoc", "description": "Sum of detrital organic carbon component concentrations"}

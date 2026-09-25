@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sirdgthick",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sirdgthick", "type": "variable", "drs_name": "sirdgthick", "description": "Total volume of ridged sea ice divided by area of ridges, i.e. mean thickness of ridged sea ice."}

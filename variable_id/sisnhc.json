@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sisnhc",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sisnhc", "type": "variable", "drs_name": "sisnhc", "description": "Heat content of all snow in grid cell divided by grid-cell area. This includes both the latent and sensible heat content contributions. Snow-water equivalent at 0 C is assumed to have a heat content of 0 J. Does not include the heat content of sea ice."}

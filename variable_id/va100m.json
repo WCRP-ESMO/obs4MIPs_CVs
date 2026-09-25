@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "va100m",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "va100m", "type": "variable", "drs_name": "va100m", "description": "Meridional wind at 100m above the surface."}

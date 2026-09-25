@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sidivvel",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sidivvel", "type": "variable", "drs_name": "sidivvel", "description": "Divergence of sea-ice velocity field (first shear strain invariant)."}

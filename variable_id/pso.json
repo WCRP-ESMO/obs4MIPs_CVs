@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "pso",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "pso", "type": "variable", "drs_name": "pso", "description": "The surface called \"surface\" means the lower boundary of the atmosphere.  \"Sea water pressure\" is the pressure that exists in the medium of sea water.  It includes the pressure due to overlying sea water, sea ice, air and any other medium that may be present."}

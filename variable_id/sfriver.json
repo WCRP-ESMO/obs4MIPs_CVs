@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "sfriver",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "sfriver", "type": "variable", "drs_name": "sfriver", "description": "This field is physical, and it arises when rivers carry a nonzero salt content.  Often this is zero, with rivers assumed to be fresh."}

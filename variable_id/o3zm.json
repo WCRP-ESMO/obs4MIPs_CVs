@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "o3zm",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "o3zm", "type": "variable", "drs_name": "o3zm", "description": "Zonal mean ozone mole fraction."}

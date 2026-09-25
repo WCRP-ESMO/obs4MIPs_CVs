@@ -1,5 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "bigthetao",
-    "type": "variable"
-}
+{"@context": "000_context.jsonld", "id": "bigthetao", "type": "variable", "drs_name": "bigthetao", "description": "Sea water conservative temperature (this should be contributed only for models using conservative temperature as prognostic field)"}
