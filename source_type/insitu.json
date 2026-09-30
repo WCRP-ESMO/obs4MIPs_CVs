@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "insitu", "type": "source_type", "drs_name": "insitu", "description": "site data"}
+{"@context": "000_context.jsonld", "id": "insitu", "type": "obs_type", "drs_name": "insitu", "description": "site data"}

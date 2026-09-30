@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "tmt",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "tmt",
+    "long_name": "Temperature of the Mid-Troposphere",
+    "standard_name": "air_temperature",
+    "units": "K",
+    "description": "MSU/AMSU mid-troposphere brightness temperature (TMT)."
 }

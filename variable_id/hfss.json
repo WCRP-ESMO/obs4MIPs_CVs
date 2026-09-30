@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "hfss",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "hfss",
+    "long_name": "Surface Upward Sensible Heat Flux",
+    "standard_name": "surface_upward_sensible_heat_flux",
+    "units": "W m-2",
+    "description": "Upward sensible heat flux from the ice sheet surface. The surface sensible heat flux, also called turbulent heat flux, is the exchange of heat between the surface and the air by motion of air."
 }

@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "siflswdbot",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "siflswdbot",
+    "long_name": "Downwelling Shortwave Flux under Sea Ice",
+    "standard_name": "downwelling_shortwave_flux_in_sea_water_at_sea_ice_base",
+    "units": "W m-2",
+    "description": "Downwelling shortwave flux underneath sea ice, i.e. the amount of shortwave radiation that penetrates the sea ice and reaches the sea ice-ocean interface (energy flow per sea ice area). Always positive or zero."
 }

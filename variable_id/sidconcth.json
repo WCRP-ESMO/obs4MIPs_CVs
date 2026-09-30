@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "sidconcth",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "sidconcth",
+    "long_name": "Sea-Ice Area Fraction Tendency Due to Thermodynamics",
+    "standard_name": "tendency_of_sea_ice_area_fraction_due_to_thermodynamics",
+    "units": "s-1",
+    "description": "Total change in sea-ice area fraction through thermodynamic processes."
 }

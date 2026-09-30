@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "rsdo",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "rsdo",
+    "long_name": "Downwelling Shortwave Radiation in Sea Water",
+    "standard_name": "downwelling_shortwave_flux_in_sea_water",
+    "units": "W m-2",
+    "description": "Downwelling radiation is radiation from above. It does not mean \"net downward\".  When thought of as being incident on a surface, a radiative flux is sometimes called \"irradiance\".  In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called \"vector irradiance\".  In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.  \"shortwave\" means shortwave radiation."
 }

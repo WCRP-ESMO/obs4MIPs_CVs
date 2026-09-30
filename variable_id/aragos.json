@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "aragos",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "aragos",
+    "long_name": "Surface Aragonite Concentration",
+    "standard_name": "mole_concentration_of_aragonite_expressed_as_carbon_in_sea_water",
+    "units": "mol m-3",
+    "description": "sum of particulate aragonite components (e.g. Phytoplankton, Detrital, etc.)"
 }

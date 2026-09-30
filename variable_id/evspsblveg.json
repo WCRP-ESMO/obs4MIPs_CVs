@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "evspsblveg",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "evspsblveg",
+    "long_name": "Evaporation from Canopy",
+    "standard_name": "water_evaporation_flux_from_canopy",
+    "units": "kg m-2 s-1",
+    "description": "The canopy evaporation and sublimation (if present in model); may include dew formation as a negative flux."
 }

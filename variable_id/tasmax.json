@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "tasmax",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "tasmax",
+    "long_name": "Daily Maximum Near-Surface Air Temperature",
+    "standard_name": "air_temperature",
+    "units": "K",
+    "description": "maximum near-surface (usually, 2 meter) air temperature (add cell_method attribute \"time: max\")"
 }

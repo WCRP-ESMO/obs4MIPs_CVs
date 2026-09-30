@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "sidragtop",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "sidragtop",
+    "long_name": "Atmospheric Drag Coefficient",
+    "standard_name": "surface_drag_coefficient_for_momentum_in_air",
+    "units": "1",
+    "description": "Atmospheric drag coefficient that is used to calculate the atmospheric momentum drag on sea ice."
 }

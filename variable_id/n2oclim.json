@@ -1,5 +1,10 @@
 {
   "@context": "000_context.jsonld",
   "id": "n2oclim",
-  "type": "variable"
+  "type": "variable",
+  "drs_name": "",
+  "long_name": "",
+  "standard_name": "",
+  "units": "",
+  "description": ""
 }

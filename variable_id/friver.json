@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "friver",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "friver",
+    "long_name": "Water Flux into Sea Water from Rivers",
+    "standard_name": "water_flux_into_sea_water_from_rivers",
+    "units": "kg m-2 s-1",
+    "description": "computed as the river flux of water into the ocean divided by the area of the ocean portion of the grid cell."
 }

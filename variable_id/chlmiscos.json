@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "chlmiscos",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "chlmiscos",
+    "long_name": "Surface Mass Concentration of Other Phytoplankton Expressed as Chlorophyll in Sea Water",
+    "standard_name": "mass_concentration_of_miscellaneous_phytoplankton_expressed_as_chlorophyll_in_sea_water",
+    "units": "kg m-3",
+    "description": "chlorophyll from additional phytoplankton component concentrations alone"
 }

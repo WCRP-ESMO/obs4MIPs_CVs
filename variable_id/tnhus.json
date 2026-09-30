@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "tnhus",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "tnhus",
+    "long_name": "Tendency of Specific Humidity",
+    "standard_name": "tendency_of_specific_humidity",
+    "units": "s-1",
+    "description": "Tendency of Specific Humidity"
 }

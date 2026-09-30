@@ -1,5 +1,10 @@
 {
-    "@context": "000_context.jsonld",
-    "id": "phnatos",
-    "type": "variable"
+  "@context": "000_context.jsonld",
+  "id": "phnatos",
+  "type": "variable",
+  "drs_name": "",
+  "long_name": "",
+  "standard_name": "",
+  "units": "",
+  "description": ""
 }

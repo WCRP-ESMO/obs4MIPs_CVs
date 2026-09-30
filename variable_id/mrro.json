@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "mrro",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "mrro",
+    "long_name": "Total Runoff",
+    "standard_name": "runoff_flux",
+    "units": "kg m-2 s-1",
+    "description": "The total run-off (including drainage through the base of the soil model) per unit area leaving the land portion of the grid cell."
 }

@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "sivols",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "sivols",
+    "long_name": "Sea-Ice Volume South",
+    "standard_name": "sea_ice_volume",
+    "units": "1e3 km3",
+    "description": "Total integrated volume of sea ice in the Southern Hemisphere."
 }

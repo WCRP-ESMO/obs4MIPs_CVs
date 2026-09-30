@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "chlcalc",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "chlcalc",
+    "long_name": "Mass Concentration of Calcareous Phytoplankton Expressed as Chlorophyll in Sea Water",
+    "standard_name": "mass_concentration_of_calcareous_phytoplankton_expressed_as_chlorophyll_in_sea_water",
+    "units": "kg m-3",
+    "description": "chlorophyll concentration from the calcite-producing phytoplankton component alone"
 }

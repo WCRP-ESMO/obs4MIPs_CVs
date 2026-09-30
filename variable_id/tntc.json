@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "tntc",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "tntc",
+    "long_name": "Tendency of Air Temperature Due to Convection",
+    "standard_name": "tendency_of_air_temperature_due_to_convection",
+    "units": "K s-1",
+    "description": "Tendencies from cumulus convection scheme."
 }

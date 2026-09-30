@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "hur",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "hur",
+    "long_name": "Relative Humidity",
+    "standard_name": "relative_humidity",
+    "units": "%",
+    "description": "The relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C."
 }

@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "phyc",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "phyc",
+    "long_name": "Phytoplankton Carbon Concentration",
+    "standard_name": "mole_concentration_of_phytoplankton_expressed_as_carbon_in_sea_water",
+    "units": "mol m-3",
+    "description": "sum of phytoplankton carbon component concentrations.  In most (all?) cases this is the sum of phycdiat and phycmisc (i.e., \"Diatom Carbon Concentration\" and \"Non-Diatom Phytoplankton Carbon Concentration\""
 }

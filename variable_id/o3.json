@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "o3",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "o3",
+    "long_name": "Mole Fraction of O3",
+    "standard_name": "mole_fraction_of_ozone_in_air",
+    "units": "mol mol-1",
+    "description": "This is the mole fraction of ozone in air, sampled on the first day of the month as an instantaneous field."
 }

@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "tnhusc",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "tnhusc",
+    "long_name": "Tendency of Specific Humidity Due to Convection",
+    "standard_name": "tendency_of_specific_humidity_due_to_convection",
+    "units": "s-1",
+    "description": "Tendencies from cumulus convection scheme."
 }

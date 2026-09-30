@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "fsfe",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "fsfe",
+    "long_name": "Surface Downward Net Flux of Iron",
+    "standard_name": "tendency_of_ocean_mole_content_of_iron_due_to_deposition_and_runoff_and_sediment_dissolution",
+    "units": "mol m-2 s-1",
+    "description": "Iron supply through deposition flux onto sea surface, runoff, coasts, sediments, etc"
 }

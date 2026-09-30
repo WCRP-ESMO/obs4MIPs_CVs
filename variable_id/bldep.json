@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "bldep",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "bldep",
+    "long_name": "Boundary Layer Depth",
+    "standard_name": "atmosphere_boundary_layer_thickness",
+    "units": "m",
+    "description": "maximum boundary layer height during the day (add cell_methods attribute: \"time: maximum\")"
 }

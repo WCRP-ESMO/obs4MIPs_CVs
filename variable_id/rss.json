@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "rss",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "rss",
+    "long_name": "Net Shortwave Surface Radiation",
+    "standard_name": "surface_net_downward_shortwave_flux",
+    "units": "W m-2",
+    "description": "Net downward shortwave radiation at the surface"
 }

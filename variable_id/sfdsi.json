@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "sfdsi",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "sfdsi",
+    "long_name": "Downward Sea Ice Basal Salt Flux",
+    "standard_name": "downward_sea_ice_basal_salt_flux",
+    "units": "kg m-2 s-1",
+    "description": "Total flux of salt from water into sea ice divided by grid-cell area. This flux is upward (negative) during ice growth when salt is embedded into the ice and downward (positive) during melt when salt from sea ice is again released to the ocean."
 }

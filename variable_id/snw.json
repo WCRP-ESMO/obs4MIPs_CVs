@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "snw",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "snw",
+    "long_name": "Surface Snow Amount",
+    "standard_name": "surface_snow_amount",
+    "units": "kg m-2",
+    "description": "The mass of surface snow on the land portion of the grid cell divided by the land area in the grid cell; reported as missing where the land fraction is 0; excludes snow on vegetation canopy or on sea ice."
 }

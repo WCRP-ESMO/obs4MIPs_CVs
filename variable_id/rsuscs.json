@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "rsuscs",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "rsuscs",
+    "long_name": "Surface Upwelling Clear-Sky Shortwave Radiation",
+    "standard_name": "surface_upwelling_shortwave_flux_in_air_assuming_clear_sky",
+    "units": "W m-2",
+    "description": "Surface Upwelling Clear-sky Shortwave Radiation"
 }

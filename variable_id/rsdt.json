@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "rsdt",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "rsdt",
+    "long_name": "TOA Incident Shortwave Radiation",
+    "standard_name": "toa_incoming_shortwave_flux",
+    "units": "W m-2",
+    "description": "Shortwave radiation incident at the top of the atmosphere."
 }

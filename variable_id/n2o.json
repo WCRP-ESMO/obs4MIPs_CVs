@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "n2o",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "n2o",
+    "long_name": "Mole Fraction of N2O",
+    "standard_name": "mole_fraction_of_nitrous_oxide_in_air",
+    "units": "mol mol-1",
+    "description": "Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.   The chemical formula of  nitrous oxide is N2O."
 }

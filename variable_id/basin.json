@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "basin",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "basin",
+    "long_name": "Region Selection Index",
+    "standard_name": "region",
+    "units": "1",
+    "description": "A variable with the standard name of region contains strings which indicate geographical regions. These strings must be chosen from the standard region list."
 }

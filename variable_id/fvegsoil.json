@@ -1,5 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "fvegsoil",
-  "type": "variable"
+    "@context": "000_context.jsonld",
+    "id": "fvegsoil",
+    "type": "variable",
+    "drs_name": "fVegSoil",
+    "long_name": "Total Carbon Mass Flux from Vegetation Directly to Soil",
+    "standard_name": "carbon_mass_flux_into_soil_from_vegetation_excluding_litter",
+    "units": "kg m-2 s-1",
+    "description": "Carbon mass flux per unit area from vegetation directly into soil, without intermediate conversion to litter."
 }

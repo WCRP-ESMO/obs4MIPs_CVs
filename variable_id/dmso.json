@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "dmso",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "dmso",
+    "long_name": "Mole Concentration of Dimethyl Sulphide in Sea Water",
+    "standard_name": "mole_concentration_of_dimethyl_sulfide_in_sea_water",
+    "units": "mol m-3",
+    "description": "Mole concentration of dimethyl sulphide in water in the near surface layer"
 }

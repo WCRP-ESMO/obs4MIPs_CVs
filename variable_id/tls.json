@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "tls",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "tls",
+    "long_name": "Temperature of the Lower Stratosphere",
+    "standard_name": "air_temperature",
+    "units": "K",
+    "description": "MSU/AMSU lower stratosphere brightness temperature (TLS)."
 }

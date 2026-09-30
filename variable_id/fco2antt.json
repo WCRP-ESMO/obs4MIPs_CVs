@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "fco2antt",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "fco2antt",
+    "long_name": "Carbon Mass Flux into Atmosphere Due to All Anthropogenic Emissions of CO2 [kgC m-2 s-1]",
+    "standard_name": "tendency_of_atmosphere_mass_content_of_carbon_dioxide_expressed_as_carbon_due_to_anthropogenic_emission",
+    "units": "kg m-2 s-1",
+    "description": "This is requested only for the emission-driven coupled carbon climate model runs. Does not include natural fire sources but, includes all anthropogenic sources, including fossil fuel use, cement production, agricultural burning, and sources associated with anthropogenic land use change excluding forest regrowth."
 }

@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "huss",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "huss",
+    "long_name": "Near-Surface Specific Humidity",
+    "standard_name": "specific_humidity",
+    "units": "1",
+    "description": "Near-surface (usually, 2 meter) specific humidity."
 }

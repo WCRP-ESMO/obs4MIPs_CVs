@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "thkcello",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "thkcello",
+    "long_name": "Ocean Model Cell Thickness",
+    "standard_name": "cell_thickness",
+    "units": "m",
+    "description": "Thickness of ocean cells. \"Thickness\" means the vertical extent of a layer. \"Cell\" refers to a model grid-cell."
 }

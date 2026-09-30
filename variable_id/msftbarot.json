@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "msftbarot",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "msftbarot",
+    "long_name": "Ocean Barotropic Mass Streamfunction",
+    "standard_name": "ocean_barotropic_mass_streamfunction",
+    "units": "kg s-1",
+    "description": "Streamfunction or its approximation for free surface models. See OMDP document for details."
 }

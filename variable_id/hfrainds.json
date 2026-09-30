@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "hfrainds",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "hfrainds",
+    "long_name": "Temperature Flux Due to Rainfall Expressed as Heat Flux into Sea Water",
+    "standard_name": "temperature_flux_due_to_rainfall_expressed_as_heat_flux_into_sea_water",
+    "units": "W m-2",
+    "description": "This is defined as \"where ice_free_sea over sea\"; i.e., the total flux (considered here) entering the ice-free portion of the grid cell divided by the area of the ocean portion of the grid cell.  All such heat fluxes are computed based on Celsius scale."
 }

@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "hfx",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "hfx",
+    "long_name": "Ocean Heat X Transport",
+    "standard_name": "ocean_heat_x_transport",
+    "units": "W",
+    "description": "Contains all contributions to \"x-ward\" heat transport from resolved and parameterized processes.  Use Celsius for temperature scale."
 }

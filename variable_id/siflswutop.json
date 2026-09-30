@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "siflswutop",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "siflswutop",
+    "long_name": "Upwelling Shortwave Flux over Sea Ice",
+    "standard_name": "surface_upwelling_shortwave_flux_in_air",
+    "units": "W m-2",
+    "description": "Upward shortwave flux from the sea-ice surface to the atmosphere (energy flow per sea ice area). Always positive or zero."
 }

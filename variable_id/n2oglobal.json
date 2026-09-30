@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "n2oglobal",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "n2oglobal",
+    "long_name": "Global Mean Mole Fraction of N2O",
+    "standard_name": "mole_fraction_of_nitrous_oxide_in_air",
+    "units": "1E-09",
+    "description": "Global mean Nitrous Oxide (N2O)"
 }

@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "rlutcs",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "rlutcs",
+    "long_name": "TOA Outgoing Clear-Sky Longwave Radiation",
+    "standard_name": "toa_outgoing_longwave_flux_assuming_clear_sky",
+    "units": "W m-2",
+    "description": "Upwelling clear-sky longwave radiation at top of atmosphere"
 }

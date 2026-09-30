@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "sistrydtop",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "sistrydtop",
+    "long_name": "Y-Component of Atmospheric Stress on Sea Ice",
+    "standard_name": "surface_downward_y_stress",
+    "units": "N m-2",
+    "description": "Y-component of the atmospheric stress on the surface of sea ice divided by grid-cell area."
 }

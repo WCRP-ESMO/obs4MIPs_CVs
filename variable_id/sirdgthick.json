@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "sirdgthick",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "sirdgthick",
+    "long_name": "Ridged Ice Thickness",
+    "standard_name": "sea_ice_thickness",
+    "units": "m",
+    "description": "Total volume of ridged sea ice divided by area of ridges, i.e. mean thickness of ridged sea ice."
 }

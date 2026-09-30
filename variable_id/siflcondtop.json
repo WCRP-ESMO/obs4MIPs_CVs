@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "siflcondtop",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "siflcondtop",
+    "long_name": "Net Conductive Heat Flux in Sea Ice at the Surface",
+    "standard_name": "surface_downward_heat_flux_in_sea_ice",
+    "units": "W m-2",
+    "description": "Net heat conduction flux at the ice surface, i.e. the conductive heat flux from the centre of the uppermost vertical sea-ice grid box to the surface of the sea ice (energy flow per sea ice area). Positive for a downward heat flux."
 }

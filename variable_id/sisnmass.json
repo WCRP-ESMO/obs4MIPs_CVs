@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "sisnmass",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "sisnmass",
+    "long_name": "Snow Mass per Area",
+    "standard_name": "surface_snow_mass",
+    "units": "kg",
+    "description": "Total mass of snow on sea ice divided by grid-cell area. This then allows one to analyse the storage of latent heat in the snow, and to calculate the snow-water equivalent."
 }

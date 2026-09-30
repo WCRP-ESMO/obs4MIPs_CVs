@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "hussanom",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "hussanom",
+    "long_name": "Near-Surface Specific Humidity Anomaly",
+    "standard_name": "specific_humidity",
+    "units": "1",
+    "description": "Anomaly of near-surface specific humidity."
 }

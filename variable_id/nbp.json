@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "nbp",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "nbp",
+    "long_name": "Carbon Mass Flux out of Atmosphere Due to Net Biospheric Production on Land [kgC m-2 s-1]",
+    "standard_name": "surface_net_downward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_all_land_processes",
+    "units": "kg m-2 s-1",
+    "description": "This is the net mass flux of carbon from atmosphere into land, calculated as photosynthesis MINUS the sum of  plant and soil respiration, carbon fluxes from fire, harvest, grazing  and land use change. Positive flux is into the land."
 }

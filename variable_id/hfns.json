@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "hfns",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "hfns",
+    "long_name": "Surface Net Heat Flux",
+    "standard_name": "surface_net_downward_heat_flux",
+    "units": "W m-2",
+    "description": "Net surface heat flux, including radiative and turbulent components."
 }

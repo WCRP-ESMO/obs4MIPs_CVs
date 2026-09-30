@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "ph",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "ph",
+    "long_name": "pH",
+    "standard_name": "sea_water_ph_reported_on_total_scale",
+    "units": "1",
+    "description": "Negative log10 of hydrogen ion concentration with the concentration expressed as mol H kg-1.\nEvaluated at the upper boundary of the liquid ocean, including at the lower boundary of sea-ice and floating ice shelves."
 }

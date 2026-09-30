@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "ta-plev37",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "ta-plev37",
+    "long_name": "Air Temperature on 37 Pressure Levels",
+    "standard_name": "air_temperature",
+    "units": "K",
+    "description": "Air temperature interpolated to 37 pressure levels."
 }

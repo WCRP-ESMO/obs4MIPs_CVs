@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "ua",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "ua",
+    "long_name": "Eastward Wind",
+    "standard_name": "eastward_wind",
+    "units": "m s-1",
+    "description": "6 hourly instantaneous eastward wind at 5 pressure levels in the UTLS region (150, 175, 200, 225, and 250 hPa)"
 }

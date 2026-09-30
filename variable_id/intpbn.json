@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "intpbn",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "intpbn",
+    "long_name": "Nitrogen Production",
+    "standard_name": "tendency_of_ocean_mole_content_of_nitrogen_due_to_biological_production",
+    "units": "mol m-2 s-1",
+    "description": "Vertically integrated biogenic nitrogen production"
 }

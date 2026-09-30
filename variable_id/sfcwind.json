@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "sfcwind",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "sfcWind",
+    "long_name": "Near-Surface Wind Speed",
+    "standard_name": "wind_speed",
+    "units": "m s-1",
+    "description": "Daily maximum near-surface (usually, 10 meters) wind speed."
 }

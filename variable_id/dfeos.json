@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "dfeos",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "dfeos",
+    "long_name": "Surface Dissolved Iron Concentration",
+    "standard_name": "mole_concentration_of_dissolved_iron_in_sea_water",
+    "units": "mol m-3",
+    "description": "dissolved iron in sea water is meant to include both Fe2+ and Fe3+ ions (but not, e.g., particulate detrital iron)"
 }

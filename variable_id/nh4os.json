@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "nh4os",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "nh4os",
+    "long_name": "Surface Dissolved Ammonium Concentration",
+    "standard_name": "mole_concentration_of_ammonium_in_sea_water",
+    "units": "mol m-3",
+    "description": "Mole concentration means moles (amount of substance) per unit volume and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y."
 }

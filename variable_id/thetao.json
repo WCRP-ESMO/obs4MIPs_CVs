@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "thetao",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "thetao",
+    "long_name": "Sea Water Potential Temperature",
+    "standard_name": "sea_water_potential_temperature",
+    "units": "degC",
+    "description": "Diagnostic should be contributed even for models using conservative temperature as prognostic field."
 }

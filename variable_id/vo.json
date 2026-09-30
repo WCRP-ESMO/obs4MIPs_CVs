@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "vo",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "vo",
+    "long_name": "Sea Water Y Velocity",
+    "standard_name": "sea_water_y_velocity",
+    "units": "m s-1",
+    "description": "Prognostic y-ward velocity component resolved by the model."
 }

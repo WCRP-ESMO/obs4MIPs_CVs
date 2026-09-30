@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "wo",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "wo",
+    "long_name": "Sea Water Vertical Velocity",
+    "standard_name": "upward_sea_water_velocity",
+    "units": "m s-1",
+    "description": "A velocity is a vector quantity. \"Upward\" indicates a vector component which is positive when directed upward (negative downward)."
 }

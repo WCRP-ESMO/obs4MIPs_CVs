@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "siage",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "siage",
+    "long_name": "Age of Sea Ice",
+    "standard_name": "age_of_sea_ice",
+    "units": "s",
+    "description": "Age of sea ice since its formation in open water."
 }

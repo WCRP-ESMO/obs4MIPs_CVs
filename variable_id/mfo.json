@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "mfo",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "mfo",
+    "long_name": "Sea Water Transport",
+    "standard_name": "sea_water_transport_across_line",
+    "units": "kg s-1",
+    "description": "Transport across_line means that which crosses a particular line on the Earth's surface; formally this means the integral along the line of the normal component of the transport."
 }

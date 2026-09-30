@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "sci",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "sci",
+    "long_name": "Fraction of Time Shallow Convection Occurs",
+    "standard_name": "shallow_convection_time_fraction",
+    "units": "1",
+    "description": "Fraction of time that shallow convection occurs in the grid cell."
 }

@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "mc",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "mc",
+    "long_name": "Convective Mass Flux",
+    "standard_name": "atmosphere_net_upward_convective_mass_flux",
+    "units": "kg m-2 s-1",
+    "description": "The net mass flux should represent the difference between the updraft and downdraft components.  The flux is computed as the mass divided by the area of the grid cell."
 }

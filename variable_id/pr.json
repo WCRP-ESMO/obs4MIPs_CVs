@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "pr",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "pr",
+    "long_name": "Precipitation",
+    "standard_name": "precipitation_flux",
+    "units": "kg m-2 s-1",
+    "description": "In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics."
 }

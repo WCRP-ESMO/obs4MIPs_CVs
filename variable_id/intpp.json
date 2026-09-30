@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "intpp",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "intpp",
+    "long_name": "Primary Organic Carbon Production by All Types of Phytoplankton",
+    "standard_name": "net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_phytoplankton",
+    "units": "mol m-2 s-1",
+    "description": "Vertically integrated total primary (organic carbon) production by phytoplankton.  This should equal the sum of intpdiat+intpphymisc, but those individual components may be unavailable in some models."
 }

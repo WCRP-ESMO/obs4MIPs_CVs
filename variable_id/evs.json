@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "evs",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "evs",
+    "long_name": "Water Evaporation Flux Where Ice Free Ocean over Sea",
+    "standard_name": "water_evapotranspiration_flux",
+    "units": "kg m-2 s-1",
+    "description": "computed as the total mass of water vapor evaporating from the ice-free portion of the ocean  divided by the area of the ocean portion of the grid cell."
 }

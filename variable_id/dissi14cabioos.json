@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "dissi14cabioos",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "dissi14cabioos",
+    "long_name": "Surface Abiotic Dissolved Inorganic Carbon-14 Concentration",
+    "standard_name": "mole_concentration_of_dissolved_inorganic_14C_in_sea_water",
+    "units": "mol m-3",
+    "description": "Abiotic Dissolved inorganic carbon-14 (CO3+HCO3+H2CO3) concentration"
 }

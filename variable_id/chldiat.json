@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "chldiat",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "chldiat",
+    "long_name": "Mass Concentration of Diatoms Expressed as Chlorophyll in Sea Water",
+    "standard_name": "mass_concentration_of_diatoms_expressed_as_chlorophyll_in_sea_water",
+    "units": "kg m-3",
+    "description": "chlorophyll from diatom phytoplankton component concentration alone"
 }

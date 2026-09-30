@@ -1,5 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "npproot",
-  "type": "variable"
+    "@context": "000_context.jsonld",
+    "id": "npproot",
+    "type": "variable",
+    "drs_name": "nppRoot",
+    "long_name": "Net Primary Production Allocated to Roots as Carbon Mass Flux [kgC m-2 s-1]",
+    "standard_name": "net_primary_productivity_of_biomass_expressed_as_carbon_accumulated_in_roots",
+    "units": "kg m-2 s-1",
+    "description": "This is the rate of carbon uptake by roots due to NPP"
 }

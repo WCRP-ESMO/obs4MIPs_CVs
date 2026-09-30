@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "sftgif",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "sftgif",
+    "long_name": "Land Ice Area Percentage",
+    "standard_name": "land_ice_area_fraction",
+    "units": "%",
+    "description": "Percentage of grid cell covered by land ice (ice sheet, ice shelf, ice cap, glacier)"
 }

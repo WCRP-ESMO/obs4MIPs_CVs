@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "phydiat",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "phydiat",
+    "long_name": "Mole Concentration of Diatoms Expressed as Carbon in Sea Water",
+    "standard_name": "mole_concentration_of_diatoms_expressed_as_carbon_in_sea_water",
+    "units": "mol m-3",
+    "description": "carbon from the diatom phytoplankton component concentration alone"
 }

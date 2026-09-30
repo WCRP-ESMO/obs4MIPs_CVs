@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "wfo",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "wfo",
+    "long_name": "Water Flux into Sea Water",
+    "standard_name": "water_flux_into_sea_water",
+    "units": "kg m-2 s-1",
+    "description": "Computed as the water flux into the ocean divided by the area of the ocean portion of the grid cell. This is the sum *wfonocorr* and *wfcorr*."
 }

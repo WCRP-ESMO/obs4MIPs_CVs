@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "sitempsnic",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "sitempsnic",
+    "long_name": "Temperature at Snow-Ice Interface",
+    "standard_name": "sea_ice_surface_temperature",
+    "units": "K",
+    "description": "Mean temperature at the snow-ice interface. This is the surface temperature of ice where snow thickness is zero."
 }

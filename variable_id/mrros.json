@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "mrros",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "mrros",
+    "long_name": "Surface Runoff",
+    "standard_name": "surface_runoff_flux",
+    "units": "kg m-2 s-1",
+    "description": "The total surface run off leaving the land portion of the grid cell (excluding drainage through the base of the soil model)."
 }

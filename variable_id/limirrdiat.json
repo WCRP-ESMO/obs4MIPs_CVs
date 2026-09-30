@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "limirrdiat",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "limirrdiat",
+    "long_name": "Irradiance Limitation of Diatoms",
+    "standard_name": "growth_limitation_of_diatoms_due_to_solar_irradiance",
+    "units": "1",
+    "description": "Growth limitation of diatoms due to solar irradiance. \"Growth limitation due to solar irradiance\" means the ratio of the growth rate of a species population in the environment (where the amount of sunlight reaching a location may be limited) to the theoretical growth rate if there were no such limit on solar irradiance."
 }

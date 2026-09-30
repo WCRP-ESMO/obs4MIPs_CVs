@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "fsn",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "fsn",
+    "long_name": "Surface Downward Net Flux of Nitrogen",
+    "standard_name": "tendency_of_ocean_mole_content_of_elemental_nitrogen_due_to_deposition_and_fixation_and_runoff",
+    "units": "mol m-2 s-1",
+    "description": "Flux of nitrogen into the ocean due to deposition (sum of dry and wet deposition), fixation (the production of ammonia from nitrogen gas by diazotrophs) and runoff (liquid water which drains from land)."
 }

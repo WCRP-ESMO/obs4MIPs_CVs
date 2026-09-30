@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "ua-plev37",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "ua-plev37",
+    "long_name": "Eastward Wind on 37 Pressure Levels",
+    "standard_name": "eastward_wind",
+    "units": "m s-1",
+    "description": "Eastward wind component interpolated to 37 pressure levels."
 }

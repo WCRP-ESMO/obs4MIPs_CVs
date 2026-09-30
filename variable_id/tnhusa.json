@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "tnhusa",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "tnhusa",
+    "long_name": "Tendency of Specific Humidity Due to Advection",
+    "standard_name": "tendency_of_specific_humidity_due_to_advection",
+    "units": "s-1",
+    "description": "Tendency of Specific Humidity due to Advection"
 }

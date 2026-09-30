@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "rlucs",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "rlucs",
+    "long_name": "Upwelling Clear-Sky Longwave Radiation",
+    "standard_name": "upwelling_longwave_flux_in_air_assuming_clear_sky",
+    "units": "W m-2",
+    "description": "Upwelling clear-sky longwave radiation  (includes the fluxes at the surface and TOA)"
 }

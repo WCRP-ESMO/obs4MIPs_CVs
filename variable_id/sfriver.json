@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "sfriver",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "sfriver",
+    "long_name": "Salt Flux into Sea Water from Rivers",
+    "standard_name": "salt_flux_into_sea_water_from_rivers",
+    "units": "kg m-2 s-1",
+    "description": "This field is physical, and it arises when rivers carry a nonzero salt content.  Often this is zero, with rivers assumed to be fresh."
 }

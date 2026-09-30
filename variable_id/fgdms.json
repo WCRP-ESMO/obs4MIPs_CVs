@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "fgdms",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "fgdms",
+    "long_name": "Surface Upward Flux of DMS",
+    "standard_name": "surface_upward_mole_flux_of_dimethyl_sulfide",
+    "units": "mol m-2 s-1",
+    "description": "Gas exchange flux of DMS (positive into atmosphere)"
 }

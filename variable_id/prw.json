@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "prw",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "prw",
+    "long_name": "Water Vapor Path",
+    "standard_name": "atmosphere_mass_content_of_water_vapor",
+    "units": "kg m-2",
+    "description": "vertically integrated through the atmospheric column"
 }

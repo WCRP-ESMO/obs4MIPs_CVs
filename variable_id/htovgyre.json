@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "htovgyre",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "htovgyre",
+    "long_name": "Northward Ocean Heat Transport Due to Gyre",
+    "standard_name": "northward_ocean_heat_transport_due_to_gyre",
+    "units": "W",
+    "description": "From all advective mass transport processes, resolved and parameterized."
 }

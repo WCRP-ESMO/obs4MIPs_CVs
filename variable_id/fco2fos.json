@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "fco2fos",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "fco2fos",
+    "long_name": "Carbon Mass Flux into Atmosphere Due to Fossil Fuel Emissions of CO2 [kgC m-2 s-1]",
+    "standard_name": "tendency_of_atmosphere_mass_content_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_fossil_fuel_combustion",
+    "units": "kg m-2 s-1",
+    "description": "This is requested only for the emission-driven coupled carbon climate model runs. This is the prescribed anthropogenic CO2 flux from fossil fuel use, including cement production, and flaring (but not from land-use changes, agricultural burning, forest regrowth, etc.)"
 }

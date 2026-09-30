@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "zmiscos",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "zmiscos",
+    "long_name": "Surface Mole Concentration of Other Zooplankton Expressed as Carbon in Sea Water",
+    "standard_name": "mole_concentration_of_miscellaneous_zooplankton_expressed_as_carbon_in_sea_water",
+    "units": "mol m-3",
+    "description": "carbon from additional zooplankton component concentrations alone (e.g. Micro, meso).  Since the models all have different numbers of components, this variable has been included to provide a check for intercomparison between models since some phytoplankton groups are supersets."
 }

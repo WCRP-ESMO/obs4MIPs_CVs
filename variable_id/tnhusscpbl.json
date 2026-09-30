@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "tnhusscpbl",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "tnhusscpbl",
+    "long_name": "Tendency of Specific Humidity Due to Stratiform Cloud and Precipitation and Boundary Layer Mixing",
+    "standard_name": "tendency_of_specific_humidity_due_to_stratiform_cloud_and_precipitation_and_boundary_layer_mixing",
+    "units": "s-1",
+    "description": "Tendency of Specific Humidity Due to Stratiform Cloud and Precipitation and Boundary Layer Mixing  (to be specified only in  models which do not separate budget terms for stratiform cloud, precipitation and boundary layer schemes.  Includes all boundary layer terms including and diffusive terms.)"
 }

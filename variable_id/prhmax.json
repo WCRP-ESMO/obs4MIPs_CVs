@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "prhmax",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "prhmax",
+    "long_name": "Maximum Hourly Precipitation Rate",
+    "standard_name": "precipitation_flux",
+    "units": "kg m-2 s-1",
+    "description": "In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics."
 }

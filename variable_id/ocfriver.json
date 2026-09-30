@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "ocfriver",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "ocfriver",
+    "long_name": "Flux of Organic Carbon into Ocean Surface by Runoff",
+    "standard_name": "tendency_of_ocean_mole_content_of_organic_carbon_due_to_runoff_and_sediment_dissolution",
+    "units": "mol m-2 s-1",
+    "description": "Organic Carbon supply to ocean through runoff (separate from gas exchange)"
 }

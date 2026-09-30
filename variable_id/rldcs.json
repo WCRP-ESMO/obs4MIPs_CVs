@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "rldcs",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "rldcs",
+    "long_name": "Downwelling Clear-Sky Longwave Radiation",
+    "standard_name": "downwelling_longwave_flux_in_air_assuming_clear_sky",
+    "units": "W m-2",
+    "description": "Downwelling clear-sky longwave radiation (includes the fluxes at the surface and TOA)"
 }

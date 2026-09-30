@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "mrso",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "mrso",
+    "long_name": "Total Soil Moisture Content",
+    "standard_name": "mass_content_of_water_in_soil",
+    "units": "kg m-2",
+    "description": "the mass per unit area  (summed over all soil layers) of water in all phases."
 }

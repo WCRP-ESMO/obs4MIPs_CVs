@@ -1,0 +1,1 @@
+{"@context": "000_context.jsonld", "id": "eumetsat-cmsaf-girafe-v1", "type": "source", "drs_name": "EUMETSAT-CMSAF-GIRAFE-v1", "description": "Satellite-based Global Interpolated RAinFall Estimation (GIRAFE)"}

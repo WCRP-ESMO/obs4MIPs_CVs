@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "siitdconc",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "siitdconc",
+    "long_name": "Sea-Ice Area Percentage in Ice Thickness Categories",
+    "standard_name": "sea_ice_area_fraction",
+    "units": "%",
+    "description": "Area fraction of grid cell covered by each ice thickness category (vector with one entry for each ice thickness category starting from the thinnest category, netcdf file should use thickness bounds of the categories as third coordinate axis)."
 }

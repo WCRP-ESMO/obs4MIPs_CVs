@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "wmo",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "wmo",
+    "long_name": "Upward Ocean Mass Transport",
+    "standard_name": "upward_ocean_mass_transport",
+    "units": "kg s-1",
+    "description": "Upward mass transport from resolved and parameterized advective transport."
 }

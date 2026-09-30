@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "vsfriver",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "vsfriver",
+    "long_name": "Virtual Salt Flux into Sea Water from Rivers",
+    "standard_name": "virtual_salt_flux_into_sea_water_from_rivers",
+    "units": "kg m-2 s-1",
+    "description": "zero for models using real water fluxes."
 }

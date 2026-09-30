@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "siforcetiltx",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "siforcetiltx",
+    "long_name": "Sea-Surface Tilt Term in Force Balance (X-Component)",
+    "standard_name": "sea_ice_x_force_per_unit_area_due_to_sea_surface_tilt",
+    "units": "N m-2",
+    "description": "X-component of the force on sea ice caused by sea-surface tilt divided by grid-cell area."
 }

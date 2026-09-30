@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "co3",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "co3",
+    "long_name": "Carbonate Ion Concentration",
+    "standard_name": "mole_concentration_of_carbonate_expressed_as_carbon_in_sea_water",
+    "units": "mol m-3",
+    "description": "Near surface mole concentration (number of moles per unit volume: molarity) of the carbonate anion (CO3)."
 }

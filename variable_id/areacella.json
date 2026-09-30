@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "areacella",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "areacella",
+    "long_name": "Grid-Cell Area for Atmospheric Grid Variables",
+    "standard_name": "cell_area",
+    "units": "m2",
+    "description": "For atmospheres with more than 1 mesh (e.g., staggered grids), report areas that apply to surface vertical fluxes of energy."
 }

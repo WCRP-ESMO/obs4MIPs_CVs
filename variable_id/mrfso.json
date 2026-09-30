@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "mrfso",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "mrfso",
+    "long_name": "Soil Frozen Water Content",
+    "standard_name": "soil_frozen_water_content",
+    "units": "kg m-2",
+    "description": "The mass per unit area (summed over all model layers) of frozen water."
 }

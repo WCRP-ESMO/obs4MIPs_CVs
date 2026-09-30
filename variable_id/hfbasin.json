@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "hfbasin",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "hfbasin",
+    "long_name": "Northward Ocean Heat Transport",
+    "standard_name": "northward_ocean_heat_transport",
+    "units": "W",
+    "description": "Contains contributions from all physical processes affecting the northward heat transport, including resolved advection, parameterized advection, lateral diffusion, etc. Diagnosed here as a function of latitude and basin.   Use Celsius for temperature scale."
 }

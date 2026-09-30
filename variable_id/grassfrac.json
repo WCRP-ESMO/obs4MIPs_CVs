@@ -1,5 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "grassfrac",
-  "type": "variable"
+    "@context": "000_context.jsonld",
+    "id": "grassfrac",
+    "type": "variable",
+    "drs_name": "grassFrac",
+    "long_name": "Natural Grass Area Percentage",
+    "standard_name": "area_fraction",
+    "units": "%",
+    "description": "Percentage of entire grid cell that is covered by natural grass."
 }

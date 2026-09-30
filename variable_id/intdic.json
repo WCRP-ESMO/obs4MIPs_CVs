@@ -1,5 +1,10 @@
 {
     "@context": "000_context.jsonld",
     "id": "intdic",
-    "type": "variable"
+    "type": "variable",
+    "drs_name": "intdic",
+    "long_name": "Dissolved Inorganic Carbon Content",
+    "standard_name": "ocean_mass_content_of_dissolved_inorganic_carbon",
+    "units": "kg m-2",
+    "description": "Vertically integrated DIC"
 }
