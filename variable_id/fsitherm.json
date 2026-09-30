@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "fsitherm", "type": "variable", "drs_name": "fsitherm", "description": "computed as the sea ice thermodynamic water flux into the ocean divided by the area of the ocean portion of the grid cell."}
+{
+    "@context": "000_context.jsonld",
+    "id": "fsitherm",
+    "type": "variable",
+    "drs_name": "fsitherm",
+    "long_name": "Water Flux into Sea Water Due to Sea Ice Thermodynamics",
+    "standard_name": "water_flux_into_sea_water_due_to_sea_ice_thermodynamics",
+    "units": "kg m-2 s-1",
+    "description": "computed as the sea ice thermodynamic water flux into the ocean divided by the area of the ocean portion of the grid cell."
+}

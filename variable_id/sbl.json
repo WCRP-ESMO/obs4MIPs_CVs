@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "sbl", "type": "variable", "drs_name": "sbl", "description": "Rate of change of snow mass through sublimation divided by grid-cell area. If a model does not differentiate between the sublimation of snow and sea ice, we recommend to report all sublimation within sisndmasssubl as long as the ice is snow covered."}
+{
+    "@context": "000_context.jsonld",
+    "id": "sbl",
+    "type": "variable",
+    "drs_name": "sbl",
+    "long_name": "Surface Snow and Ice Sublimation Flux",
+    "standard_name": "tendency_of_atmosphere_mass_content_of_water_vapor_due_to_sublimation_of_surface_snow_and_ice",
+    "units": "kg m-2 s-1",
+    "description": "Rate of change of snow mass through sublimation divided by grid-cell area. If a model does not differentiate between the sublimation of snow and sea ice, we recommend to report all sublimation within sisndmasssubl as long as the ice is snow covered."
+}

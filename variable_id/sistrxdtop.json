@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "sistrxdtop", "type": "variable", "drs_name": "sistrxdtop", "description": "X-component of the atmospheric stress on the surface of sea ice divided by grid-cell area."}
+{
+    "@context": "000_context.jsonld",
+    "id": "sistrxdtop",
+    "type": "variable",
+    "drs_name": "sistrxdtop",
+    "long_name": "X-Component of Atmospheric Stress on Sea Ice",
+    "standard_name": "surface_downward_x_stress",
+    "units": "N m-2",
+    "description": "X-component of the atmospheric stress on the surface of sea ice divided by grid-cell area."
+}

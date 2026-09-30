@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "co2massclim", "type": "variable", "drs_name": "co2massclim", "description": ""}
+{
+  "@context": "000_context.jsonld",
+  "id": "co2massclim",
+  "type": "variable",
+  "drs_name": "",
+  "long_name": "",
+  "standard_name": "",
+  "units": "",
+  "description": ""
+}

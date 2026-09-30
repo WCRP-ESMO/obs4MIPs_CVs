@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "hfgeou", "type": "variable", "drs_name": "hfgeou", "description": "Upward geothermal heat flux per unit area on the sea floor"}
+{
+    "@context": "000_context.jsonld",
+    "id": "hfgeou",
+    "type": "variable",
+    "drs_name": "hfgeou",
+    "long_name": "Upward Geothermal Heat Flux at Sea Floor",
+    "standard_name": "upward_geothermal_heat_flux_at_sea_floor",
+    "units": "W m-2",
+    "description": "Upward geothermal heat flux per unit area on the sea floor"
+}

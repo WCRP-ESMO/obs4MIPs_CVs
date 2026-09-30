@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "baccos", "type": "variable", "drs_name": "baccos", "description": "Sum of bacterial carbon component concentrations"}
+{
+    "@context": "000_context.jsonld",
+    "id": "baccos",
+    "type": "variable",
+    "drs_name": "baccos",
+    "long_name": "Surface Bacterial Carbon Concentration",
+    "standard_name": "mole_concentration_of_bacteria_expressed_as_carbon_in_sea_water",
+    "units": "mol m-3",
+    "description": "Sum of bacterial carbon component concentrations"
+}

@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "wfcorr", "type": "variable", "drs_name": "wfcorr", "description": "Computed as the water flux into the ocean due to flux correction divided by the area of the ocean portion of the grid cell."}
+{
+    "@context": "000_context.jsonld",
+    "id": "wfcorr",
+    "type": "variable",
+    "drs_name": "wfcorr",
+    "long_name": "Water Flux Correction",
+    "standard_name": "water_flux_correction",
+    "units": "kg m-2 s-1",
+    "description": "Computed as the water flux into the ocean due to flux correction divided by the area of the ocean portion of the grid cell."
+}

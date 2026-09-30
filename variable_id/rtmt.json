@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "rtmt", "type": "variable", "drs_name": "rtmt", "description": "Net Downward Radiative Flux at Top of Model : I.e., at the top of that portion of the atmosphere where dynamics are explicitly treated by the model. This is reported only if it differs from the net downward radiative flux at the top of the atmosphere."}
+{
+    "@context": "000_context.jsonld",
+    "id": "rtmt",
+    "type": "variable",
+    "drs_name": "rtmt",
+    "long_name": "Net Downward Radiative Flux at Top of Model",
+    "standard_name": "net_downward_radiative_flux_at_top_of_atmosphere_model",
+    "units": "W m-2",
+    "description": "Net Downward Radiative Flux at Top of Model : I.e., at the top of that portion of the atmosphere where dynamics are explicitly treated by the model. This is reported only if it differs from the net downward radiative flux at the top of the atmosphere."
+}

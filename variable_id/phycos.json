@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "phycos", "type": "variable", "drs_name": "phycos", "description": "sum of phytoplankton organic carbon component concentrations at the sea surface"}
+{
+    "@context": "000_context.jsonld",
+    "id": "phycos",
+    "type": "variable",
+    "drs_name": "phycos",
+    "long_name": "Sea Surface Phytoplankton Carbon Concentration",
+    "standard_name": "mole_concentration_of_phytoplankton_expressed_as_carbon_in_sea_water",
+    "units": "mol m-3",
+    "description": "sum of phytoplankton organic carbon component concentrations at the sea surface"
+}

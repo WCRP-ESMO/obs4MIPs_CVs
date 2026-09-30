@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "sftof", "type": "variable", "drs_name": "sftof", "description": "Percentage of horizontal area occupied by ocean."}
+{
+    "@context": "000_context.jsonld",
+    "id": "sftof",
+    "type": "variable",
+    "drs_name": "sftof",
+    "long_name": "Sea Area Percentage",
+    "standard_name": "sea_area_fraction",
+    "units": "%",
+    "description": "Percentage of horizontal area occupied by ocean."
+}

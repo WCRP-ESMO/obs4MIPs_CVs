@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "rsdscs", "type": "variable", "drs_name": "rsdscs", "description": "Surface solar irradiance clear sky for UV calculations"}
+{
+    "@context": "000_context.jsonld",
+    "id": "rsdscs",
+    "type": "variable",
+    "drs_name": "rsdscs",
+    "long_name": "Surface Downwelling Clear-Sky Shortwave Radiation",
+    "standard_name": "surface_downwelling_shortwave_flux_in_air_assuming_clear_sky",
+    "units": "W m-2",
+    "description": "Surface solar irradiance clear sky for UV calculations"
+}

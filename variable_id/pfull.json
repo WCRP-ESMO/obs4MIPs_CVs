@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "pfull", "type": "variable", "drs_name": "pfull", "description": "Air pressure on model levels"}
+{
+    "@context": "000_context.jsonld",
+    "id": "pfull",
+    "type": "variable",
+    "drs_name": "pfull",
+    "long_name": "Pressure at Model Full-Levels",
+    "standard_name": "air_pressure",
+    "units": "Pa",
+    "description": "Air pressure on model levels"
+}

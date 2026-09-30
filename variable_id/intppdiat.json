@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "intppdiat", "type": "variable", "drs_name": "intppdiat", "description": "Vertically integrated primary (organic carbon) production by the diatom phytoplankton component alone"}
+{
+    "@context": "000_context.jsonld",
+    "id": "intppdiat",
+    "type": "variable",
+    "drs_name": "intppdiat",
+    "long_name": "Net Primary Organic Carbon Production by Diatoms",
+    "standard_name": "net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_diatoms",
+    "units": "mol m-2 s-1",
+    "description": "Vertically integrated primary (organic carbon) production by the diatom phytoplankton component alone"
+}

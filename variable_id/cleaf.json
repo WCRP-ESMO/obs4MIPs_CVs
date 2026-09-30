@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "cleaf", "type": "variable", "drs_name": "cleaf", "description": "Carbon mass per unit area in leaves."}
+{
+    "@context": "000_context.jsonld",
+    "id": "cleaf",
+    "type": "variable",
+    "drs_name": "cLeaf",
+    "long_name": "Carbon Mass in Leaves",
+    "standard_name": "leaf_mass_content_of_carbon",
+    "units": "kg m-2",
+    "description": "Carbon mass per unit area in leaves."
+}

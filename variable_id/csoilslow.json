@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "csoilslow", "type": "variable", "drs_name": "csoilslow", "description": ""}
+{
+  "@context": "000_context.jsonld",
+  "id": "csoilslow",
+  "type": "variable",
+  "drs_name": "",
+  "long_name": "",
+  "standard_name": "",
+  "units": "",
+  "description": ""
+}

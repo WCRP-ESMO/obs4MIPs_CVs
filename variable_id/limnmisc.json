@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "limnmisc", "type": "variable", "drs_name": "limnmisc", "description": "Phytoplankton are algae that grow where there is sufficient light to support photosynthesis. \"Miscellaneous phytoplankton\" are all those phytoplankton that are not diatoms, diazotrophs, calcareous phytoplankton, picophytoplankton or other separately named components of the phytoplankton population. \"Nitrogen growth limitation\" means the ratio of the growth rate of a species population in the environment (where there is a finite availability of nitrogen) to the theoretical growth rate if there were no such limit on nitrogen availability."}
+{
+    "@context": "000_context.jsonld",
+    "id": "limnmisc",
+    "type": "variable",
+    "drs_name": "limnmisc",
+    "long_name": "Nitrogen Limitation of Other Phytoplankton",
+    "standard_name": "nitrogen_growth_limitation_of_miscellaneous_phytoplankton",
+    "units": "1",
+    "description": "Phytoplankton are algae that grow where there is sufficient light to support photosynthesis. \"Miscellaneous phytoplankton\" are all those phytoplankton that are not diatoms, diazotrophs, calcareous phytoplankton, picophytoplankton or other separately named components of the phytoplankton population. \"Nitrogen growth limitation\" means the ratio of the growth rate of a species population in the environment (where there is a finite availability of nitrogen) to the theoretical growth rate if there were no such limit on nitrogen availability."
+}

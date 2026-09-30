@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "ch4global", "type": "variable", "drs_name": "ch4global", "description": "Global Mean Mole Fraction of CH4"}
+{
+    "@context": "000_context.jsonld",
+    "id": "ch4global",
+    "type": "variable",
+    "drs_name": "ch4global",
+    "long_name": "Global Mean Mole Fraction of CH4",
+    "standard_name": "mole_fraction_of_methane_in_air",
+    "units": "1E-09",
+    "description": "Global Mean Mole Fraction of CH4"
+}

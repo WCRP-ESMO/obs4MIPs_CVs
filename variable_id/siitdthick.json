@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "siitdthick", "type": "variable", "drs_name": "siitdthick", "description": "Actual (floe) thickness of sea ice in each ice thickness category, NOT volume divided by grid area (vector with one entry for each ice thickness category starting from the thinnest category, netcdf file should use thickness bounds of categories as third coordinate axis)."}
+{
+    "@context": "000_context.jsonld",
+    "id": "siitdthick",
+    "type": "variable",
+    "drs_name": "siitdthick",
+    "long_name": "Sea-Ice Thickness in Ice Thickness Categories",
+    "standard_name": "sea_ice_thickness",
+    "units": "m",
+    "description": "Actual (floe) thickness of sea ice in each ice thickness category, NOT volume divided by grid area (vector with one entry for each ice thickness category starting from the thinnest category, netcdf file should use thickness bounds of categories as third coordinate axis)."
+}

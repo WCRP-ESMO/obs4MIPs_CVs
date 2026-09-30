@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "tossq", "type": "variable", "drs_name": "tossq", "description": "Square of temperature of liquid ocean.\nEvaluated at the upper boundary of the liquid ocean, including at the lower boundary of sea-ice and floating ice shelves."}
+{
+    "@context": "000_context.jsonld",
+    "id": "tossq",
+    "type": "variable",
+    "drs_name": "tossq",
+    "long_name": "Square of Sea Surface Temperature",
+    "standard_name": "square_of_sea_surface_temperature",
+    "units": "degC2",
+    "description": "Square of temperature of liquid ocean.\nEvaluated at the upper boundary of the liquid ocean, including at the lower boundary of sea-ice and floating ice shelves."
+}

@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "chlpicoos", "type": "variable", "drs_name": "chlpicoos", "description": "chlorophyll concentration from the picophytoplankton (<2 um) component alone"}
+{
+    "@context": "000_context.jsonld",
+    "id": "chlpicoos",
+    "type": "variable",
+    "drs_name": "chlpicoos",
+    "long_name": "Surface Mass Concentration of Picophytoplankton Expressed as Chlorophyll in Sea Water",
+    "standard_name": "mass_concentration_of_picophytoplankton_expressed_as_chlorophyll_in_sea_water",
+    "units": "kg m-3",
+    "description": "chlorophyll concentration from the picophytoplankton (<2 um) component alone"
+}

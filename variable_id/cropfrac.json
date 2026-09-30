@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "cropfrac", "type": "variable", "drs_name": "cropfrac", "description": "Percentage of entire grid cell  that is covered by crop."}
+{
+    "@context": "000_context.jsonld",
+    "id": "cropfrac",
+    "type": "variable",
+    "drs_name": "cropFrac",
+    "long_name": "Percentage Crop Cover",
+    "standard_name": "area_fraction",
+    "units": "%",
+    "description": "Percentage of entire grid cell  that is covered by crop."
+}

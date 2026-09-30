@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "sidivvel", "type": "variable", "drs_name": "sidivvel", "description": "Divergence of sea-ice velocity field (first shear strain invariant)."}
+{
+    "@context": "000_context.jsonld",
+    "id": "sidivvel",
+    "type": "variable",
+    "drs_name": "sidivvel",
+    "long_name": "Divergence of the Sea-Ice Velocity Field",
+    "standard_name": "divergence_of_sea_ice_velocity",
+    "units": "s-1",
+    "description": "Divergence of sea-ice velocity field (first shear strain invariant)."
+}

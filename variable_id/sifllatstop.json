@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "sifllatstop", "type": "variable", "drs_name": "sifllatstop", "description": ""}
+{
+  "@context": "000_context.jsonld",
+  "id": "sifllatstop",
+  "type": "variable",
+  "drs_name": "",
+  "long_name": "",
+  "standard_name": "",
+  "units": "",
+  "description": ""
+}

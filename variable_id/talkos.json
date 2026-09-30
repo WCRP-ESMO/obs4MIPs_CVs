@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "talkos", "type": "variable", "drs_name": "talkos", "description": ""}
+{
+  "@context": "000_context.jsonld",
+  "id": "talkos",
+  "type": "variable",
+  "drs_name": "",
+  "long_name": "",
+  "standard_name": "",
+  "units": "",
+  "description": ""
+}

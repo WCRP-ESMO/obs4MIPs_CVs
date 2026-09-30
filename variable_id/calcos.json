@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "calcos", "type": "variable", "drs_name": "calcos", "description": "sum of particulate calcite component concentrations (e.g. Phytoplankton, Detrital, etc.)"}
+{
+    "@context": "000_context.jsonld",
+    "id": "calcos",
+    "type": "variable",
+    "drs_name": "calcos",
+    "long_name": "Surface Calcite Concentration",
+    "standard_name": "mole_concentration_of_calcite_expressed_as_carbon_in_sea_water",
+    "units": "mol m-3",
+    "description": "sum of particulate calcite component concentrations (e.g. Phytoplankton, Detrital, etc.)"
+}

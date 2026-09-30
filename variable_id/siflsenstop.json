@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "siflsenstop", "type": "variable", "drs_name": "siflsenstop", "description": "Net sensible heat flux over sea ice\u00a0(energy flow per sea ice area). Positive for a downward heat flux."}
+{
+    "@context": "000_context.jsonld",
+    "id": "siflsenstop",
+    "type": "variable",
+    "drs_name": "siflsenstop",
+    "long_name": "Net Downward Sensible Heat Flux over Sea Ice",
+    "standard_name": "surface_downward_sensible_heat_flux",
+    "units": "W m-2",
+    "description": "Net sensible heat flux over sea ice (energy flow per sea ice area). Positive for a downward heat flux."
+}

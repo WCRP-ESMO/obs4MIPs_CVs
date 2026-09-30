@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "zfullo", "type": "variable", "drs_name": "zfullo", "description": "Depth below geoid"}
+{
+    "@context": "000_context.jsonld",
+    "id": "zfullo",
+    "type": "variable",
+    "drs_name": "zfullo",
+    "long_name": "Depth Below Geoid of Ocean Layer",
+    "standard_name": "depth_below_geoid",
+    "units": "m",
+    "description": "Depth below geoid"
+}

@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "rsdcs", "type": "variable", "drs_name": "rsdcs", "description": "Downwelling clear-sky shortwave radiation (includes the fluxes at the surface and top-of-atmosphere)"}
+{
+    "@context": "000_context.jsonld",
+    "id": "rsdcs",
+    "type": "variable",
+    "drs_name": "rsdcs",
+    "long_name": "Downwelling Clear-Sky Shortwave Radiation",
+    "standard_name": "downwelling_shortwave_flux_in_air_assuming_clear_sky",
+    "units": "W m-2",
+    "description": "Downwelling clear-sky shortwave radiation (includes the fluxes at the surface and top-of-atmosphere)"
+}

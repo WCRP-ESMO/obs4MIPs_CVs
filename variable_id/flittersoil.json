@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "flittersoil", "type": "variable", "drs_name": "flittersoil", "description": "Carbon mass flux per unit area into soil from litter (dead plant material in or above the soil)."}
+{
+    "@context": "000_context.jsonld",
+    "id": "flittersoil",
+    "type": "variable",
+    "drs_name": "fLitterSoil",
+    "long_name": "Total Carbon Mass Flux from Litter to Soil",
+    "standard_name": "carbon_mass_flux_into_soil_from_litter",
+    "units": "kg m-2 s-1",
+    "description": "Carbon mass flux per unit area into soil from litter (dead plant material in or above the soil)."
+}

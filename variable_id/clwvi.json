@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "clwvi", "type": "variable", "drs_name": "clwvi", "description": "Mass of condensed (liquid + ice) water in the column divided by the area of the column (not just the area of the cloudy portion of the column). Includes precipitating hydrometeors ONLY if the precipitating hydrometeors affect the calculation of radiative transfer in model."}
+{
+    "@context": "000_context.jsonld",
+    "id": "clwvi",
+    "type": "variable",
+    "drs_name": "clwvi",
+    "long_name": "Condensed Water Path",
+    "standard_name": "atmosphere_mass_content_of_cloud_condensed_water",
+    "units": "kg m-2",
+    "description": "Mass of condensed (liquid + ice) water in the column divided by the area of the column (not just the area of the cloudy portion of the column). Includes precipitating hydrometeors ONLY if the precipitating hydrometeors affect the calculation of radiative transfer in model."
+}

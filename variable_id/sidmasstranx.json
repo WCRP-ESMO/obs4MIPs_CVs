@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "sidmasstranx", "type": "variable", "drs_name": "sidmasstranx", "description": "X-component of the sea-ice drift-induced transport of snow and sea ice mass."}
+{
+    "@context": "000_context.jsonld",
+    "id": "sidmasstranx",
+    "type": "variable",
+    "drs_name": "sidmasstranx",
+    "long_name": "X-Component of Sea-Ice Mass Transport",
+    "standard_name": "sea_ice_x_transport",
+    "units": "kg s-1",
+    "description": "X-component of the sea-ice drift-induced transport of snow and sea ice mass."
+}

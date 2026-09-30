@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "sob", "type": "variable", "drs_name": "sob", "description": "Model prognostic salinity at bottom-most model grid cell"}
+{
+    "@context": "000_context.jsonld",
+    "id": "sob",
+    "type": "variable",
+    "drs_name": "sob",
+    "long_name": "Sea Water Salinity at Sea Floor",
+    "standard_name": "sea_water_salinity_at_sea_floor",
+    "units": "1E-03",
+    "description": "Model prognostic salinity at bottom-most model grid cell"
+}

@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "rldscs", "type": "variable", "drs_name": "rldscs", "description": "Surface downwelling clear-sky longwave radiation"}
+{
+    "@context": "000_context.jsonld",
+    "id": "rldscs",
+    "type": "variable",
+    "drs_name": "rldscs",
+    "long_name": "Surface Downwelling Clear-Sky Longwave Radiation",
+    "standard_name": "surface_downwelling_longwave_flux_in_air_assuming_clear_sky",
+    "units": "W m-2",
+    "description": "Surface downwelling clear-sky longwave radiation"
+}

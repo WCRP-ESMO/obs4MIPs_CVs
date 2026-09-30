@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "icfriver", "type": "variable", "drs_name": "icfriver", "description": "Inorganic Carbon supply to ocean through runoff (separate from gas exchange)"}
+{
+    "@context": "000_context.jsonld",
+    "id": "icfriver",
+    "type": "variable",
+    "drs_name": "icfriver",
+    "long_name": "Flux of Inorganic Carbon into Ocean Surface by Runoff",
+    "standard_name": "tendency_of_ocean_mole_content_of_inorganic_carbon_due_to_runoff_and_sediment_dissolution",
+    "units": "mol m-2 s-1",
+    "description": "Inorganic Carbon supply to ocean through runoff (separate from gas exchange)"
+}

@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "areacellr", "type": "variable", "drs_name": "areacellr", "description": "For river routing model, if grid differs from the atmospheric grid."}
+{
+    "@context": "000_context.jsonld",
+    "id": "areacellr",
+    "type": "variable",
+    "drs_name": "areacellr",
+    "long_name": "Grid-Cell Area for River Model Variables",
+    "standard_name": "cell_area",
+    "units": "m2",
+    "description": "For river routing model, if grid differs from the atmospheric grid."
+}

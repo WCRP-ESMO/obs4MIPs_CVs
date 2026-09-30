@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "msftmzsmpa", "type": "variable", "drs_name": "msftmzsmpa", "description": "Report only if there is a submesoscale eddy parameterization."}
+{
+    "@context": "000_context.jsonld",
+    "id": "msftmzsmpa",
+    "type": "variable",
+    "drs_name": "msftmzsmpa",
+    "long_name": "Ocean Meridional Overturning Mass Streamfunction Due to Parameterized Submesoscale Advection",
+    "standard_name": "ocean_meridional_overturning_mass_streamfunction_due_to_parameterized_submesoscale_eddy_advection",
+    "units": "kg s-1",
+    "description": "Report only if there is a submesoscale eddy parameterization."
+}

@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "sispeed", "type": "variable", "drs_name": "sispeed", "description": "Speed of ice (i.e. mean absolute velocity) to account for back-and-forth movement of the ice."}
+{
+    "@context": "000_context.jsonld",
+    "id": "sispeed",
+    "type": "variable",
+    "drs_name": "sispeed",
+    "long_name": "Sea-Ice Speed",
+    "standard_name": "sea_ice_speed",
+    "units": "m s-1",
+    "description": "Speed of ice (i.e. mean absolute velocity) to account for back-and-forth movement of the ice."
+}

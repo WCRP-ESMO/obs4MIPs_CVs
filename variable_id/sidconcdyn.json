@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "sidconcdyn", "type": "variable", "drs_name": "sidconcdyn", "description": "Total change in sea-ice area fraction through dynamics-related processes (advection, divergence, etc.)."}
+{
+    "@context": "000_context.jsonld",
+    "id": "sidconcdyn",
+    "type": "variable",
+    "drs_name": "sidconcdyn",
+    "long_name": "Sea-Ice Area Fraction Tendency Due to Dynamics",
+    "standard_name": "tendency_of_sea_ice_area_fraction_due_to_dynamics",
+    "units": "s-1",
+    "description": "Total change in sea-ice area fraction through dynamics-related processes (advection, divergence, etc.)."
+}

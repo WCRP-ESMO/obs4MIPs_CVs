@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "wap", "type": "variable", "drs_name": "wap", "description": "Omega (vertical velocity in pressure coordinates, positive downwards) at 500hPa level;"}
+{
+    "@context": "000_context.jsonld",
+    "id": "wap",
+    "type": "variable",
+    "drs_name": "wap",
+    "long_name": "Omega (=dp/dt)",
+    "standard_name": "lagrangian_tendency_of_air_pressure",
+    "units": "Pa s-1",
+    "description": "Omega (vertical velocity in pressure coordinates, positive downwards) at 500hPa level;"
+}

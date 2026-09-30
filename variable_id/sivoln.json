@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "sivoln", "type": "variable", "drs_name": "sivoln", "description": "Total integrated volume of sea ice in the Northern Hemisphere."}
+{
+    "@context": "000_context.jsonld",
+    "id": "sivoln",
+    "type": "variable",
+    "drs_name": "sivoln",
+    "long_name": "Sea-Ice Volume North",
+    "standard_name": "sea_ice_volume",
+    "units": "1e3 km3",
+    "description": "Total integrated volume of sea ice in the Northern Hemisphere."
+}

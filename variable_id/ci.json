@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "ci", "type": "variable", "drs_name": "ci", "description": "Fraction of time that convection occurs in the grid cell."}
+{
+    "@context": "000_context.jsonld",
+    "id": "ci",
+    "type": "variable",
+    "drs_name": "ci",
+    "long_name": "Fraction of Time Convection Occurs in Cell",
+    "standard_name": "convection_time_fraction",
+    "units": "1",
+    "description": "Fraction of time that convection occurs in the grid cell."
+}

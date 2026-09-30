@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "intppmisc", "type": "variable", "drs_name": "intppmisc", "description": "Vertically integrated total primary (organic carbon) production by other phytoplankton components alone"}
+{
+    "@context": "000_context.jsonld",
+    "id": "intppmisc",
+    "type": "variable",
+    "drs_name": "intppmisc",
+    "long_name": "Net Primary Organic Carbon Production by Other Phytoplankton",
+    "standard_name": "net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_miscellaneous_phytoplankton",
+    "units": "mol m-2 s-1",
+    "description": "Vertically integrated total primary (organic carbon) production by other phytoplankton components alone"
+}

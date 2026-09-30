@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "froc", "type": "variable", "drs_name": "froc", "description": "Organic Carbon loss to sediments"}
+{
+    "@context": "000_context.jsonld",
+    "id": "froc",
+    "type": "variable",
+    "drs_name": "froc",
+    "long_name": "Downward Organic Carbon Flux at Ocean Bottom",
+    "standard_name": "minus_tendency_of_ocean_mole_content_of_organic_carbon_due_to_sedimentation",
+    "units": "mol m-2 s-1",
+    "description": "Organic Carbon loss to sediments"
+}

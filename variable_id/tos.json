@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "tos", "type": "variable", "drs_name": "tos", "description": "Temperature of upper boundary of the liquid ocean, including temperatures below sea-ice and floating ice shelves."}
+{
+    "@context": "000_context.jsonld",
+    "id": "tos",
+    "type": "variable",
+    "drs_name": "tos",
+    "long_name": "Sea Surface Temperature",
+    "standard_name": "sea_surface_temperature",
+    "units": "degC",
+    "description": "Temperature of upper boundary of the liquid ocean, including temperatures below sea-ice and floating ice shelves."
+}

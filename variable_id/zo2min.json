@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "zo2min", "type": "variable", "drs_name": "zo2min", "description": ""}
+{
+  "@context": "000_context.jsonld",
+  "id": "zo2min",
+  "type": "variable",
+  "drs_name": "",
+  "long_name": "",
+  "standard_name": "",
+  "units": "",
+  "description": ""
+}

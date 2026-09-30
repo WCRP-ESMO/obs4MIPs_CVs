@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "phalf", "type": "variable", "drs_name": "phalf", "description": "Air pressure on model half-levels"}
+{
+    "@context": "000_context.jsonld",
+    "id": "phalf",
+    "type": "variable",
+    "drs_name": "phalf",
+    "long_name": "Pressure on Model Half-Levels",
+    "standard_name": "air_pressure",
+    "units": "Pa",
+    "description": "Air pressure on model half-levels"
+}

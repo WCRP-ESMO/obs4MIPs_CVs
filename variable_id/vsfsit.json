@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "vsfsit", "type": "variable", "drs_name": "vsfsit", "description": "This variable measures the virtual salt flux into sea water due to the melting of sea ice. It is set to zero in models which receive a real water flux."}
+{
+    "@context": "000_context.jsonld",
+    "id": "vsfsit",
+    "type": "variable",
+    "drs_name": "vsfsit",
+    "long_name": "Virtual Salt Flux into Sea Water Due to Sea Ice Thermodynamics",
+    "standard_name": "virtual_salt_flux_into_sea_water_due_to_sea_ice_thermodynamics",
+    "units": "kg m-2 s-1",
+    "description": "This variable measures the virtual salt flux into sea water due to the melting of sea ice. It is set to zero in models which receive a real water flux."
+}

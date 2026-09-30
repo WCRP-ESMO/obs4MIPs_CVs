@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "vsf", "type": "variable", "drs_name": "vsf", "description": "It is set to zero in models which receive a real water flux."}
+{
+    "@context": "000_context.jsonld",
+    "id": "vsf",
+    "type": "variable",
+    "drs_name": "vsf",
+    "long_name": "Virtual Salt Flux into Sea Water",
+    "standard_name": "virtual_salt_flux_into_sea_water",
+    "units": "kg m-2 s-1",
+    "description": "It is set to zero in models which receive a real water flux."
+}

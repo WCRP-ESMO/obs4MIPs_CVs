@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "ua100m", "type": "variable", "drs_name": "ua100m", "description": "Zonal wind at 100m height"}
+{
+    "@context": "000_context.jsonld",
+    "id": "ua100m",
+    "type": "variable",
+    "drs_name": "ua100m",
+    "long_name": "Eastward Wind at 100m",
+    "standard_name": "eastward_wind",
+    "units": "m s-1",
+    "description": "Zonal wind at 100m height"
+}

@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "fgco2", "type": "variable", "drs_name": "fgco2", "description": "Gas exchange flux of CO2 (positive into ocean)"}
+{
+    "@context": "000_context.jsonld",
+    "id": "fgco2",
+    "type": "variable",
+    "drs_name": "fgco2",
+    "long_name": "Surface Downward Mass Flux of Carbon as CO2 [kgC m-2 s-1]",
+    "standard_name": "surface_downward_mass_flux_of_carbon_dioxide_expressed_as_carbon",
+    "units": "kg m-2 s-1",
+    "description": "Gas exchange flux of CO2 (positive into ocean)"
+}

@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "sifllwutop", "type": "variable", "drs_name": "sifllwutop", "description": "Upward longwave flux from the sea-ice surface to the atmosphere\u00a0(energy flow per sea ice area). Always positive or zero."}
+{
+    "@context": "000_context.jsonld",
+    "id": "sifllwutop",
+    "type": "variable",
+    "drs_name": "sifllwutop",
+    "long_name": "Upwelling Longwave Flux over Sea Ice",
+    "standard_name": "surface_upwelling_longwave_flux_in_air",
+    "units": "W m-2",
+    "description": "Upward longwave flux from the sea-ice surface to the atmosphere (energy flow per sea ice area). Always positive or zero."
+}

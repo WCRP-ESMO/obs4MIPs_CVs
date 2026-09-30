@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "hfcorr", "type": "variable", "drs_name": "hfcorr", "description": ""}
+{
+  "@context": "000_context.jsonld",
+  "id": "hfcorr",
+  "type": "variable",
+  "drs_name": "",
+  "long_name": "",
+  "standard_name": "",
+  "units": "",
+  "description": ""
+}

@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "residualfrac", "type": "variable", "drs_name": "residualfrac", "description": "Percentage of entire grid cell  that is land and is covered by  neither vegetation nor bare-soil (e.g., urban, ice, lakes, etc.)"}
+{
+    "@context": "000_context.jsonld",
+    "id": "residualfrac",
+    "type": "variable",
+    "drs_name": "residualFrac",
+    "long_name": "Percentage of Grid Cell That Is Land but neither Vegetation Covered nor Bare Soil",
+    "standard_name": "area_fraction",
+    "units": "%",
+    "description": "Percentage of entire grid cell  that is land and is covered by  neither vegetation nor bare-soil (e.g., urban, ice, lakes, etc.)"
+}

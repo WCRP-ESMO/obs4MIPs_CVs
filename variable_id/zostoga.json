@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "zostoga", "type": "variable", "drs_name": "zostoga", "description": "There is no CMIP6 request for zosga nor zossga."}
+{
+    "@context": "000_context.jsonld",
+    "id": "zostoga",
+    "type": "variable",
+    "drs_name": "zostoga",
+    "long_name": "Global Average Thermosteric Sea Level Change",
+    "standard_name": "global_average_thermosteric_sea_level_change",
+    "units": "m",
+    "description": "There is no CMIP6 request for zosga nor zossga."
+}

@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "hfevapds", "type": "variable", "drs_name": "hfevapds", "description": "This is defined as \"where ice_free_sea over sea\""}
+{
+    "@context": "000_context.jsonld",
+    "id": "hfevapds",
+    "type": "variable",
+    "drs_name": "hfevapds",
+    "long_name": "Temperature Flux Due to Evaporation Expressed as Heat Flux out of Sea Water",
+    "standard_name": "temperature_flux_due_to_evaporation_expressed_as_heat_flux_out_of_sea_water",
+    "units": "W m-2",
+    "description": "This is defined as \"where ice_free_sea over sea\""
+}

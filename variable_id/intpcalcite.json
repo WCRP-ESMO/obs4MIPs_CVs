@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "intpcalcite", "type": "variable", "drs_name": "intpcalcite", "description": "Vertically integrated calcite production"}
+{
+    "@context": "000_context.jsonld",
+    "id": "intpcalcite",
+    "type": "variable",
+    "drs_name": "intpcalcite",
+    "long_name": "Calcite Production",
+    "standard_name": "tendency_of_ocean_mole_content_of_calcite_expressed_as_carbon_due_to_biological_production",
+    "units": "mol m-2 s-1",
+    "description": "Vertically integrated calcite production"
+}

@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "umo", "type": "variable", "drs_name": "umo", "description": "X-ward mass transport from resolved and parameterized advective transport."}
+{
+    "@context": "000_context.jsonld",
+    "id": "umo",
+    "type": "variable",
+    "drs_name": "umo",
+    "long_name": "Ocean Mass X Transport",
+    "standard_name": "ocean_mass_x_transport",
+    "units": "kg s-1",
+    "description": "X-ward mass transport from resolved and parameterized advective transport."
+}

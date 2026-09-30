@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "burntfractionall", "type": "variable", "drs_name": "burntfractionall", "description": "Percentage of grid cell burned due to all fires including natural and anthropogenic fires and those associated with anthropogenic Land-use change"}
+{
+    "@context": "000_context.jsonld",
+    "id": "burntfractionall",
+    "type": "variable",
+    "drs_name": "burntFractionAll",
+    "long_name": "Percentage of Entire Grid Cell That Is Covered by Burnt Vegetation (All Classes)",
+    "standard_name": "area_fraction",
+    "units": "%",
+    "description": "Percentage of grid cell burned due to all fires including natural and anthropogenic fires and those associated with anthropogenic Land-use change"
+}

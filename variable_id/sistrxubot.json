@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "sistrxubot", "type": "variable", "drs_name": "sistrxubot", "description": "X-component of the ocean stress on the sea ice bottom divided by grid-cell area."}
+{
+    "@context": "000_context.jsonld",
+    "id": "sistrxubot",
+    "type": "variable",
+    "drs_name": "sistrxubot",
+    "long_name": "X-Component of Ocean Stress on Sea Ice",
+    "standard_name": "upward_x_stress_at_sea_ice_base",
+    "units": "N m-2",
+    "description": "X-component of the ocean stress on the sea ice bottom divided by grid-cell area."
+}

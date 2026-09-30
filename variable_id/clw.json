@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "clw", "type": "variable", "drs_name": "clw", "description": "Includes both large-scale and convective cloud. Calculate as the mass of cloud liquid water in the grid cell divided by the mass of air (including the water in all phases) in the grid cells. Precipitating hydrometeors are included ONLY if the precipitating hydrometeors affect the calculation of radiative transfer in model."}
+{
+    "@context": "000_context.jsonld",
+    "id": "clw",
+    "type": "variable",
+    "drs_name": "clw",
+    "long_name": "Mass Fraction of Cloud Liquid Water",
+    "standard_name": "mass_fraction_of_cloud_liquid_water_in_air",
+    "units": "kg kg-1",
+    "description": "Includes both large-scale and convective cloud. Calculate as the mass of cloud liquid water in the grid cell divided by the mass of air (including the water in all phases) in the grid cells. Precipitating hydrometeors are included ONLY if the precipitating hydrometeors affect the calculation of radiative transfer in model."
+}

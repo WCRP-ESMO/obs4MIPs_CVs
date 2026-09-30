@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "siitdsnconc", "type": "variable", "drs_name": "siitdsnconc", "description": "Area fraction of grid cell covered by snow in each ice thickness category (vector with one entry for each ice thickness category starting from the thinnest category, netcdf file should use thickness bounds of the categories as third coordinate axis)."}
+{
+    "@context": "000_context.jsonld",
+    "id": "siitdsnconc",
+    "type": "variable",
+    "drs_name": "siitdsnconc",
+    "long_name": "Snow Area Percentage in Ice Thickness Categories",
+    "standard_name": "surface_snow_area_fraction",
+    "units": "%",
+    "description": "Area fraction of grid cell covered by snow in each ice thickness category (vector with one entry for each ice thickness category starting from the thinnest category, netcdf file should use thickness bounds of the categories as third coordinate axis)."
+}

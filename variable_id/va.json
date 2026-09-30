@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "va", "type": "variable", "drs_name": "va", "description": "6 hourly instantaneous northward wind at 5 pressure levels in the UTLS region (150, 175, 200, 225, and 250 hPa)"}
+{
+    "@context": "000_context.jsonld",
+    "id": "va",
+    "type": "variable",
+    "drs_name": "va",
+    "long_name": "Northward Wind",
+    "standard_name": "northward_wind",
+    "units": "m s-1",
+    "description": "6 hourly instantaneous northward wind at 5 pressure levels in the UTLS region (150, 175, 200, 225, and 250 hPa)"
+}

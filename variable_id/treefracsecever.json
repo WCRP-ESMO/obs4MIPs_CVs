@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "treefracsecever", "type": "variable", "drs_name": "treefracsecever", "description": ""}
+{
+  "@context": "000_context.jsonld",
+  "id": "treefracsecever",
+  "type": "variable",
+  "drs_name": "",
+  "long_name": "",
+  "standard_name": "",
+  "units": "",
+  "description": ""
+}

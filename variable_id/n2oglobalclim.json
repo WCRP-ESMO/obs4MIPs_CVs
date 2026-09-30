@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "n2oglobalclim", "type": "variable", "drs_name": "n2oglobalclim", "description": ""}
+{
+  "@context": "000_context.jsonld",
+  "id": "n2oglobalclim",
+  "type": "variable",
+  "drs_name": "",
+  "long_name": "",
+  "standard_name": "",
+  "units": "",
+  "description": ""
+}

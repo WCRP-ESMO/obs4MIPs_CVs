@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "chldiazos", "type": "variable", "drs_name": "chldiazos", "description": "chlorophyll concentration from the diazotrophic phytoplankton component alone"}
+{
+    "@context": "000_context.jsonld",
+    "id": "chldiazos",
+    "type": "variable",
+    "drs_name": "chldiazos",
+    "long_name": "Surface Mass Concentration of Diazotrophs Expressed as Chlorophyll in Sea Water",
+    "standard_name": "mass_concentration_of_diazotrophic_phytoplankton_expressed_as_chlorophyll_in_sea_water",
+    "units": "kg m-3",
+    "description": "chlorophyll concentration from the diazotrophic phytoplankton component alone"
+}

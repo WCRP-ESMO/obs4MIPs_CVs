@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "intpn2", "type": "variable", "drs_name": "intpn2", "description": "Vertically integrated nitrogen fixation"}
+{
+    "@context": "000_context.jsonld",
+    "id": "intpn2",
+    "type": "variable",
+    "drs_name": "intpn2",
+    "long_name": "Nitrogen Fixation Rate in Ocean",
+    "standard_name": "tendency_of_ocean_mole_content_of_elemental_nitrogen_due_to_fixation",
+    "units": "mol m-2 s-1",
+    "description": "Vertically integrated nitrogen fixation"
+}

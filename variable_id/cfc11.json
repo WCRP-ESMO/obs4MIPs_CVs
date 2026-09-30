@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "cfc11", "type": "variable", "drs_name": "cfc11", "description": "Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.  The chemical formula of CFC11 is CFCl3.  The IUPAC name for CFC11 is trichloro-fluoro-methane."}
+{
+    "@context": "000_context.jsonld",
+    "id": "cfc11",
+    "type": "variable",
+    "drs_name": "cfc11",
+    "long_name": "Global Mean Mole Fraction of CFC11",
+    "standard_name": "mole_fraction_of_cfc11_in_air",
+    "units": "1E-12",
+    "description": "Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.  The chemical formula of CFC11 is CFCl3.  The IUPAC name for CFC11 is trichloro-fluoro-methane."
+}

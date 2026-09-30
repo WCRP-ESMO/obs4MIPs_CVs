@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "chldiatos", "type": "variable", "drs_name": "chldiatos", "description": "chlorophyll from diatom phytoplankton component concentration alone"}
+{
+    "@context": "000_context.jsonld",
+    "id": "chldiatos",
+    "type": "variable",
+    "drs_name": "chldiatos",
+    "long_name": "Surface Mass Concentration of Diatoms Expressed as Chlorophyll in Sea Water",
+    "standard_name": "mass_concentration_of_diatoms_expressed_as_chlorophyll_in_sea_water",
+    "units": "kg m-3",
+    "description": "chlorophyll from diatom phytoplankton component concentration alone"
+}

@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "arag", "type": "variable", "drs_name": "arag", "description": "Sum of particulate aragonite components (e.g. Phytoplankton, Detrital, etc.)"}
+{
+    "@context": "000_context.jsonld",
+    "id": "arag",
+    "type": "variable",
+    "drs_name": "arag",
+    "long_name": "Aragonite Concentration",
+    "standard_name": "mole_concentration_of_aragonite_expressed_as_carbon_in_sea_water",
+    "units": "mol m-3",
+    "description": "Sum of particulate aragonite components (e.g. Phytoplankton, Detrital, etc.)"
+}

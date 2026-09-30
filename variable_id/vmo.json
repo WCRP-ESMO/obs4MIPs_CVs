@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "vmo", "type": "variable", "drs_name": "vmo", "description": "Y-ward mass transport from resolved and parameterized advective transport."}
+{
+    "@context": "000_context.jsonld",
+    "id": "vmo",
+    "type": "variable",
+    "drs_name": "vmo",
+    "long_name": "Ocean Mass Y Transport",
+    "standard_name": "ocean_mass_y_transport",
+    "units": "kg s-1",
+    "description": "Y-ward mass transport from resolved and parameterized advective transport."
+}

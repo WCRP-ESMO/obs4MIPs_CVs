@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "intpbfe", "type": "variable", "drs_name": "intpbfe", "description": "Vertically integrated biogenic iron production"}
+{
+    "@context": "000_context.jsonld",
+    "id": "intpbfe",
+    "type": "variable",
+    "drs_name": "intpbfe",
+    "long_name": "Iron Production",
+    "standard_name": "tendency_of_ocean_mole_content_of_iron_due_to_biological_production",
+    "units": "mol m-2 s-1",
+    "description": "Vertically integrated biogenic iron production"
+}

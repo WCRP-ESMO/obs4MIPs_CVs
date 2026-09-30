@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "rootd", "type": "variable", "drs_name": "rootd", "description": "report the maximum soil depth reachable by plant roots (if defined in model), i.e., the maximum soil depth from which they can extract moisture; report as *missing* where the land fraction is 0."}
+{
+    "@context": "000_context.jsonld",
+    "id": "rootd",
+    "type": "variable",
+    "drs_name": "rootd",
+    "long_name": "Maximum Root Depth",
+    "standard_name": "root_depth",
+    "units": "m",
+    "description": "report the maximum soil depth reachable by plant roots (if defined in model), i.e., the maximum soil depth from which they can extract moisture; report as *missing* where the land fraction is 0."
+}

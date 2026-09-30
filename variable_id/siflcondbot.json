@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "siflcondbot", "type": "variable", "drs_name": "siflcondbot", "description": "Net heat conduction flux at the ice base, i.e. the conductive heat flux from the centre of the lowermost vertical sea-ice grid box to the base of the sea ice\u00a0(energy flow per sea ice area). Positive for a downward heat flux."}
+{
+    "@context": "000_context.jsonld",
+    "id": "siflcondbot",
+    "type": "variable",
+    "drs_name": "siflcondbot",
+    "long_name": "Net Conductive Heat Flux in Sea Ice at the Base",
+    "standard_name": "basal_downward_heat_flux_in_sea_ice",
+    "units": "W m-2",
+    "description": "Net heat conduction flux at the ice base, i.e. the conductive heat flux from the centre of the lowermost vertical sea-ice grid box to the base of the sea ice (energy flow per sea ice area). Positive for a downward heat flux."
+}

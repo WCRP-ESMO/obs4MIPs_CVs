@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "volcello", "type": "variable", "drs_name": "volcello", "description": "grid-cell volume ca. 2000."}
+{
+    "@context": "000_context.jsonld",
+    "id": "volcello",
+    "type": "variable",
+    "drs_name": "volcello",
+    "long_name": "Ocean Grid-Cell Volume",
+    "standard_name": "ocean_volume",
+    "units": "m3",
+    "description": "grid-cell volume ca. 2000."
+}

@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "toz", "type": "variable", "drs_name": "toz", "description": "Total ozone column calculated at 0 degrees C and 1 bar, such that 1m = 1e5 DU."}
+{
+    "@context": "000_context.jsonld",
+    "id": "toz",
+    "type": "variable",
+    "drs_name": "toz",
+    "long_name": "Total Column Ozone",
+    "standard_name": "equivalent_thickness_at_stp_of_atmosphere_ozone_content",
+    "units": "m",
+    "description": "Total ozone column calculated at 0 degrees C and 1 bar, such that 1m = 1e5 DU."
+}

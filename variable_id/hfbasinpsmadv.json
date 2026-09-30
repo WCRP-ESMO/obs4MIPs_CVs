@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "hfbasinpsmadv", "type": "variable", "drs_name": "hfbasinpsmadv", "description": "Contributions to heat transport from parameterized mesoscale eddy-induced advective transport. Diagnosed here as a function of latitude and basin.  Use Celsius for temperature scale."}
+{
+    "@context": "000_context.jsonld",
+    "id": "hfbasinpsmadv",
+    "type": "variable",
+    "drs_name": "hfbasinpsmadv",
+    "long_name": "Northward Ocean Heat Transport Due to Parameterized Submesoscale Advection",
+    "standard_name": "northward_ocean_heat_transport_due_to_parameterized_submesoscale_eddy_advection",
+    "units": "W",
+    "description": "Contributions to heat transport from parameterized mesoscale eddy-induced advective transport. Diagnosed here as a function of latitude and basin.  Use Celsius for temperature scale."
+}

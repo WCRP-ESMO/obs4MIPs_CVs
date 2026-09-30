@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "rlu", "type": "variable", "drs_name": "rlu", "description": "Upwelling longwave radiation (includes the fluxes at the surface and TOA)"}
+{
+    "@context": "000_context.jsonld",
+    "id": "rlu",
+    "type": "variable",
+    "drs_name": "rlu",
+    "long_name": "Upwelling Longwave Radiation",
+    "standard_name": "upwelling_longwave_flux_in_air",
+    "units": "W m-2",
+    "description": "Upwelling longwave radiation (includes the fluxes at the surface and TOA)"
+}

@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "detoc", "type": "variable", "drs_name": "detoc", "description": "Sum of detrital organic carbon component concentrations"}
+{
+    "@context": "000_context.jsonld",
+    "id": "detoc",
+    "type": "variable",
+    "drs_name": "detoc",
+    "long_name": "Detrital Organic Carbon Concentration",
+    "standard_name": "mole_concentration_of_organic_detritus_expressed_as_carbon_in_sea_water",
+    "units": "mol m-3",
+    "description": "Sum of detrital organic carbon component concentrations"
+}

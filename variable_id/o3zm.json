@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "o3zm", "type": "variable", "drs_name": "o3zm", "description": "Zonal mean ozone mole fraction."}
+{
+    "@context": "000_context.jsonld",
+    "id": "o3zm",
+    "type": "variable",
+    "drs_name": "o3zm",
+    "long_name": "Zonal Mean Mole Fraction of O3",
+    "standard_name": "mole_fraction_of_ozone_in_air",
+    "units": "mol mol-1",
+    "description": "Zonal mean ozone mole fraction."
+}

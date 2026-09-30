@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "sidragbot", "type": "variable", "drs_name": "sidragbot", "description": "Oceanic drag coefficient that is used to calculate the oceanic momentum drag on sea ice."}
+{
+    "@context": "000_context.jsonld",
+    "id": "sidragbot",
+    "type": "variable",
+    "drs_name": "sidragbot",
+    "long_name": "Ocean Drag Coefficient",
+    "standard_name": "sea_ice_basal_drag_coefficient_for_momentum_in_sea_water",
+    "units": "1",
+    "description": "Oceanic drag coefficient that is used to calculate the oceanic momentum drag on sea ice."
+}

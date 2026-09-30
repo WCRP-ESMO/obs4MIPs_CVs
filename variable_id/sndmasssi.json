@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "sndmasssi", "type": "variable", "drs_name": "sndmasssi", "description": ""}
+{
+  "@context": "000_context.jsonld",
+  "id": "sndmasssi",
+  "type": "variable",
+  "drs_name": "",
+  "long_name": "",
+  "standard_name": "",
+  "units": "",
+  "description": ""
+}

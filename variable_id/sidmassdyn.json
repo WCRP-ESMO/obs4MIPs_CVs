@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "sidmassdyn", "type": "variable", "drs_name": "sidmassdyn", "description": "Total change in sea-ice mass through dynamics-related processes (advection, divergence, etc.) divided by grid-cell area."}
+{
+    "@context": "000_context.jsonld",
+    "id": "sidmassdyn",
+    "type": "variable",
+    "drs_name": "sidmassdyn",
+    "long_name": "Sea-Ice Mass Change from Dynamics",
+    "standard_name": "tendency_of_sea_ice_amount_due_to_sea_ice_dynamics",
+    "units": "kg m-2 s-1",
+    "description": "Total change in sea-ice mass through dynamics-related processes (advection, divergence, etc.) divided by grid-cell area."
+}

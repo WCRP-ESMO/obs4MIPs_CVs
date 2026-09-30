@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "sitempbot", "type": "variable", "drs_name": "sitempbot", "description": "Mean temperature at the base of the sea ice, NOT the temperature within lowermost sea-ice model layer."}
+{
+    "@context": "000_context.jsonld",
+    "id": "sitempbot",
+    "type": "variable",
+    "drs_name": "sitempbot",
+    "long_name": "Temperature at Ice-Ocean Interface",
+    "standard_name": "sea_ice_basal_temperature",
+    "units": "K",
+    "description": "Mean temperature at the base of the sea ice, NOT the temperature within lowermost sea-ice model layer."
+}

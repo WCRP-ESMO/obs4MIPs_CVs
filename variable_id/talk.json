@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "talk", "type": "variable", "drs_name": "talk", "description": "total alkalinity equivalent concentration (including carbonate, nitrogen, silicate, and borate components)"}
+{
+    "@context": "000_context.jsonld",
+    "id": "talk",
+    "type": "variable",
+    "drs_name": "talk",
+    "long_name": "Total Alkalinity",
+    "standard_name": "sea_water_alkalinity_expressed_as_mole_equivalent",
+    "units": "mol m-3",
+    "description": "total alkalinity equivalent concentration (including carbonate, nitrogen, silicate, and borate components)"
+}

@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "deptho", "type": "variable", "drs_name": "deptho", "description": "Ocean bathymetry.   Reported here is the sea floor depth for present day relative to z=0 geoid. Reported as missing for land grid cells."}
+{
+    "@context": "000_context.jsonld",
+    "id": "deptho",
+    "type": "variable",
+    "drs_name": "deptho",
+    "long_name": "Sea Floor Depth Below Geoid",
+    "standard_name": "sea_floor_depth_below_geoid",
+    "units": "m",
+    "description": "Ocean bathymetry.   Reported here is the sea floor depth for present day relative to z=0 geoid. Reported as missing for land grid cells."
+}

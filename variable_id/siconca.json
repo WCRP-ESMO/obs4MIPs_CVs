@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "siconca", "type": "variable", "drs_name": "siconca", "description": "Areal fraction of a given grid cell that is covered by sea ice on the atmosphere grid, independent of the thickness of that ice."}
+{
+    "@context": "000_context.jsonld",
+    "id": "siconca",
+    "type": "variable",
+    "drs_name": "siconca",
+    "long_name": "Sea-Ice Area Percentage (Atmospheric Grid)",
+    "standard_name": "sea_ice_area_fraction",
+    "units": "%",
+    "description": "Areal fraction of a given grid cell that is covered by sea ice on the atmosphere grid, independent of the thickness of that ice."
+}

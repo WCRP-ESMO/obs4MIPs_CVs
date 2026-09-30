@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "tran", "type": "variable", "drs_name": "tran", "description": "Transpiration (may include dew formation as a negative flux)."}
+{
+    "@context": "000_context.jsonld",
+    "id": "tran",
+    "type": "variable",
+    "drs_name": "tran",
+    "long_name": "Transpiration",
+    "standard_name": "transpiration_flux",
+    "units": "kg m-2 s-1",
+    "description": "Transpiration (may include dew formation as a negative flux)."
+}

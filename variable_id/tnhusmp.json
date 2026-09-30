@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "tnhusmp", "type": "variable", "drs_name": "tnhusmp", "description": "Tendency of specific humidity due to model physics. This includes sources and sinks from parametrized moist physics (e.g. convection, boundary layer, stratiform condensation/evaporation, etc.) and excludes sources and sinks from resolved dynamics or from horizontal or vertical numerical diffusion not associated with model physics.  For example any diffusive mixing by the boundary layer scheme would be included."}
+{
+    "@context": "000_context.jsonld",
+    "id": "tnhusmp",
+    "type": "variable",
+    "drs_name": "tnhusmp",
+    "long_name": "Tendency of Specific Humidity Due to Model Physics",
+    "standard_name": "tendency_of_specific_humidity_due_to_model_physics",
+    "units": "s-1",
+    "description": "Tendency of specific humidity due to model physics. This includes sources and sinks from parametrized moist physics (e.g. convection, boundary layer, stratiform condensation/evaporation, etc.) and excludes sources and sinks from resolved dynamics or from horizontal or vertical numerical diffusion not associated with model physics.  For example any diffusive mixing by the boundary layer scheme would be included."
+}

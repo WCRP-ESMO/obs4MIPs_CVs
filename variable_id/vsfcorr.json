@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "vsfcorr", "type": "variable", "drs_name": "vsfcorr", "description": "It is set to zero in models which receive a real water flux."}
+{
+    "@context": "000_context.jsonld",
+    "id": "vsfcorr",
+    "type": "variable",
+    "drs_name": "vsfcorr",
+    "long_name": "Virtual Salt Flux Correction",
+    "standard_name": "virtual_salt_flux_correction",
+    "units": "kg m-2 s-1",
+    "description": "It is set to zero in models which receive a real water flux."
+}

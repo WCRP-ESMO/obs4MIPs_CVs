@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "c4pftfrac", "type": "variable", "drs_name": "c4pftfrac", "description": "Percentage of entire grid cell  that is covered by C4 PFTs (including grass and crops)."}
+{
+    "@context": "000_context.jsonld",
+    "id": "c4pftfrac",
+    "type": "variable",
+    "drs_name": "c4PftFrac",
+    "long_name": "Percentage Cover by C4 Plant Functional Type",
+    "standard_name": "area_fraction",
+    "units": "%",
+    "description": "Percentage of entire grid cell  that is covered by C4 PFTs (including grass and crops)."
+}

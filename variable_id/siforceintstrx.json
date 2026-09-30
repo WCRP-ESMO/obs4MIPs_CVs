@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "siforceintstrx", "type": "variable", "drs_name": "siforceintstrx", "description": "X-component of the force on sea ice caused by internal stress (divergence of sigma) divided by grid-cell area."}
+{
+    "@context": "000_context.jsonld",
+    "id": "siforceintstrx",
+    "type": "variable",
+    "drs_name": "siforceintstrx",
+    "long_name": "Internal Stress Term in Force Balance (X-Component)",
+    "standard_name": "sea_ice_x_internal_stress",
+    "units": "N m-2",
+    "description": "X-component of the force on sea ice caused by internal stress (divergence of sigma) divided by grid-cell area."
+}

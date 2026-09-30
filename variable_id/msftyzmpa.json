@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "msftyzmpa", "type": "variable", "drs_name": "msftyzmpa", "description": "CMIP5 called this \"due to Bolus Advection\".  Name change respects the more general physics of the mesoscale parameterizations."}
+{
+    "@context": "000_context.jsonld",
+    "id": "msftyzmpa",
+    "type": "variable",
+    "drs_name": "msftyzmpa",
+    "long_name": "Ocean Y Overturning Mass Streamfunction Due to Parameterized Mesoscale Advection",
+    "standard_name": "ocean_y_overturning_mass_streamfunction_due_to_parameterized_mesoscale_eddy_advection",
+    "units": "kg s-1",
+    "description": "CMIP5 called this \"due to Bolus Advection\".  Name change respects the more general physics of the mesoscale parameterizations."
+}

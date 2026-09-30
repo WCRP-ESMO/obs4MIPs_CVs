@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "rt", "type": "variable", "drs_name": "rt", "description": "Net downward radiative flux at the top of the atmosphere."}
+{
+    "@context": "000_context.jsonld",
+    "id": "rt",
+    "type": "variable",
+    "drs_name": "rt",
+    "long_name": "TOA Net Radiative Flux",
+    "standard_name": "toa_net_downward_radiative_flux",
+    "units": "W m-2",
+    "description": "Net downward radiative flux at the top of the atmosphere."
+}

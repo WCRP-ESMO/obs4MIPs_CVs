@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "dissicos", "type": "variable", "drs_name": "dissicos", "description": "Dissolved inorganic carbon (CO3+HCO3+H2CO3) concentration"}
+{
+    "@context": "000_context.jsonld",
+    "id": "dissicos",
+    "type": "variable",
+    "drs_name": "dissicos",
+    "long_name": "Surface Dissolved Inorganic Carbon Concentration",
+    "standard_name": "mole_concentration_of_dissolved_inorganic_carbon_in_sea_water",
+    "units": "mol m-3",
+    "description": "Dissolved inorganic carbon (CO3+HCO3+H2CO3) concentration"
+}

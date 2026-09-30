@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "rsutcs", "type": "variable", "drs_name": "rsutcs", "description": "Calculated in the absence of clouds."}
+{
+    "@context": "000_context.jsonld",
+    "id": "rsutcs",
+    "type": "variable",
+    "drs_name": "rsutcs",
+    "long_name": "TOA Outgoing Clear-Sky Shortwave Radiation",
+    "standard_name": "toa_outgoing_shortwave_flux_assuming_clear_sky",
+    "units": "W m-2",
+    "description": "Calculated in the absence of clouds."
+}

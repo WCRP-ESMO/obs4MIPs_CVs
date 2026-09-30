@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "rsu", "type": "variable", "drs_name": "rsu", "description": "Upwelling shortwave radiation  (includes also the fluxes at the surface and top of atmosphere)"}
+{
+    "@context": "000_context.jsonld",
+    "id": "rsu",
+    "type": "variable",
+    "drs_name": "rsu",
+    "long_name": "Upwelling Shortwave Radiation",
+    "standard_name": "upwelling_shortwave_flux_in_air",
+    "units": "W m-2",
+    "description": "Upwelling shortwave radiation  (includes also the fluxes at the surface and top of atmosphere)"
+}

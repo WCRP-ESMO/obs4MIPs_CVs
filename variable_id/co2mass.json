@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "co2mass", "type": "variable", "drs_name": "co2mass", "description": "Total atmospheric mass of Carbon Dioxide"}
+{
+    "@context": "000_context.jsonld",
+    "id": "co2mass",
+    "type": "variable",
+    "drs_name": "co2mass",
+    "long_name": "Total Atmospheric Mass of CO2",
+    "standard_name": "atmosphere_mass_of_carbon_dioxide",
+    "units": "kg",
+    "description": "Total atmospheric mass of Carbon Dioxide"
+}

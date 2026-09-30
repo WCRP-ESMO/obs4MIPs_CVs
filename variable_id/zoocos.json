@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "zoocos", "type": "variable", "drs_name": "zoocos", "description": "sum of zooplankton carbon component concentrations"}
+{
+    "@context": "000_context.jsonld",
+    "id": "zoocos",
+    "type": "variable",
+    "drs_name": "zoocos",
+    "long_name": "Surface Zooplankton Carbon Concentration",
+    "standard_name": "mole_concentration_of_zooplankton_expressed_as_carbon_in_sea_water",
+    "units": "mol m-3",
+    "description": "sum of zooplankton carbon component concentrations"
+}

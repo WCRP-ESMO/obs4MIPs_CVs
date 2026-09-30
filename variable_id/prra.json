@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "prra", "type": "variable", "drs_name": "prra", "description": "Mass of liquid precipitation falling onto sea ice divided by grid-cell area. If the rain is directly put into the ocean, it should not be counted towards sipr. Always positive or zero."}
+{
+    "@context": "000_context.jsonld",
+    "id": "prra",
+    "type": "variable",
+    "drs_name": "prra",
+    "long_name": "Rainfall Flux",
+    "standard_name": "rainfall_flux",
+    "units": "kg m-2 s-1",
+    "description": "Mass of liquid precipitation falling onto sea ice divided by grid-cell area. If the rain is directly put into the ocean, it should not be counted towards sipr. Always positive or zero."
+}

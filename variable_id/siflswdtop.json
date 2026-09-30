@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "siflswdtop", "type": "variable", "drs_name": "siflswdtop", "description": "Downwelling shortwave flux from the atmosphere to the sea-ice surface\u00a0(energy flow per sea ice area). Always positive or zero."}
+{
+    "@context": "000_context.jsonld",
+    "id": "siflswdtop",
+    "type": "variable",
+    "drs_name": "siflswdtop",
+    "long_name": "Downwelling Shortwave Flux over Sea Ice",
+    "standard_name": "surface_downwelling_shortwave_flux_in_air",
+    "units": "W m-2",
+    "description": "Downwelling shortwave flux from the atmosphere to the sea-ice surface (energy flow per sea ice area). Always positive or zero."
+}
