@@ -32,10 +32,6 @@ dataset_properties:
     catalog_field_value_type: string
     is_required: true
 
-  - source_collection: external_variables
-    catalog_field_value_type: string_array
-    is_required: false
-
   - source_collection: null
     catalog_field_name: experiment
     catalog_field_value_type: string
@@ -45,13 +41,13 @@ dataset_properties:
     catalog_field_value_type: string
     is_required: true
 
-  - source_collection: grid_label
+  - source_collection: grid_label # Grid label description
     source_collection_key: description
-    catalog_field_name: grid
     catalog_field_value_type: string
     is_required: false
 
   - source_collection: grid_label
+    catalog_field_name: grid # Grid is actual string value
     catalog_field_value_type: string
     is_required: true
 
@@ -91,7 +87,9 @@ dataset_properties:
     catalog_field_value_type: string
     is_required: false
 
-  - source_collection: site_location
+  - source_collection: site_id # site_location description
+    source_collection_key: description
+    catalog_field_name: site_location
     catalog_field_value_type: string
     is_required: false
 
@@ -99,7 +97,9 @@ dataset_properties:
     catalog_field_value_type: string
     is_required: true
 
-  - source_collection: source_label
+  - source_collection: source_id
+    source_collection_key: description
+    catalog_field_name: source_label
     catalog_field_value_type: string
     is_required: true
 
@@ -112,7 +112,7 @@ dataset_properties:
     is_required: false
 
   - source_collection: variable_id
-    source_collection_key: standard_name
+    source_collection_key: standard_name # Missing from CVs
     catalog_field_name: variable_cf_standard_name
     catalog_field_value_type: string
     is_required: true
@@ -122,13 +122,13 @@ dataset_properties:
     is_required: true
 
   - source_collection: variable_id
-    source_collection_key: long_name
+    source_collection_key: long_name # Missing from CVs
     catalog_field_name: variable_long_name
     catalog_field_value_type: string
     is_required: true
 
   - source_collection: variable_id
-    source_collection_key: units
+    source_collection_key: units # Missing from CVs
     catalog_field_name: variable_units
     catalog_field_value_type: string
     is_required: true
@@ -137,7 +137,9 @@ dataset_properties:
     catalog_field_value_type: string
     is_required: true
 
-  - source_collection: variant_info
+  - source_collection: variant_label
+    catalog_field_name: variant_info
+    source_collection_key: description
     catalog_field_value_type: string
     is_required: false
 

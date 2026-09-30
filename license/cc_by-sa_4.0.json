@@ -1,0 +1,10 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "cc_by-sa_4.0",
+  "type": "license",
+  "drs_name": "CC-BY-SA-4.0",
+  "spdx_id": "CC-BY-SA-4.0",
+  "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "description": "Creative Commons Attribution-ShareAlike 4.0 International",
+  "regex": ".*Creative Commons Attribution-ShareAlike 4.0 International License.*$"
+}
