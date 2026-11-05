@@ -41,15 +41,13 @@ dataset_properties:
     catalog_field_value_type: string
     is_required: true
 
-  - source_collection: grid_label # Grid label description
-    source_collection_key: description
-    catalog_field_value_type: string
-    is_required: false
-
-  - source_collection: grid_label
-    catalog_field_name: grid # Grid is actual string value
+  - source_collection: grid_label # Grid label freetext
     catalog_field_value_type: string
     is_required: true
+
+  - source_collection: grid
+    catalog_field_value_type: string
+    is_required: false
 
   - source_collection: has_aux_unc
     catalog_field_value_type: boolean
