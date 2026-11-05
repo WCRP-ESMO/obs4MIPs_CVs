@@ -1,5 +1,5 @@
 {
     "@context": "000_context.jsonld",
-    "id": "obs4ref_2_1_0",
+    "id": "freetext",
     "type": "data_specs_version"
 }
