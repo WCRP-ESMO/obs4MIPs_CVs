@@ -40,3 +40,10 @@ def attrs(doc) -> dict:
 @pytest.fixture(scope="session")
 def schema(repo_root) -> dict:
     return json.loads((repo_root / "global_attributes_schema.json").read_text())
+
+
+def pytest_configure(config):
+    config.addinivalue_line(
+        "markers",
+        "esgvoc_build: full esgvoc build against the latest universe (warnings only; clones git)",
+    )

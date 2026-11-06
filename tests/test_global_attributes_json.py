@@ -508,3 +508,21 @@ def test_catalog_regex_id_matches_dataset_id_drs(repo_root, drs_specs):
     # regex_title is the same pattern without the version.
     assert catalog["regex_id"] == catalog["regex_title"][:-1] + r"\.v[0-9]{8}$"
     assert rtitle.match(ds["separator"].join([project["drs_name"], *["Abc-1"] * n_middle]))
+
+
+def test_catalog_specs_source_collections_are_cv_directories(repo_root):
+    """
+    esgvoc raises "collection '<x>' is not found" when generating the catalog schema for a
+    `source_collection` that is not a project collection (a CV directory). Properties that
+    are not backed by a collection must use `source_collection: null` plus a
+    `catalog_field_name`.
+    """
+    catalog = yaml.safe_load((repo_root / "catalog_specs.yaml").read_text())
+    dirs = _cv_dirs(repo_root)
+    bad = sorted({
+        p["source_collection"]
+        for key in ("dataset_properties", "file_properties")
+        for p in catalog[key]
+        if p["source_collection"] is not None and p["source_collection"] not in dirs
+    })
+    assert not bad, f"catalog_specs.yaml source_collection is not a CV directory: {bad}"
