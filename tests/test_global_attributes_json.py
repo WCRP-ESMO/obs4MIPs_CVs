@@ -464,3 +464,35 @@ def test_attr_specs_value_type_agrees_with_dtype_and_separator(attrs, attr_specs
                 f"{name}: attr_specs.yaml value_type={e['value_type']!r}, JSON implies {want!r}"
             )
     assert not bad, bad
+
+
+def test_catalog_regex_id_matches_dataset_id_drs(repo_root, drs_specs):
+    """
+    catalog_specs.yaml `regex_id` / `regex_title` must describe exactly the dataset id that
+    drs_specs.yaml defines: <activity_id>.<middle parts...>.<version>, joined by the DRS
+    separator, where the activity is the project's drs_name (obs4MIPs).
+    """
+    catalog = yaml.safe_load((repo_root / "catalog_specs.yaml").read_text())["catalog_properties"]
+    project = yaml.safe_load((repo_root / "project_specs.yaml").read_text())
+    ds = drs_specs["dataset_id"]
+    parts = [p["source_collection"] for p in ds["parts"]]
+    assert parts[0] == "activity_id" and parts[-1] == "version", (
+        f"dataset_id must start with activity_id and end with version, got {parts}"
+    )
+    assert ds["separator"] == ".", f"regex_id assumes '.' separators, got {ds['separator']!r}"
+
+    def make_id(n_middle, version="v20260101"):
+        return ds["separator"].join([project["drs_name"], *["Abc-1"] * n_middle, version])
+
+    n_middle = len(parts) - 2
+    rid, rtitle = re.compile(catalog["regex_id"]), re.compile(catalog["regex_title"])
+    assert rid.match(make_id(n_middle)), (
+        f"regex_id does not match a dataset id with {len(parts)} DRS parts ({parts}); "
+        f"regex_id={catalog['regex_id']!r}"
+    )
+    assert not rid.match(make_id(n_middle + 1)) and not rid.match(make_id(n_middle - 1)), (
+        "regex_id also accepts ids with a different number of parts"
+    )
+    # regex_title is the same pattern without the version.
+    assert catalog["regex_id"] == catalog["regex_title"][:-1] + r"\.v[0-9]{8}$"
+    assert rtitle.match(ds["separator"].join([project["drs_name"], *["Abc-1"] * n_middle]))

@@ -107,7 +107,14 @@ changes (this repo's `pyproject.toml` says `>=5.0.1`; CI installs the latest).
 - **YAML specs are validated against esgvoc's models** by
   `test_yaml_specs_validate_against_esgvoc_models` (`attr_specs.yaml`, `drs_specs.yaml`,
   `catalog_specs.yaml`). `catalog_specs.yaml` needs `catalog_properties.regex_title`.
-  Open question: `regex_id` expects 5 dataset-id parts but the DRS dataset id has 12.
+  `test_catalog_regex_id_matches_dataset_id_drs` keeps `regex_id`/`regex_title` consistent with
+  the `dataset_id` parts in `drs_specs.yaml`.
+- **DRS decision (issue #7, `WCRP-ESMO/obs4MIPs_CVs`, still open):** the ODS 2.6.1 directory
+  template uses `nominal_resolution`, but published data uses `grid_label`; the ODS is
+  considered to have a typo. `drs_specs.yaml` (from dwest77's commit `05676d9`) now uses
+  `<activity_id>/<institution_id>/<source_id>/<frequency>/<variable_id>/<grid_label>/<version>`
+  for the directory and `activity_id.institution_id.source_id.frequency.variable_id.grid_label.version`
+  for the dataset id. `nominal_resolution` stays a global attribute and catalog property.
 - `esgvoc ncattvalid <project> [attr] [value]` already validates NetCDF global attributes
   against a project's CVs. It overlaps with the QA/QC tool; check what it does before
   re-implementing CV-membership logic.
