@@ -84,20 +84,6 @@ def _strings(obj):
             yield from _strings(v)
 
 
-def _cv_regexes(repo_root, table):
-    """Regexes the CV itself defines: term `regex` fields plus strings in the context."""
-    found = {t["regex"] for t in _terms(repo_root, table).values() if isinstance(t.get("regex"), str)}
-    ctx = repo_root / table / "000_context.jsonld"
-    if ctx.exists():
-        found |= set(_strings(json.loads(ctx.read_text(encoding="utf-8"))))
-    return found
-
-
-def _condition(attrs, name):
-    (_, cond), = attrs[name]["required"].items()
-    return cond["unless"]
-
-
 # Conditions are Python expressions over global attribute names, e.g.
 #   product == "site-observations" or product == "site-collection"
 #   variant_label != institution_id
@@ -126,7 +112,9 @@ def condition_problems(expr, attr_names):
                 visit(v)
         elif isinstance(node, ast.Name):
             if node.id not in attr_names:
-                problems.append(f"{node.id!r} is not a global attribute (quote it if it is a value)")
+                problems.append(
+                    f"{node.id!r} is not a global attribute (quote it if it is a value)"
+                )
         elif isinstance(node, ast.Constant) and isinstance(node.value, (str, bool)):
             pass
         else:
@@ -164,7 +152,8 @@ def test_matches_json_schema(doc, schema):
     validator = jsonschema.Draft202012Validator(schema)
     errors = sorted(validator.iter_errors(doc), key=lambda e: list(e.absolute_path))
     assert not errors, "\n".join(
-        f"{'/'.join(map(str, e.absolute_path)) or '<root>'}: {e.message}" for e in errors
+        f"{'/'.join(map(str, e.absolute_path)) or '<root>'}: {e.message}"
+        for e in errors
     )
 
 
@@ -187,11 +176,17 @@ def test_attribute_style(name, attrs):
 def test_introduced_not_after_ods_version(doc, attrs):
     ods = _ver(doc["ods_version"])
     late = {n: a["introduced"] for n, a in attrs.items() if _ver(a["introduced"]) > ods}
-    assert not late, f"attributes introduced after ods_version {doc['ods_version']}: {late}"
+    assert not late, (
+        f"attributes introduced after ods_version {doc['ods_version']}: {late}"
+    )
 
 
 def test_boolean_attributes_are_single_valued(attrs):
-    bad = [n for n, a in attrs.items() if a["dtype"] == "boolean" and a["separator"] is not None]
+    bad = [
+        n
+        for n, a in attrs.items()
+        if a["dtype"] == "boolean" and a["separator"] is not None
+    ]
     assert not bad, f"boolean attributes cannot be multi-valued: {bad}"
 
 
@@ -200,7 +195,7 @@ def test_boolean_attributes_are_single_valued(attrs):
 
 @pytest.mark.parametrize("name", ATTR_NAMES)
 def test_unless_condition_is_valid_logic(name, attrs):
-    (level, cond), = attrs[name]["required"].items()
+    ((level, cond),) = attrs[name]["required"].items()
     expr = cond["unless"]
     if expr is None:
         return
@@ -234,7 +229,9 @@ def test_no_regexes_in_global_attributes_json(raw_text):
     """
     assert '"chars"' not in raw_text and '"regex"' not in raw_text
     suspicious = re.findall(r'"[^"\n]*(?:\^|\$|\[\^|\(\?)[^"\n]*"', raw_text)
-    assert not suspicious, f"regex-looking strings in global_attributes.json: {suspicious}"
+    assert not suspicious, (
+        f"regex-looking strings in global_attributes.json: {suspicious}"
+    )
 
 
 # ---- 4. cross-file consistency ---------------------------------------------------------
@@ -242,15 +239,20 @@ def test_no_regexes_in_global_attributes_json(raw_text):
 
 def test_cv_tables_exist(attrs, repo_root):
     dirs = _cv_dirs(repo_root)
-    missing = {n: a["cv"]["table"] for n, a in attrs.items()
-               if a["cv"] and a["cv"]["table"] not in dirs}
+    missing = {
+        n: a["cv"]["table"]
+        for n, a in attrs.items()
+        if a["cv"] and a["cv"]["table"] not in dirs
+    }
     assert not missing, f"cv.table has no directory with 000_context.jsonld: {missing}"
 
 
 def test_cv_directory_named_after_attribute_means_cv_not_null(attrs, repo_root):
     dirs = _cv_dirs(repo_root)
     bad = sorted(n for n, a in attrs.items() if a["cv"] is None and n in dirs)
-    assert not bad, f"CV directory exists but cv is null in global_attributes.json: {bad}"
+    assert not bad, (
+        f"CV directory exists but cv is null in global_attributes.json: {bad}"
+    )
 
 
 def test_cv_keys_present_in_non_pattern_terms(attrs, repo_root):
@@ -261,12 +263,30 @@ def test_cv_keys_present_in_non_pattern_terms(attrs, repo_root):
         if not cv or not cv["key"]:
             continue
         lacking = sorted(
-            f for f, t in _terms(repo_root, cv["table"]).items()
+            f
+            for f, t in _terms(repo_root, cv["table"]).items()
             if "regex" not in t and cv["key"] not in t
         )
         if lacking:
             bad[f"{name} (cv {cv['table']}.{cv['key']})"] = lacking
     assert not bad, f"terms missing the key global_attributes.json points at: {bad}"
+
+
+def test_cv_term_file_names_are_lowercase(repo_root):
+    """
+    esgvoc skips any term file whose name is not lowercase at build time
+    (project_ingestion.py), but `esgvoc admin validate --schema-only` does not notice.
+    Only the *file name* must be lowercase; `drs_name` keeps its original case.
+    """
+    bad = {}
+    for table in sorted(_cv_dirs(repo_root)):
+        files = sorted(
+            os.path.basename(f) for f in glob.glob(str(repo_root / table / "*.json"))
+        )
+        upper = [f for f in files if f != f.lower()]
+        if upper:
+            bad[table] = f"{len(upper)} file(s), e.g. {upper[:3]}"
+    assert not bad, f"term file names must be lowercase: {bad}"
 
 
 @pytest.fixture(scope="module")
@@ -291,7 +311,9 @@ def test_attr_specs_only_describes_global_attributes(attrs, attr_specs):
 def test_attr_specs_source_collections_are_cv_directories(attr_specs, repo_root):
     dirs = _cv_dirs(repo_root)
     # esgvoc: source_collection is the collection that originated the attribute, or null.
-    bad = sorted({e["source_collection"] for e in attr_specs if e["source_collection"]} - dirs)
+    bad = sorted(
+        {e["source_collection"] for e in attr_specs if e["source_collection"]} - dirs
+    )
     assert not bad, (
         f"attr_specs.yaml source_collection is not a CV directory (use null and set "
         f"field_name for attributes without a CV): {bad}"
@@ -310,14 +332,24 @@ def test_attr_specs_is_required_agrees(attrs, attr_specs):
         if name in attrs:
             json_required = next(iter(attrs[name]["required"])) == "yes"
             if e["is_required"] != json_required:
-                bad.append(f"{name}: yaml is_required={e['is_required']}, json={json_required}")
+                bad.append(
+                    f"{name}: yaml is_required={e['is_required']}, json={json_required}"
+                )
     assert not bad, bad
 
 
 def test_attr_specs_use_only_keys_esgvoc_reads(attr_specs):
     """esgvoc silently ignores unknown keys (e.g. `specific_key`; the real one is `source_collection_key`)."""
-    allowed = {"source_collection", "field_name", "source_collection_key", "value_type", "is_required"}
-    bad = {_yaml_name(e): sorted(set(e) - allowed) for e in attr_specs if set(e) - allowed}
+    allowed = {
+        "source_collection",
+        "field_name",
+        "source_collection_key",
+        "value_type",
+        "is_required",
+    }
+    bad = {
+        _yaml_name(e): sorted(set(e) - allowed) for e in attr_specs if set(e) - allowed
+    }
     assert not bad, f"attr_specs.yaml keys esgvoc does not read: {bad}"
 
 
@@ -333,24 +365,34 @@ def test_attr_specs_cv_agrees_with_global_attributes(attrs, attr_specs):
         if name not in attrs:
             continue
         cv = attrs[name]["cv"]
-        want = (None, None) if cv is None else (
-            cv["table"], None if cv["key"] in (None, "drs_name") else cv["key"]
+        want = (
+            (None, None)
+            if cv is None
+            else (cv["table"], None if cv["key"] in (None, "drs_name") else cv["key"])
         )
         got = (e["source_collection"], e.get("source_collection_key"))
         if got != want:
-            bad.append(f"{name}: attr_specs.yaml has {got}, global_attributes.json implies {want}")
+            bad.append(
+                f"{name}: attr_specs.yaml has {got}, global_attributes.json implies {want}"
+            )
     assert not bad, bad
 
 
 def test_drs_parts_are_attributes_or_cv_directories(attrs, drs_specs, repo_root):
     """version and time_range are not global attributes but are CV directories."""
     dirs = _cv_dirs(repo_root)
-    bad = sorted({
-        f"{kind}:{p['source_collection']}"
-        for kind, spec in drs_specs.items() for p in spec["parts"]
-        if p["source_collection"] not in attrs and p["source_collection"] not in dirs
-    })
-    assert not bad, f"DRS parts that are neither a global attribute nor a CV directory: {bad}"
+    bad = sorted(
+        {
+            f"{kind}:{p['source_collection']}"
+            for kind, spec in drs_specs.items()
+            for p in spec["parts"]
+            if p["source_collection"] not in attrs
+            and p["source_collection"] not in dirs
+        }
+    )
+    assert not bad, (
+        f"DRS parts that are neither a global attribute nor a CV directory: {bad}"
+    )
 
 
 def test_drs_required_parts_are_required_attributes(attrs, drs_specs):
@@ -360,30 +402,33 @@ def test_drs_required_parts_are_required_attributes(attrs, drs_specs):
             a = attrs.get(p["source_collection"])
             if a is None or not p["is_required"]:
                 continue
-            (level, cond), = a["required"].items()
+            ((level, cond),) = a["required"].items()
             if level != "yes":
-                bad.append(f"{kind}: {p['source_collection']} is a required DRS part but optional as an attribute")
+                bad.append(
+                    f"{kind}: {p['source_collection']} is a required DRS part but optional as an attribute"
+                )
     assert not bad, bad
 
 
 def test_every_cv_directory_is_referenced(attrs, repo_root):
     referenced = {a["cv"]["table"] for a in attrs.values() if a["cv"]}
     for fname in ("drs_specs.yaml", "attr_specs.yaml", "catalog_specs.yaml"):
-        referenced |= set(re.findall(r"source_collection:\s*(\w+)", (repo_root / fname).read_text()))
+        referenced |= set(
+            re.findall(r"source_collection:\s*(\w+)", (repo_root / fname).read_text())
+        )
     unreferenced = sorted(_cv_dirs(repo_root) - referenced)
     assert not unreferenced, f"CV directories nothing refers to: {unreferenced}"
 
 
 def test_yaml_specs_validate_against_esgvoc_models(repo_root):
     """The YAMLs must load with esgvoc's own pydantic models (CI's validator does not check this)."""
-    from pydantic import TypeAdapter
-
     from esgvoc.api.project_specs import (
         AttributeSpecification,
         CatalogSpecification,
         DrsSpecification,
         DrsType,
     )
+    from pydantic import TypeAdapter
 
     def load(name):
         return yaml.safe_load((repo_root / name).read_text())
@@ -415,5 +460,7 @@ def test_attr_specs_value_type_agrees_with_dtype_and_separator(attrs, attr_specs
         else:
             want = "string"
         if e["value_type"] != want:
-            bad.append(f"{name}: attr_specs.yaml value_type={e['value_type']!r}, JSON implies {want!r}")
+            bad.append(
+                f"{name}: attr_specs.yaml value_type={e['value_type']!r}, JSON implies {want!r}"
+            )
     assert not bad, bad
