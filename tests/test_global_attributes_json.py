@@ -7,7 +7,7 @@ markers. If the data is wrong, the test fails and says what to fix.
 Layers:
 
 1. Structure: the file matches global_attributes_schema.json plus house style rules.
-2. Internal consistency: `unless` conditions are real, evaluable Python logic that only
+2. Internal consistency: `conditional.when` expressions are real, evaluable Python logic that only
    refers to global attributes; `introduced` <= `ods_version`.
 3. Regexes: none in global_attributes.json (pattern CVs hold their own `regex` terms;
    other format rules live in the QA/QC tool).
@@ -42,7 +42,8 @@ ATTR_KEY_ORDER = [
     "description",
     "dtype",
     "separator",
-    "required",
+    "requirement",
+    "conditional",
     "cv",
     "rc",
     "introduced",
@@ -193,17 +194,27 @@ def test_boolean_attributes_are_single_valued(attrs):
 # ---- 2. conditions ---------------------------------------------------------------------
 
 
+LEVEL_RANK = {"optional": 0, "recommended": 1, "required": 2}
+
+
 @pytest.mark.parametrize("name", ATTR_NAMES)
-def test_unless_condition_is_valid_logic(name, attrs):
-    ((level, cond),) = attrs[name]["required"].items()
-    expr = cond["unless"]
-    if expr is None:
+def test_conditional_requirement_is_valid_logic(name, attrs):
+    """
+    `requirement` is the unconditional level. `conditional` (or null) raises it when `when`
+    is true. `when` must be real Python logic over global attributes (see condition_problems).
+    """
+    a = attrs[name]
+    cond = a["conditional"]
+    if cond is None:
         return
-    assert level == "no", f"{name}: a condition on a 'yes' attribute is ambiguous"
-    problems = condition_problems(expr, set(attrs))
-    assert not problems, f"{name}: {expr!r}: " + "; ".join(problems)
+    assert LEVEL_RANK[cond["requirement"]] > LEVEL_RANK[a["requirement"]], (
+        f"{name}: conditional level {cond['requirement']!r} must be higher than the base "
+        f"requirement {a['requirement']!r}"
+    )
+    problems = condition_problems(cond["when"], set(attrs))
+    assert not problems, f"{name}: {cond['when']!r}: " + "; ".join(problems)
     # It must also evaluate to a bool for an arbitrary (here: empty) attribute set.
-    assert isinstance(evaluate_condition(expr, {}), bool)
+    assert isinstance(evaluate_condition(cond["when"], {}), bool)
 
 
 # ---- 3. regexes live in the CV ---------------------------------------------------------
@@ -330,7 +341,8 @@ def test_attr_specs_is_required_agrees(attrs, attr_specs):
     for e in attr_specs:
         name = _yaml_name(e)
         if name in attrs:
-            json_required = next(iter(attrs[name]["required"])) == "yes"
+            # esgvoc only has a boolean: true means unconditionally required.
+            json_required = attrs[name]["requirement"] == "required"
             if e["is_required"] != json_required:
                 bad.append(
                     f"{name}: yaml is_required={e['is_required']}, json={json_required}"
@@ -402,10 +414,10 @@ def test_drs_required_parts_are_required_attributes(attrs, drs_specs):
             a = attrs.get(p["source_collection"])
             if a is None or not p["is_required"]:
                 continue
-            ((level, cond),) = a["required"].items()
-            if level != "yes":
+            if a["requirement"] != "required":
                 bad.append(
-                    f"{kind}: {p['source_collection']} is a required DRS part but optional as an attribute"
+                    f"{kind}: {p['source_collection']} is a required DRS part but its "
+                    f"requirement is {a['requirement']!r}"
                 )
     assert not bad, bad
 

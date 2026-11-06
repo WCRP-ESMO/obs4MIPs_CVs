@@ -31,11 +31,18 @@ What stays in QA/QC code:
 
 ## Where things live in `obs4MIPs_CVs`
 
-- `global_attributes.json` — **in progress, on branch `global-json`, not merged.**
-  Intended master definition of every global attribute: description, dtype, separator,
-  allowed characters, requirement (including conditions), CV table and key, registered
-  content (`rc`), version introduced, notes. A generator script will derive the ODS Table 1,
-  the DRS, and other tables from it. A QA/QC specs loader will read it.
+- `global_attributes.json` — **on branch `global-json`, not merged.** Master definition of
+  every global attribute (schema: `global_attributes_schema.json`): `description`, `dtype`
+  (`string`/`boolean`), `separator`, `requirement`, `conditional`, `cv` (table and key), `rc`
+  (registered content), `introduced`, `notes`. A generator script will derive the ODS Table 1
+  and DRS from it; the QA/QC specs loader will read it.
+  - `requirement`: `required` | `recommended` | `optional`. ODS Table 1: "always" is
+    required, "encouraged" is recommended, "optional" is optional.
+  - `conditional`: `null`, or `{"requirement": <higher level>, "when": "<python expr>"}`
+    which raises the level when the expression is true. `when` may only use attribute
+    names, quoted string constants, `==`/`!=`, `and`/`or`/`not` (tested). esgvoc cannot
+    express conditions, so `attr_specs.yaml` `is_required` is true only for
+    `requirement == "required"`.
 - `<attribute_name>/` directories — one per CV-backed attribute. Each has a
   `000_context.jsonld` and one `<term>.json` per term. Some directories hold a single
   `regex` term, not enumerated values (e.g. `tracking_id`, `references`,
@@ -236,5 +243,6 @@ stops matching what is already on ESGF and validators will start failing.
   `Conventions`, `activity_id`, `realm`, `region`).
 - `sync_cvs.py` `value_field` choices (`cv_sources.json`) disagree with `cv.key` in
   `global_attributes.json` for some tables (e.g. `variable_id`: `id` vs `drs_name`).
-- `global_attributes.json` can express only required yes/no, but the tool has three
-  levels (required / recommended / optional).
+- `variant_info`: the JSON condition is `variant_label != institution_id` (recommended),
+  but the QA/QC tool's `variant_is_not_be` exempts any label equal to or ending in `-BE`
+  (ODS note 15). The grammar cannot express "ends with"; reconcile when migrating the tool.
