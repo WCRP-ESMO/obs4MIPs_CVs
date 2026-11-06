@@ -84,7 +84,7 @@
         "separator": null,
         "requirement": "required",
         "conditional": null,
-        "cv": {"table": "data_specs_version", "key": "drs_name"},
+        "cv": {"table": "data_specs_version", "key": null},
         "rc": "no",
         "introduced": "2.1",
         "notes": null

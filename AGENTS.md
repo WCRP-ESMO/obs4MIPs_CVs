@@ -106,7 +106,7 @@ changes (this repo's `pyproject.toml` says `>=5.0.1`; CI installs the latest).
   `site_id`, `variable_id`, `institution_id`...): it would turn them into pattern terms
   and drop membership checking. A lone pattern term added to an enumerated collection
   would accept any matching string. Pattern terms are only for collections that are
-  entirely patterns (`tracking_id`, `references`, `title`, `variant_label`). A new pattern
+  entirely patterns (`tracking_id`, `references`, `title`, `variant_label`, `data_specs_version`). A new pattern
   term of `type: regex` also needs its counterpart file in the universe's `regex/`.
 - **Project terms override universe terms field by field**, including with `""`. Nothing
   in esgvoc ingestion rejects empty strings; the 122 empty `variable_id` stubs also exist
@@ -151,11 +151,19 @@ that needs the dataset or several attributes.
 
 ## Commands
 
-CVs repo (Python ≥ 3.12; no dev dependencies are declared yet):
+CVs repo (Python ≥ 3.12; dev dependencies are in `pyproject.toml` / `tests/requirements.txt`):
 ```bash
 esgvoc admin validate --schema-only .     # what CI runs; must pass
-python -m pip install -r tests/requirements.txt && python -m pytest tests -q
+uv run pytest tests -q                    # or: python -m pip install -r tests/requirements.txt && python -m pytest tests -q
+OBS4MIPS_SKIP_ESGVOC_BUILD=1 uv run pytest tests -q   # skip the slow, network-using esgvoc build test
 ```
+
+`tests/test_esgvoc_build.py` clones the latest WCRP-universe and runs a full `esgvoc admin
+build`. It **never fails**: differences from the universe (terms whose universe link does
+not exist yet, skipped files, ...) are reported as `EsgvocBuildWarning`s in pytest's
+"warnings summary" (about 30 s). Set `OBS4MIPS_UNIVERSE_REF=<branch or tag>` to build against
+another universe ref (for example a branch carrying the obs4MIPs terms). Treat new warnings
+as things to look into, not noise.
 
 QA/QC repo (supports Python ≥ 3.10; CI uses 3.10, so no 3.11+-only syntax or stdlib):
 ```bash
@@ -168,7 +176,7 @@ uv run python scripts/sync_cvs.py --check # fails if cv_data/ is stale vs. the p
 ## Regexes and new CVs (project decisions)
 
 - **No regexes in `global_attributes.json`** (the schema forbids `chars`). Pattern CVs
-  (`tracking_id`, `references`, `title`, `variant_label`) carry their own `regex` terms; use
+  (`tracking_id`, `references`, `title`, `variant_label`, `data_specs_version`) carry their own `regex` terms; use
   those. Every other format/character rule (e.g. allowed characters in `source_id`,
   the bare-DOI form) is enforced in the QA/QC tool, kept in **one place** (`specs/`), not
   spread across files. This is the one exception to "don't hard-code ODS facts in the tool".
@@ -246,3 +254,8 @@ stops matching what is already on ESGF and validators will start failing.
 - `variant_info`: the JSON condition is `variant_label != institution_id` (recommended),
   but the QA/QC tool's `variant_is_not_be` exempts any label equal to or ending in `-BE`
   (ODS note 15). The grammar cannot express "ends with"; reconcile when migrating the tool.
+- `data_specs_version` is now free text (issue #8): a single pattern term `freetext`
+  (`type: regex`, `regex: ".*"`, same form as `references`). The QA/QC tool must stop
+  requiring the value `2.6.1` and treating it as a hard CV error.
+- Catalog properties not backed by a CV directory (e.g. `grid`) must use
+  `source_collection: null` plus `catalog_field_name` (tested).
