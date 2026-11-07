@@ -9,7 +9,7 @@ catalog_properties:
     - name: alternate-assets
       version: v1.2.0
   regex_id: '^obs4MIPs(\.[A-Za-z0-9-]+){5}\.v[0-9]{8}$'
-  regex_base_id: '^obs4MIPs(\.[A-Za-z0-9-]+){5}$'
+  regex_title: '^obs4MIPs(\.[A-Za-z0-9-]+){5}$'
 
 dataset_properties:
   - source_collection: aux_uncertainty_id
@@ -41,15 +41,14 @@ dataset_properties:
     catalog_field_value_type: string
     is_required: true
 
-  - source_collection: grid_label # Grid label description
-    source_collection_key: description
-    catalog_field_value_type: string
-    is_required: false
-
-  - source_collection: grid_label
-    catalog_field_name: grid # Grid is actual string value
+  - source_collection: grid_label # Grid label freetext
     catalog_field_value_type: string
     is_required: true
+
+  - source_collection: null # grid is free text, not a CV collection
+    catalog_field_name: grid
+    catalog_field_value_type: string
+    is_required: false
 
   - source_collection: has_aux_unc
     catalog_field_value_type: boolean
@@ -58,6 +57,12 @@ dataset_properties:
   - source_collection: institution_id
     catalog_field_value_type: string
     is_required: true
+
+  - source_collection: institution_id
+    source_collection_key: description
+    catalog_field_name: institution
+    catalog_field_value_type: string
+    is_required: true    
 
   - source_collection: license
     catalog_field_value_type: string

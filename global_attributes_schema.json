@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "global_attributes_schema.json",
+  "title": "obs4MIPs global_attributes.json (current draft format)",
+  "description": "Structural schema only. Cross-file consistency (CV directories, YAMLs, conditions) is tested in tests/test_global_attributes_json.py.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["ods_version", "global_attributes"],
+  "properties": {
+    "ods_version": {"type": "string", "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"},
+    "global_attributes": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {"pattern": "^[A-Za-z][A-Za-z0-9_]*$"},
+      "additionalProperties": {"$ref": "#/$defs/attribute"}
+    }
+  },
+  "$defs": {
+    "nonEmptyString": {"type": "string", "minLength": 1, "pattern": "^\\S(.*\\S)?$"},
+    "attribute": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["description", "dtype", "separator", "requirement", "conditional", "cv", "rc", "introduced", "notes"],
+      "properties": {
+        "description": {"$ref": "#/$defs/nonEmptyString"},
+        "dtype": {"enum": ["string", "boolean"]},
+        "separator": {"enum": [null, "space", "comma", "semicolon"]},
+        "requirement": {"enum": ["required", "recommended", "optional"]},
+        "conditional": {
+          "oneOf": [
+            {"type": "null"},
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["requirement", "when"],
+              "properties": {
+                "requirement": {"enum": ["required", "recommended"]},
+                "when": {"$ref": "#/$defs/nonEmptyString"}
+              }
+            }
+          ]
+        },
+        "cv": {
+          "oneOf": [
+            {"type": "null"},
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["table", "key"],
+              "properties": {
+                "table": {"$ref": "#/$defs/nonEmptyString"},
+                "key": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/nonEmptyString"}]}
+              }
+            }
+          ]
+        },
+        "rc": {"enum": ["yes", "no"]},
+        "introduced": {"type": "string", "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"},
+        "notes": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/nonEmptyString"}]}
+      }
+    }
+  }
+}
