@@ -15,7 +15,7 @@
     "activity_id": {
         "description": "CMIP activity identifier",
         "dtype": "string",
-        "separator": "space",
+        "separator": null,
         "requirement": "required",
         "conditional": null,
         "cv": {"table": "activity_id", "key": "drs_name"},

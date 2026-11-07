@@ -2,7 +2,7 @@
   value_type: string_array
   is_required: false
 - source_collection: activity_id
-  value_type: string_array
+  value_type: string
   is_required: true
 - source_collection: null
   field_name: comment
