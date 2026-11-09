@@ -1,10 +1,1 @@
-{
-  "@context": "000_context.jsonld",
-  "id": "fgco2abio",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
-}
+{"@context": "000_context.jsonld", "id": "fgco2abio", "type": "variable", "drs_name": "fgco2abio", "long_name": "", "standard_name": "", "units": "", "description": ""}
