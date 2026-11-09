@@ -1,11 +1,20 @@
-[tool.poetry]
+[project]
 name = "obs4mips-cvs"
 version = "0.1.0"
-description = "Add your description here"
+description = "Controlled vocabularies for obs4MIPs"
 readme = "README.md"
-package-mode = false
+requires-python = ">=3.12"
+dependencies = [
+    "requests>=2.32.3",
+    "esgvoc>=5.0.1",
+]
 
-[tool.poetry.dependencies]
-python = ">=3.12"
-requests = ">=2.32.3"
-esgvoc = ">=5.0.1"
+[dependency-groups]
+dev = [
+    "pytest",
+    "jsonschema",
+    "pyyaml",
+]
+
+[tool.poetry]
+package-mode = false
