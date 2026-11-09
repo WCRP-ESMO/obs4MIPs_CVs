@@ -9,7 +9,7 @@ catalog_properties:
     - name: alternate-assets
       version: v1.2.0
   regex_id: '^obs4MIPs(\.[A-Za-z0-9-]+){5}\.v[0-9]{8}$'
-  regex_base_id: '^obs4MIPs(\.[A-Za-z0-9-]+){5}$'
+  regex_title: '^obs4MIPs(\.[A-Za-z0-9-]+){10}$'
 
 dataset_properties:
   - source_collection: aux_uncertainty_id
@@ -22,7 +22,7 @@ dataset_properties:
 
   - source_collection: citation_url
     catalog_field_value_type: string
-    is_required: true
+    is_required: false
 
   - source_collection: conventions
     catalog_field_value_type: string_array
@@ -51,7 +51,7 @@ dataset_properties:
 
   - source_collection: has_aux_unc
     catalog_field_value_type: boolean
-    is_required: true
+    is_required: false
 
   - source_collection: institution_id
     catalog_field_value_type: string
@@ -59,7 +59,7 @@ dataset_properties:
 
   - source_collection: license
     catalog_field_value_type: string
-    is_required: false
+    is_required: true
 
   - source_collection: nominal_resolution
     catalog_field_value_type: string
