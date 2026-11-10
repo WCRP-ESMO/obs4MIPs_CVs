@@ -33,15 +33,15 @@ dataset_properties:
     is_required: true
 
   - source_collection: null
-    catalog_field_name: experiment
-    catalog_field_value_type: string
+    catalog_field_name: external_variables
+    catalog_field_value_type: string_array
     is_required: false
 
   - source_collection: frequency
     catalog_field_value_type: string
     is_required: true
 
-  - source_collection: grid_label # Grid label freetext
+  - source_collection: grid_label # Grid label not freetext
     catalog_field_value_type: string
     is_required: true
 
