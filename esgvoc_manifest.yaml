@@ -3,8 +3,67 @@ project:
   id: obs4mips
   name: obs4MIPs Controlled Vocabulary
 cv_version: 1.0.0
-universe_version: 3.4.5
+universe_version: 3.4.6
 esgvoc:
   min_version: 5.0.1
 release_notes: |
-  - initial esgvoc release
+  - attr_specs.yaml: updated
+  - catalog_specs.yaml: new
+  - drs_specs.yaml: new
+  - project_specs.yaml: new
+  - activity_id: new collection model
+  - aux_uncertainty_id: new collection model
+  - citation_url: new collection model
+  - contact: new collection model
+  - conventions: new collection model
+  - creation_date: new collection model
+  - data_specs_version: new collection model
+  - dataset_contributor: new collection model
+  - frequency: new collection model
+  - grid_label: new collection model
+  - has_aux_unc: new collection model
+  - institution_id: new collection model
+  - license: new collection model
+  - nominal_resolution: new collection model
+  - processing_code_location: new collection model
+  - product: new collection model
+  - realm: new collection model
+  - references: new collection model
+  - region: new collection model
+  - site_id: new collection model
+  - source_id: new collection model
+  - source_type: new collection model
+  - time_range: new collection model
+  - title: new collection model
+  - tracking_id: new collection model
+  - variable_id: new collection model
+  - variant_label: new collection model
+  - version: new collection model
+  - activity_id: 1 added
+  - aux_uncertainty_id: 9 added
+  - citation_url: 1 added
+  - contact: 1 added
+  - conventions: 6 added
+  - creation_date: 1 added
+  - data_specs_version: 1 added
+  - dataset_contributor: 1 added
+  - frequency: 16 added
+  - grid_label: 47 added
+  - has_aux_unc: 2 added
+  - institution_id: 56 added
+  - license: 2 added
+  - nominal_resolution: 20 added
+  - processing_code_location: 1 added
+  - product: 5 added
+  - realm: 8 added
+  - references: 1 added
+  - region: 68 added
+  - site_id: 427 added
+  - source_id: 167 added
+  - source_type: 6 added
+  - time_range: 3 added
+  - title: 1 added
+  - tracking_id: 1 added
+  - variable_id: 579 added
+  - variant_label: 6 added
+  - version: 1 added
