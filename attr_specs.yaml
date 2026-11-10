@@ -1,12 +1,11 @@
 - source_collection: aux_uncertainty_id
-  value_type: string_array
+  value_type: boolean
   is_required: false
 - source_collection: activity_id
-  value_type: string
+  value_type: string_array
   is_required: true
-- source_collection: null
-  field_name: comment
-  value_type: string
+- source_collection: comment
+  value_type: string_array
   is_required: false
 - source_collection: contact
   value_type: string
@@ -24,19 +23,18 @@
 - source_collection: data_specs_version
   value_type: string
   is_required: true
-- source_collection: null
-  field_name: doi
+- source_collection: doi
   value_type: string
   is_required: false
-- source_collection: null
-  field_name: external_variables
-  value_type: string
+- source_collection: external_variables
+  value_type: string_array
   is_required: false
 - source_collection: frequency
   value_type: string
   is_required: true
-- source_collection: null
+- source_collection: grid_label
   field_name: grid
+  specific_key: description
   value_type: string
   is_required: true
 - source_collection: grid_label
@@ -45,13 +43,12 @@
 - source_collection: has_aux_unc
   value_type: boolean
   is_required: true
-- source_collection: null
-  field_name: history
+- source_collection: history
   value_type: string
   is_required: false
 - source_collection: institution_id
+  specific_key: description
   field_name: institution
-  source_collection_key: description
   value_type: string
   is_required: true
 - source_collection: institution_id
@@ -60,7 +57,11 @@
 - source_collection: license
   value_type: string
   is_required: true
+- source_collection: long_name
+  value_type: string
+  is_required: false
 - source_collection: nominal_resolution
+  specific_key: description
   value_type: string
   is_required: true
 - source_collection: processing_code_location
@@ -70,7 +71,7 @@
   value_type: string
   is_required: true
 - source_collection: realm
-  value_type: string
+  value_type: string_array
   is_required: true
 - source_collection: references
   value_type: string
@@ -81,40 +82,35 @@
 - source_collection: site_id
   value_type: string
   is_required: false
-- source_collection: site_id
-  field_name: site_location
-  source_collection_key: description
+- source_collection: site_location
   value_type: string
   is_required: false
 - source_collection: source_id
   value_type: string
   is_required: true
 - source_collection: source_id
+  specific_key: label_extended
   field_name: source
-  source_collection_key: description
   value_type: string
   is_required: true
-- source_collection: null
+- source_collection: source_id
+  specific_key: drs_name
   field_name: source_label
   value_type: string
   is_required: true
-- source_collection: null
-  field_name: source_data_notes
+- source_collection: source_data_notes
   value_type: string
   is_required: false
-- source_collection: null
-  field_name: source_data_retrieval_date
+- source_collection: source_data_retrieval_date
   value_type: string
   is_required: false
-- source_collection: null
-  field_name: source_data_url
+- source_collection: source_data_url
   value_type: string
   is_required: false
 - source_collection: source_type
   value_type: string
   is_required: true
-- source_collection: null
-  field_name: source_version_number
+- source_collection: source_version_number
   value_type: string
   is_required: true
 - source_collection: title
@@ -123,11 +119,13 @@
 - source_collection: tracking_id
   value_type: string
   is_required: true
+- source_collection: units_metadata
+  value_type: string
+  is_required: false
 - source_collection: variable_id
   value_type: string
   is_required: true
-- source_collection: null
-  field_name: variant_info
+- source_collection: variant_info
   value_type: string
   is_required: false
 - source_collection: variant_label

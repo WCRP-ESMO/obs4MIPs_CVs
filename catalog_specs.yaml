@@ -1,4 +1,4 @@
-version: v1.0.1
+version: v1.0.2
 
 catalog_properties:
   name: stac
@@ -9,7 +9,7 @@ catalog_properties:
     - name: alternate-assets
       version: v1.2.0
   regex_id: '^obs4MIPs(\.[A-Za-z0-9-]+){5}\.v[0-9]{8}$'
-  regex_title: '^obs4MIPs(\.[A-Za-z0-9-]+){5}$'
+  regex_base_id: '^obs4MIPs(\.[A-Za-z0-9-]+){5}$'
 
 dataset_properties:
   - source_collection: aux_uncertainty_id
@@ -22,16 +22,10 @@ dataset_properties:
 
   - source_collection: citation_url
     catalog_field_value_type: string
-    is_required: false
+    is_required: true
 
-  - source_collection: null
-    catalog_field_name: Conventions
+  - source_collection: conventions
     catalog_field_value_type: string_array
-    is_required: false
-
-  - source_collection: null
-    catalog_field_name: cmor_version
-    catalog_field_value_type: string
     is_required: false
 
   - source_collection: data_specs_version
@@ -39,26 +33,27 @@ dataset_properties:
     is_required: true
 
   - source_collection: null
-    catalog_field_name: experiment_id
+    catalog_field_name: experiment
     catalog_field_value_type: string
-    is_required: false
-
-  - source_collection: null
-    catalog_field_name: external_variables
-    catalog_field_value_type: string_array
     is_required: false
 
   - source_collection: frequency
     catalog_field_value_type: string
     is_required: true
 
-  - source_collection: grid_label # Grid label not freetext
+  - source_collection: grid_label # Grid label description
+    source_collection_key: description
+    catalog_field_value_type: string
+    is_required: false
+
+  - source_collection: grid_label
+    catalog_field_name: grid # Grid is actual string value
     catalog_field_value_type: string
     is_required: true
 
   - source_collection: has_aux_unc
     catalog_field_value_type: boolean
-    is_required: false
+    is_required: true
 
   - source_collection: institution_id
     catalog_field_value_type: string
@@ -69,6 +64,10 @@ dataset_properties:
     is_required: false
 
   - source_collection: nominal_resolution
+    catalog_field_value_type: string
+    is_required: true
+
+  - source_collection: processing_code_location
     catalog_field_value_type: string
     is_required: true
 
@@ -134,8 +133,13 @@ dataset_properties:
     catalog_field_value_type: string
     is_required: true
 
-  - source_collection: null
-    catalog_field_name: variant_label
+  - source_collection: variant_label
+    catalog_field_value_type: string
+    is_required: true
+
+  - source_collection: variant_label
+    catalog_field_name: variant_info
+    source_collection_key: description
     catalog_field_value_type: string
     is_required: false
 

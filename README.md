@@ -1,15 +1,5 @@
 # Obs4MIPs CVs for ESGF-NG
 
-## Catalog Specs Guide
-
-- source_collection: Source CVs used to generate the schema to allow only specific values sourced from this repo.
-- catalog_field_name: Name as it appears in the catalog schema (with <project> as prefix)
-- catalog_field_value_type: Type of value to specify in the schema
-- is_required: Boolean field to specify if field is required or not.
-- source_collection_key: Pull all the values from 'source_collection.key' to use as the specific values, instead of just the ids.
-
-If the source_collection is 'null', no CVs are sourced and any value is allowed.
-
 ## Process for updating
 
 - Create a branch with the suffix `cv/` for expected changes to the CV content.

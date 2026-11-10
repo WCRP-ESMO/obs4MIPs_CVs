@@ -1,0 +1,6 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ods_2_6_1",
+    "type": "data_specs_version",
+    "drs_name":"ODS-2.6.1"
+}
