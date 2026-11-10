@@ -1,10 +1,1 @@
-{
-  "@context": "000_context.jsonld",
-  "id": "n2oclim",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
-}
+{"@context": "000_context.jsonld", "id": "n2oclim", "type": "variable", "drs_name": "n2oclim", "long_name": "", "standard_name": "", "units": "", "description": ""}

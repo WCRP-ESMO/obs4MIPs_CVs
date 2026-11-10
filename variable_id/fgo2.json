@@ -1,10 +1,1 @@
-{
-  "@context": "000_context.jsonld",
-  "id": "fgo2",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
-}
+{"@context": "000_context.jsonld", "id": "fgo2", "type": "variable", "drs_name": "fgo2", "long_name": "", "standard_name": "", "units": "", "description": ""}
