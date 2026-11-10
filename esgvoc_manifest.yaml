@@ -2,7 +2,7 @@ schema_version: '1'
 project:
   id: obs4mips
   name: obs4MIPs Controlled Vocabulary
-cv_version: 1.0.0
+cv_version: 1.0.1
 universe_version: 3.4.5
 esgvoc:
   min_version: 5.0.1
