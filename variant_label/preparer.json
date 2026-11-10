@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "preparer",
+    "type": "variant_label",
+    "regex": "^[A-Za-z0-9]+(-[A-Za-z0-9]+)*$",
+    "description": "obs4MIPs: the dataset preparer (institution_id or shorthand of the 3rd party preparer), optionally followed by '-' and a variant modifier (e.g. 'PCMDI', 'RSS-BE', 'RSS-r1'). Only letters, digits and '-', as required in file names and directories."
+}

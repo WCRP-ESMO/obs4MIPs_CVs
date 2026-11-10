@@ -133,11 +133,10 @@ jobs:
           echo "Updated manifest:"
           cat esgvoc_manifest.yaml
 
-      - name: Create manifest PR
-        id: manifest_pr
+      - name: Push manifest branch
+        id: manifest_branch
         if: steps.changes.outputs.bump_type != 'none'
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NEXT_VERSION: ${{ steps.changes.outputs.next_version }}
           CURRENT_VERSION: ${{ steps.changes.outputs.current_version }}
           BUMP_TYPE: ${{ steps.changes.outputs.bump_type }}
@@ -178,26 +177,40 @@ jobs:
           EOF
           )
 
-          PR_URL=$(gh pr create \
-            --title "chore: update manifest to ${NEXT_VERSION}" \
-            --body "${BODY}" \
-            --base main \
-            --head "${BRANCH}")
+          echo "branch=${BRANCH}" >> "$GITHUB_OUTPUT"
+          {
+            echo "body<<BODY_EOF"
+            echo "${BODY}"
+            echo "BODY_EOF"
+          } >> "$GITHUB_OUTPUT"
 
-          echo "pr_url=${PR_URL}" >> "$GITHUB_OUTPUT"
-          echo "Manifest PR created: ${PR_URL}"
+      - name: Create manifest PR
+        id: manifest_pr
+        if: steps.manifest_branch.outputs.branch
+        uses: ./.github/actions/open-manifest-pr
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ steps.manifest_branch.outputs.branch }}
+          title: "chore: update manifest to ${{ steps.changes.outputs.next_version }}"
+          body: ${{ steps.manifest_branch.outputs.body }}
 
       - name: Notify source PR
-        if: steps.manifest_pr.outputs.pr_url
+        if: steps.manifest_pr.outputs.pr_url || steps.manifest_pr.outputs.link
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPO: ${{ github.repository }}
           COMMIT_SHA: ${{ github.sha }}
           PR_URL: ${{ steps.manifest_pr.outputs.pr_url }}
+          LINK: ${{ steps.manifest_pr.outputs.link }}
         run: |
+          if [ -n "${PR_URL}" ]; then
+            MESSAGE="Manifest PR created: ${PR_URL}"
+          else
+            MESSAGE="Manifest branch pushed; GitHub Actions could not open the PR: [open it by hand](${LINK}) (description in the run summary: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+          fi
           SOURCE_PR=$(gh api "repos/${REPO}/commits/${COMMIT_SHA}/pulls" --jq '.[0].number // empty')
           if [ -n "${SOURCE_PR}" ]; then
-            gh pr comment "${SOURCE_PR}" --body "Manifest PR created: ${PR_URL}"
+            gh pr comment "${SOURCE_PR}" --body "${MESSAGE}"
           fi
 
       - name: No CV changes

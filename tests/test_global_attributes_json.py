@@ -526,3 +526,35 @@ def test_catalog_specs_source_collections_are_cv_directories(repo_root):
         if p["source_collection"] is not None and p["source_collection"] not in dirs
     })
     assert not bad, f"catalog_specs.yaml source_collection is not a CV directory: {bad}"
+
+
+# Required CV-backed global attributes that the STAC catalog deliberately leaves out or keeps
+# optional (see "Notes for reviewer" in the README). Anything else must stay in the catalog.
+CATALOG_LEAVES_OUT = {"contact", "creation_date", "dataset_contributor", "references"}
+CATALOG_KEEPS_OPTIONAL = {"Conventions", "has_aux_unc"}
+
+
+def test_required_cv_attributes_are_required_cv_properties_in_catalog(attrs, repo_root):
+    """
+    A required global attribute validated against a CV (`cv` in this file) must be a
+    required catalog property sourced from the same CV table (and the same key when the
+    key is `description`): otherwise the STAC schema accepts items that the files would
+    never be allowed to describe (free text instead of the CV, or the property missing).
+    """
+    catalog = yaml.safe_load((repo_root / "catalog_specs.yaml").read_text())
+    props = [p for s in ("dataset_properties", "file_properties") for p in catalog.get(s) or []]
+    bad = []
+    for name, a in sorted(attrs.items()):
+        if a["requirement"] != "required" or not a.get("cv") or name in CATALOG_LEAVES_OUT:
+            continue
+        by_description = a["cv"].get("key") == "description"
+        matches = [
+            p for p in props
+            if p["source_collection"] == a["cv"]["table"]
+            and (p.get("source_collection_key") == "description") == by_description
+        ]
+        if not matches:
+            bad.append(f"{name}: no catalog property sourced from CV '{a['cv']['table']}'")
+        elif name not in CATALOG_KEEPS_OPTIONAL and not all(p["is_required"] for p in matches):
+            bad.append(f"{name}: required attribute but optional catalog property")
+    assert not bad, bad

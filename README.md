@@ -1,5 +1,15 @@
 # Obs4MIPs CVs for ESGF-NG
 
+## Catalog Specs Guide
+
+- source_collection: Source CVs used to generate the schema to allow only specific values sourced from this repo.
+- catalog_field_name: Name as it appears in the catalog schema (with <project> as prefix)
+- catalog_field_value_type: Type of value to specify in the schema
+- is_required: Boolean field to specify if field is required or not.
+- source_collection_key: Pull all the values from 'source_collection.key' to use as the specific values, instead of just the ids.
+
+If the source_collection is 'null', no CVs are sourced and any value is allowed.
+
 ## Process for updating
 
 - Create a branch with the suffix `cv/` for expected changes to the CV content.
@@ -23,6 +33,10 @@
 | Manual | `publish-prod-universe-changed.yml` | Open a manifest PR to rebuild obs4mips with a new universe release |
 
 `esgvoc-dev.yml` can also be run by hand against another universe branch (e.g. a WCRP-universe PR branch).
+
+If GitHub Actions may not create pull requests (WCRP-ESMO organization setting), the release
+workflows still push the `chore/manifest-X.Y.Z` branch and give a link to open the manifest PR
+by hand (job summary, and a comment on the merged PR).
 
 Publication is manual by design: run the printed `gh workflow run publish.yml ...` command
 (job log and summary); it needs the right to run workflows on `WCRP-CMIP/esgvoc_registry`.
