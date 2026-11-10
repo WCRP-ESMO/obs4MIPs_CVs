@@ -132,7 +132,8 @@ jobs:
 
           ---
 
-          Merging this PR publishes obs4mips ${NEXT_VERSION} to WCRP-CMIP/esgvoc_registry.
+          Once merged, the "Release (merge to main)" workflow prints the command publishing
+          obs4mips ${NEXT_VERSION} to WCRP-CMIP/esgvoc_registry (job summary).
           EOF
           )
 

@@ -2,8 +2,8 @@ name: Release (merge to main)
 
 # Merge of CV changes to main (esgvoc_dev -> main): check the build, compute the
 # next version and open a "chore: update manifest" PR.
-# Merge of that manifest PR: publish the version of the manifest to
-# WCRP-CMIP/esgvoc_registry.
+# Merge of that manifest PR: print the command publishing the version of the
+# manifest to WCRP-CMIP/esgvoc_registry (published by hand).
 
 on:
   push:
@@ -55,7 +55,6 @@ jobs:
 
       - uses: ./.github/actions/publish-registry
         with:
-          token: ${{ secrets.ESGVOC_REGISTRY_TOKEN }}
           # bump_type is required by the registry workflow, version_override wins
           bump_type: patch
           version_override: ${{ steps.manifest.outputs.cv_version }}
@@ -173,7 +172,8 @@ jobs:
 
           ---
 
-          Merging this PR publishes obs4mips ${NEXT_VERSION} to WCRP-CMIP/esgvoc_registry.
+          Once merged, the "Release (merge to main)" workflow prints the command publishing
+          obs4mips ${NEXT_VERSION} to WCRP-CMIP/esgvoc_registry (job summary).
           To publish another version, edit \`cv_version\` in this PR before merging.
           EOF
           )
