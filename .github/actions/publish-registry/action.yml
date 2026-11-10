@@ -1,0 +1,56 @@
+name: Publish command for esgvoc_registry
+description: >
+  Print the command that publishes obs4mips with the "Publish DB" workflow of
+  WCRP-CMIP/esgvoc_registry. Publication is triggered by hand, by design.
+
+inputs:
+  bump_type:
+    description: patch, minor, major or dev-latest
+    required: true
+  version_override:
+    description: Exact version to publish (blank = bump from the registry index)
+    required: false
+    default: ""
+  universe_version:
+    description: Universe version embedded in the DB (blank = latest stable universe)
+    required: false
+    default: ""
+  project_ref:
+    description: Branch / tag of this repo to build from
+    required: false
+    default: main
+  universe_ref:
+    description: Branch / tag of the universe repo
+    required: false
+    default: main
+
+runs:
+  using: composite
+  steps:
+    - name: Print the registry publish command
+      shell: bash
+      env:
+        BUMP_TYPE: ${{ inputs.bump_type }}
+        VERSION_OVERRIDE: ${{ inputs.version_override }}
+        UNIVERSE_VERSION: ${{ inputs.universe_version }}
+        PROJECT_REF: ${{ inputs.project_ref }}
+        UNIVERSE_REF: ${{ inputs.universe_ref }}
+      run: |
+        CMD="gh workflow run publish.yml \\
+          -R WCRP-CMIP/esgvoc_registry \\
+          -f project_id=obs4mips \\
+          -f project_repo=${GITHUB_REPOSITORY} \\
+          -f bump_type=${BUMP_TYPE} \\
+          -f project_ref=${PROJECT_REF} \\
+          -f universe_ref=${UNIVERSE_REF}"
+        [ -n "${VERSION_OVERRIDE}" ] && CMD="${CMD} \\
+          -f version_override=${VERSION_OVERRIDE}"
+        [ -n "${UNIVERSE_VERSION}" ] && CMD="${CMD} \\
+          -f universe_version=${UNIVERSE_VERSION}"
+
+        echo "============================================"
+        echo "  Test passed! To publish, run:"
+        echo ""
+        echo "${CMD}"
+        echo "============================================"
+        { echo "### Publish obs4mips to esgvoc_registry"; echo '```bash'; echo "${CMD}"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"

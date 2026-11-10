@@ -11,6 +11,22 @@
     - Merge `esgvoc_dev` to main and WCRP-universe `esgvoc_dev` to main.
     - Trigger a new version of esgvoc to include the new CV changes.
 
+## CI and publication (esgvoc registry)
+
+| Event | Workflow | What happens |
+|-------|----------|--------------|
+| PR to `esgvoc_dev` | `esgvoc-dev.yml` | Build the DB against WCRP-universe `esgvoc_dev`, validate it, generate the STAC schema (DB and schema uploaded as workflow artifact) |
+| Merge to `esgvoc_dev` | `esgvoc-dev.yml` | Same check, then print the command publishing `obs4mips@dev-latest` to [esgvoc_registry](https://github.com/WCRP-CMIP/esgvoc_registry) |
+| PR to `main` | `test-prod.yml` | Same check against WCRP-universe `main`, plus a release preview comment (suggested version bump and changelog) |
+| Merge to `main` | `publish-prod.yml` | Open a `chore: update manifest to X.Y.Z` PR |
+| Merge of the manifest PR | `publish-prod.yml` | Print the command publishing `obs4mips@X.Y.Z` (the `cv_version` of the manifest) to the registry |
+| Manual | `publish-prod-universe-changed.yml` | Open a manifest PR to rebuild obs4mips with a new universe release |
+
+`esgvoc-dev.yml` can also be run by hand against another universe branch (e.g. a WCRP-universe PR branch).
+
+Publication is manual by design: run the printed `gh workflow run publish.yml ...` command
+(job log and summary); it needs the right to run workflows on `WCRP-CMIP/esgvoc_registry`.
+
 ## Local testing
 Test changes locally with obs4MIPs_CVs, esgvoc and WCRP-Universe. This may also include using `esg-publisher` to verify STAC record creation success before new CVs are published to ESGF-NG.
 
