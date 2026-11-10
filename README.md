@@ -24,6 +24,10 @@
 
 `esgvoc-dev.yml` can also be run by hand against another universe branch (e.g. a WCRP-universe PR branch).
 
+If GitHub Actions may not create pull requests (WCRP-ESMO organization setting), the release
+workflows still push the `chore/manifest-X.Y.Z` branch and give a link to open the manifest PR
+by hand (job summary, and a comment on the merged PR).
+
 Publication is manual by design: run the printed `gh workflow run publish.yml ...` command
 (job log and summary); it needs the right to run workflows on `WCRP-CMIP/esgvoc_registry`.
 
