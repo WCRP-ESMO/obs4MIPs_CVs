@@ -17,6 +17,8 @@ EXCLUDE_PATTERNS = [
     ":(exclude)_archive",
     ":(exclude)scripts",
     ":(exclude)_scripts",
+    ":(exclude)tests",
+    ":(exclude)global_attributes*.json",
     ":(exclude)*.md",
     ":(exclude)*.toml",
     ":(exclude)*.lock",

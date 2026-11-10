@@ -54,7 +54,7 @@ runs:
         echo "Comparing ${BASE_SHA}..HEAD"
 
         CHANGED=$(git diff --name-only --diff-filter=ACDMR "${BASE_SHA}..HEAD" -- \
-          ':(exclude)_src' ':(exclude)_tests' ':(exclude)_archive' ':(exclude)scripts' ':(exclude)_scripts' \
+          ':(exclude)_src' ':(exclude)_tests' ':(exclude)_archive' ':(exclude)scripts' ':(exclude)_scripts' ':(exclude)tests' ':(exclude)global_attributes*.json' \
           ':(exclude)*.md' ':(exclude)*.toml' ':(exclude)*.lock' ':(exclude)*.py' \
           ':(exclude).github' ':(exclude)LICENSE*' ':(exclude).gitignore' \
           ':(exclude).pre-commit-config.yaml' ':(exclude)esgvoc_manifest.yaml' || true)
