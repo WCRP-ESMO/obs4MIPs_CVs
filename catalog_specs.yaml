@@ -9,7 +9,7 @@ catalog_properties:
     - name: alternate-assets
       version: v1.2.0
   regex_id: '^obs4MIPs(\.[A-Za-z0-9-]+){5}\.v[0-9]{8}$'
-  regex_title: '^obs4MIPs(\.[A-Za-z0-9-]+){10}$'
+  regex_title: '^obs4MIPs(\.[A-Za-z0-9-]+){5}$'
 
 dataset_properties:
   - source_collection: aux_uncertainty_id
@@ -149,7 +149,7 @@ dataset_properties:
     is_required: false
 
   - source_collection: version
-    source_collection_term: creationdatenb
+    source_collection_term: creationdate
     catalog_field_value_type: string
     is_required: true
 
