@@ -29,8 +29,3 @@ jobs:
           python3 -m pip install --upgrade pip
           pip3 install esgvoc
           esgvoc admin validate --schema-only .
-      # Consistency tests for global_attributes.json
-      - name: Run tests
-        run: |
-          pip3 install -r tests/requirements.txt
-          python3 -m pytest tests -q

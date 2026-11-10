@@ -1,8 +1,0 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "uuid",
-    "description": "the tracking_id should be unique for each file published in ESGF. The <uuid> should be generated using the OSSP utility which supports a number of different DCE 1.1 variant UUID options. For CMIP6, version 4 (random number based) is required. Download the software from http://www.ossp.org/pkg/lib/uuid/.",
-    "type": "tracking_id",
-    "regex": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
-}
-
