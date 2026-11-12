@@ -140,7 +140,7 @@ dataset_properties:
     is_required: false
 
   - source_collection: version
-    source_collection_term: creationdatenb
+    source_collection_term: creationdate
     catalog_field_value_type: string
     is_required: true
 

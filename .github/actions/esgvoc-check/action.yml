@@ -1,0 +1,52 @@
+name: esgvoc check
+description: >
+  Build the obs4mips DB from this checkout against a universe branch, validate it,
+  generate the STAC JSON schema and upload both as a workflow artifact
+
+inputs:
+  universe_ref:
+    description: Branch / tag of WCRP-CMIP/WCRP-universe to build against
+    required: true
+  universe_repo:
+    description: Universe repo owner/repo
+    required: false
+    default: WCRP-CMIP/WCRP-universe
+
+runs:
+  using: composite
+  steps:
+    - name: Build DB
+      shell: bash
+      env:
+        UNIVERSE_REPO: ${{ inputs.universe_repo }}
+        UNIVERSE_REF: ${{ inputs.universe_ref }}
+      run: |
+        esgvoc admin build \
+          --project-path . \
+          --universe-repo "${UNIVERSE_REPO}" \
+          --universe-ref "${UNIVERSE_REF}" \
+          --project-id obs4mips \
+          --cv-version ci \
+          --fail-on-missing-links \
+          --output "${RUNNER_TEMP}/obs4mips.db"
+
+    - name: Validate DB
+      shell: bash
+      run: esgvoc admin validate --full "${RUNNER_TEMP}/obs4mips.db"
+
+    # esgvoc ignores a project whose specs (drs, attr, catalog) do not parse:
+    # generating the STAC schema fails in that case.
+    - name: Generate STAC schema
+      shell: bash
+      run: |
+        esgvoc admin install obs4mips "${RUNNER_TEMP}/obs4mips.db" --name ci
+        esgvoc use obs4mips@ci
+        esgvoc schema obs4mips -o "${RUNNER_TEMP}/obs4mips_stac_schema.json"
+
+    - name: Upload DB and STAC schema
+      uses: actions/upload-artifact@v4
+      with:
+        name: obs4mips-esgvoc-${{ github.run_id }}
+        path: |
+          ${{ runner.temp }}/obs4mips.db
+          ${{ runner.temp }}/obs4mips_stac_schema.json
