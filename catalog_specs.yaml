@@ -32,11 +32,6 @@ dataset_properties:
     catalog_field_value_type: string
     is_required: true
 
-  - source_collection: null
-    catalog_field_name: external_variables
-    catalog_field_value_type: string_array
-    is_required: false
-
   - source_collection: frequency
     catalog_field_value_type: string
     is_required: true
