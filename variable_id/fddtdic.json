@@ -1,10 +1,1 @@
-{
-  "@context": "000_context.jsonld",
-  "id": "fddtdic",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
-}
+{"@context": "000_context.jsonld", "id": "fddtdic", "type": "variable", "drs_name": "fddtdic", "long_name": "", "standard_name": "", "units": "", "description": ""}

@@ -1,0 +1,159 @@
+name: Prepare release (universe changed)
+
+on:
+  workflow_dispatch:
+    inputs:
+      bump_type:
+        description: "Version bump type"
+        required: true
+        type: choice
+        options:
+          - patch
+          - minor
+        default: patch
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  prepare-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: ./.github/actions/setup-esgvoc
+        with:
+          extra-packages: pyyaml
+
+      - name: Check universe version changed
+        id: check
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -e
+
+          # Read universe_version from manifest
+          MANIFEST_VERSION=$(python3 -c "
+          import yaml
+          with open('esgvoc_manifest.yaml') as f:
+              m = yaml.safe_load(f)
+          print(m.get('universe_version', ''))
+          ")
+
+          # Fetch latest universe version from registry
+          REGISTRY_VERSION=$(gh api repos/WCRP-CMIP/esgvoc_registry/contents/universe.json \
+            --jq '.content' | base64 -d | python3 .github/scripts/ci_version.py fetch-universe)
+
+          echo "Manifest universe_version: ${MANIFEST_VERSION}"
+          echo "Registry universe version: ${REGISTRY_VERSION}"
+
+          if [ "${MANIFEST_VERSION}" = "${REGISTRY_VERSION}" ]; then
+            echo "Universe version unchanged — nothing to do."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "Universe version changed: ${MANIFEST_VERSION} → ${REGISTRY_VERSION}"
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "registry_version=${REGISTRY_VERSION}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: ./.github/actions/esgvoc-check
+        if: steps.check.outputs.changed == 'true'
+        with:
+          universe_ref: main
+
+      - name: Compute next version
+        if: steps.check.outputs.changed == 'true'
+        id: version
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BUMP: ${{ inputs.bump_type }}
+        run: |
+          set -e
+
+          INDEX=$(gh api repos/WCRP-CMIP/esgvoc_registry/contents/obs4mips.json --jq '.content' 2>/dev/null | base64 -d 2>/dev/null || true)
+          CURRENT=$(echo "${INDEX}" | python3 .github/scripts/ci_version.py fetch-current)
+
+          NEXT=$(python3 .github/scripts/ci_version.py compute-next --current "${CURRENT}" --bump "${BUMP}")
+
+          echo "current_version=${CURRENT}" >> "$GITHUB_OUTPUT"
+          echo "next_version=${NEXT}" >> "$GITHUB_OUTPUT"
+          echo "Current: ${CURRENT} → Next: ${NEXT} (${BUMP})"
+
+      - name: Update manifest
+        if: steps.check.outputs.changed == 'true'
+        env:
+          NEXT_VERSION: ${{ steps.version.outputs.next_version }}
+          UNIVERSE_VERSION: ${{ steps.check.outputs.registry_version }}
+        run: |
+          CHANGELOG="Rebuild for universe ${UNIVERSE_VERSION} (no local CV changes)."
+
+          echo "${CHANGELOG}" | python3 .github/scripts/ci_update_manifest.py \
+            --version "${NEXT_VERSION}" \
+            --universe-version "${UNIVERSE_VERSION}" \
+            --changelog-file -
+
+          echo "Updated manifest:"
+          cat esgvoc_manifest.yaml
+
+      - name: Push manifest branch
+        id: manifest_branch
+        if: steps.check.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NEXT_VERSION: ${{ steps.version.outputs.next_version }}
+          CURRENT_VERSION: ${{ steps.version.outputs.current_version }}
+          BUMP_TYPE: ${{ inputs.bump_type }}
+          UNIVERSE_VERSION: ${{ steps.check.outputs.registry_version }}
+        run: |
+          BRANCH="chore/manifest-${NEXT_VERSION}"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git checkout -b "${BRANCH}"
+          git add esgvoc_manifest.yaml
+          git diff --cached --quiet && echo "No manifest changes" && exit 0
+
+          git commit -m "chore: update manifest to ${NEXT_VERSION} (universe ${UNIVERSE_VERSION})"
+          git push origin "${BRANCH}"
+
+          BODY=$(cat <<EOF
+          ## Manifest update (universe changed)
+
+          **CV Version:** ${CURRENT_VERSION} → ${NEXT_VERSION} (${BUMP_TYPE})
+          **Universe:** → ${UNIVERSE_VERSION}
+
+          No local CV changes — rebuild triggered by upstream universe update.
+
+          ---
+
+          Once merged, the "Release (merge to main)" workflow prints the command publishing
+          obs4mips ${NEXT_VERSION} to WCRP-CMIP/esgvoc_registry (job summary).
+          EOF
+          )
+
+          echo "branch=${BRANCH}" >> "$GITHUB_OUTPUT"
+          {
+            echo "body<<BODY_EOF"
+            echo "${BODY}"
+            echo "BODY_EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Create manifest PR
+        if: steps.manifest_branch.outputs.branch
+        uses: ./.github/actions/open-manifest-pr
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ steps.manifest_branch.outputs.branch }}
+          title: "chore: update manifest to ${{ steps.version.outputs.next_version }} (universe ${{ steps.check.outputs.registry_version }})"
+          body: ${{ steps.manifest_branch.outputs.body }}
+
+      - name: No changes needed
+        if: steps.check.outputs.changed != 'true'
+        run: echo "Universe version unchanged — no release needed."

@@ -1,5 +1,15 @@
 # Obs4MIPs CVs for ESGF-NG
 
+## Catalog Specs Guide
+
+- source_collection: Source CVs used to generate the schema to allow only specific values sourced from this repo.
+- catalog_field_name: Name as it appears in the catalog schema (with <project> as prefix)
+- catalog_field_value_type: Type of value to specify in the schema
+- is_required: Boolean field to specify if field is required or not.
+- source_collection_key: Pull all the values from 'source_collection.key' to use as the specific values, instead of just the ids.
+
+If the source_collection is 'null', no CVs are sourced and any value is allowed.
+
 ## Process for updating
 
 - Create a branch with the suffix `cv/` for expected changes to the CV content.
@@ -10,6 +20,26 @@
     - Check the schedule for merging esgvoc_dev into the main branch for publishing a new set of CVs.
     - Merge `esgvoc_dev` to main and WCRP-universe `esgvoc_dev` to main.
     - Trigger a new version of esgvoc to include the new CV changes.
+
+## CI and publication (esgvoc registry)
+
+| Event | Workflow | What happens |
+|-------|----------|--------------|
+| PR to `esgvoc_dev` | `esgvoc-dev.yml` | Build the DB against WCRP-universe `esgvoc_dev`, validate it, generate the STAC schema (DB and schema uploaded as workflow artifact) |
+| Merge to `esgvoc_dev` | `esgvoc-dev.yml` | Same check, then print the command publishing `obs4mips@dev-latest` to [esgvoc_registry](https://github.com/WCRP-CMIP/esgvoc_registry) |
+| PR to `main` | `test-prod.yml` | Same check against WCRP-universe `main`, plus a release preview comment (suggested version bump and changelog) |
+| Merge to `main` | `publish-prod.yml` | Open a `chore: update manifest to X.Y.Z` PR |
+| Merge of the manifest PR | `publish-prod.yml` | Print the command publishing `obs4mips@X.Y.Z` (the `cv_version` of the manifest) to the registry |
+| Manual | `publish-prod-universe-changed.yml` | Open a manifest PR to rebuild obs4mips with a new universe release |
+
+`esgvoc-dev.yml` can also be run by hand against another universe branch (e.g. a WCRP-universe PR branch).
+
+If GitHub Actions may not create pull requests (WCRP-ESMO organization setting), the release
+workflows still push the `chore/manifest-X.Y.Z` branch and give a link to open the manifest PR
+by hand (job summary, and a comment on the merged PR).
+
+Publication is manual by design: run the printed `gh workflow run publish.yml ...` command
+(job log and summary); it needs the right to run workflows on `WCRP-CMIP/esgvoc_registry`.
 
 ## Local testing
 Test changes locally with obs4MIPs_CVs, esgvoc and WCRP-Universe. This may also include using `esg-publisher` to verify STAC record creation success before new CVs are published to ESGF-NG.

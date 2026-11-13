@@ -1,0 +1,58 @@
+name: Open manifest PR
+description: >
+  Open the manifest PR from an already pushed branch. If GitHub Actions may not
+  create pull requests (WCRP-ESMO organization setting), do not fail: give the
+  link that opens it, pre-filled, in the job summary.
+
+inputs:
+  token:
+    description: GitHub token
+    required: true
+  branch:
+    description: Pushed branch holding the manifest update
+    required: true
+  title:
+    description: PR title
+    required: true
+  body:
+    description: PR description
+    required: true
+
+outputs:
+  pr_url:
+    description: URL of the created PR (empty when it could not be created)
+    value: ${{ steps.open.outputs.pr_url }}
+  link:
+    description: Link to open the PR by hand (set when it could not be created)
+    value: ${{ steps.open.outputs.link }}
+
+runs:
+  using: composite
+  steps:
+    - name: Open the PR, or give the link to open it
+      id: open
+      shell: bash
+      env:
+        GH_TOKEN: ${{ inputs.token }}
+        BRANCH: ${{ inputs.branch }}
+        TITLE: ${{ inputs.title }}
+        BODY: ${{ inputs.body }}
+      run: |
+        if PR_URL=$(gh pr create --title "${TITLE}" --body "${BODY}" --base main --head "${BRANCH}" 2>"${RUNNER_TEMP}/pr_error.txt"); then
+          echo "pr_url=${PR_URL}" >> "$GITHUB_OUTPUT"
+          echo "Manifest PR created: ${PR_URL}"
+          exit 0
+        fi
+
+        cat "${RUNNER_TEMP}/pr_error.txt"
+        TITLE_Q=$(python3 -c "import sys, urllib.parse; print(urllib.parse.quote(sys.argv[1]))" "${TITLE}")
+        LINK="https://github.com/${GITHUB_REPOSITORY}/compare/main...${BRANCH}?quick_pull=1&title=${TITLE_Q}"
+        echo "link=${LINK}" >> "$GITHUB_OUTPUT"
+        echo "::warning::Could not open the manifest PR (GitHub Actions may not create pull requests here). Open it by hand: ${LINK}"
+        {
+          echo "### Open the manifest PR by hand"
+          echo
+          echo "GitHub Actions could not create it. Branch \`${BRANCH}\` is pushed: [open the PR](${LINK}) and paste this description:"
+          echo
+          echo "${BODY}"
+        } >> "$GITHUB_STEP_SUMMARY"

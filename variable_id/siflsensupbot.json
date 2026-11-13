@@ -1,10 +1,1 @@
-{
-  "@context": "000_context.jsonld",
-  "id": "siflsensupbot",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
-}
+{"@context": "000_context.jsonld", "id": "siflsensupbot", "type": "variable", "drs_name": "siflsensupbot", "long_name": "", "standard_name": "", "units": "", "description": ""}

@@ -1,0 +1,46 @@
+name: esgvoc_dev (test, publish dev-latest)
+
+# PR to esgvoc_dev: build + validate the DB and generate the STAC schema.
+# Merge to esgvoc_dev: same check, then print the command publishing the obs4mips
+# dev-latest snapshot to WCRP-CMIP/esgvoc_registry (published by hand).
+
+on:
+  pull_request:
+    branches: [esgvoc_dev]
+  push:
+    branches: [esgvoc_dev]
+  workflow_dispatch:
+    inputs:
+      universe_ref:
+        description: "WCRP-universe branch to test against (e.g. a universe PR branch)"
+        required: false
+        type: string
+        default: esgvoc_dev
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ./.github/actions/setup-esgvoc
+
+      - uses: ./.github/actions/esgvoc-check
+        with:
+          universe_ref: ${{ inputs.universe_ref || 'esgvoc_dev' }}
+
+  publish-command:
+    needs: check
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ./.github/actions/publish-registry
+        with:
+          bump_type: dev-latest
+          project_ref: esgvoc_dev
+          universe_ref: esgvoc_dev
