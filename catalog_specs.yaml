@@ -32,11 +32,6 @@ dataset_properties:
     catalog_field_value_type: string
     is_required: true
 
-  - source_collection: null
-    catalog_field_name: external_variables
-    catalog_field_value_type: string_array
-    is_required: false
-
   - source_collection: frequency
     catalog_field_value_type: string
     is_required: true
@@ -44,11 +39,6 @@ dataset_properties:
   - source_collection: grid_label # Grid label not freetext
     catalog_field_value_type: string
     is_required: true
-
-  - source_collection: null # grid is free text, not a CV collection
-    catalog_field_name: grid
-    catalog_field_value_type: string
-    is_required: false
 
   - source_collection: has_aux_unc
     catalog_field_value_type: boolean
@@ -66,7 +56,7 @@ dataset_properties:
 
   - source_collection: license
     catalog_field_value_type: string
-    is_required: true
+    is_required: false
 
   - source_collection: nominal_resolution
     catalog_field_value_type: string
@@ -138,9 +128,10 @@ dataset_properties:
     catalog_field_value_type: string
     is_required: true
 
-  - source_collection: variant_label
+  - source_collection: null
+    catalog_field_name: variant_label
     catalog_field_value_type: string
-    is_required: true
+    is_required: false
 
   - source_collection: variant_label
     catalog_field_name: variant_info

@@ -1,27 +1,15 @@
 # Obs4MIPs CVs for ESGF-NG
 
-## Catalog Specs Guide
+This repository stores all configuration information for obs4MIPs controlled vocabularies used for ESGF Next Generation (ESGF-NG) infrastructure integration - specifically the ESGF Vocabulary manager package `esgvoc`.
 
-- source_collection: Source CVs used to generate the schema to allow only specific values sourced from this repo.
-- catalog_field_name: Name as it appears in the catalog schema (with <project> as prefix)
-- catalog_field_value_type: Type of value to specify in the schema
-- is_required: Boolean field to specify if field is required or not.
-- source_collection_key: Pull all the values from 'source_collection.key' to use as the specific values, instead of just the ids.
+## CI and publication (esgvoc registry)
 
-If the source_collection is 'null', no CVs are sourced and any value is allowed.
-
-## Process for updating
+This repository now supports automated workflows based on specific events. The process for contributing to this repository by way of the addition or modification of CVs should be as follows:
 
 - Create a branch with the suffix `cv/` for expected changes to the CV content.
 - Create a PR to the `esgvoc_dev` branch when this has been tested locally and changes are acceptable.
-- A panel member will take the branch and perform the following:
-    - Merge your CV branch into esgvoc_dev.
-    - Check a PR has been created to push changes to WCRP-universe (panel-controlled)
-    - Check the schedule for merging esgvoc_dev into the main branch for publishing a new set of CVs.
-    - Merge `esgvoc_dev` to main and WCRP-universe `esgvoc_dev` to main.
-    - Trigger a new version of esgvoc to include the new CV changes.
 
-## CI and publication (esgvoc registry)
+Note: Reviewers should only be dealing with pull requests to the `esgvoc_dev` branch. The Obs4MIPs steering panel will determine how frequently the CVs are updated to a new version by how often the `esgvoc_dev` branch is merged into main.
 
 | Event | Workflow | What happens |
 |-------|----------|--------------|
@@ -40,6 +28,16 @@ by hand (job summary, and a comment on the merged PR).
 
 Publication is manual by design: run the printed `gh workflow run publish.yml ...` command
 (job log and summary); it needs the right to run workflows on `WCRP-CMIP/esgvoc_registry`.
+
+## Catalog Specs Guide
+
+- source_collection: Source CVs used to generate the schema to allow only specific values sourced from this repo.
+- catalog_field_name: Name as it appears in the catalog schema (with <project> as prefix)
+- catalog_field_value_type: Type of value to specify in the schema
+- is_required: Boolean field to specify if field is required or not.
+- source_collection_key: Pull all the values from 'source_collection.key' to use as the specific values, instead of just the ids.
+
+If the source_collection is 'null', no CVs are sourced and any value is allowed.
 
 ## Local testing
 Test changes locally with obs4MIPs_CVs, esgvoc and WCRP-Universe. This may also include using `esg-publisher` to verify STAC record creation success before new CVs are published to ESGF-NG.
