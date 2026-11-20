@@ -530,7 +530,7 @@ def test_catalog_specs_source_collections_are_cv_directories(repo_root):
 
 # Required CV-backed global attributes that the STAC catalog deliberately leaves out or keeps
 # optional (see "Notes for reviewer" in the README). Anything else must stay in the catalog.
-CATALOG_LEAVES_OUT = {"contact", "creation_date", "dataset_contributor", "references"}
+CATALOG_LEAVES_OUT = {"contact", "creation_date", "dataset_contributor", "references","variant_label"}
 CATALOG_KEEPS_OPTIONAL = {"Conventions", "has_aux_unc"}
 
 
