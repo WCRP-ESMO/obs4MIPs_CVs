@@ -59,7 +59,13 @@ dataset_properties:
     catalog_field_value_type: string
     is_required: true    
 
+  - source_collection: null
+    catalog_field_name: license
+    catalog_field_value_type: string
+    is_required: false
+
   - source_collection: license
+    catalog_field_name: license_id
     catalog_field_value_type: string
     is_required: true
 
@@ -133,8 +139,7 @@ dataset_properties:
     catalog_field_value_type: string
     is_required: true
 
-  - source_collection: null
-    catalog_field_name: variant_label
+  - source_collection: variant_label
     catalog_field_value_type: string
     is_required: false
 
