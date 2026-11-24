@@ -59,12 +59,13 @@ dataset_properties:
     catalog_field_value_type: string
     is_required: true    
 
-  - source_collection: null
-    catalog_field_name: license
+  - source_collection: license
+    catalog_field_name: license # Description can be anything
     catalog_field_value_type: string
     is_required: false
 
   - source_collection: license
+    source_collection_key: drs_name
     catalog_field_name: license_id
     catalog_field_value_type: string
     is_required: true
