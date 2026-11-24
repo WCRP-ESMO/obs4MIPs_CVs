@@ -1,0 +1,8 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "cf-1.5",
+    "label": "CF-1.5",
+    "type": "conventions",
+    "drs_name": "CF-1.5",
+    "description": ""
+}
