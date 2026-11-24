@@ -59,10 +59,6 @@
   is_required: true
 - source_collection: license
   value_type: string
-  is_required: false
-- source_collection: license
-  source_collection_key: license_id
-  value_type: string
   is_required: true
 - source_collection: nominal_resolution
   value_type: string

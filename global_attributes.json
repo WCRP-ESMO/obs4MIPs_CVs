@@ -194,7 +194,7 @@
         "separator": null,
         "requirement": "required",
         "conditional": null,
-        "cv": {"table": "license", "key": "regex"},
+        "cv": null,
         "rc": "no",
         "introduced": "2.1",
         "notes": "Ensures that anyone using the file has access to the terms of use"
