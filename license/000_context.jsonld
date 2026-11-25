@@ -1,9 +1,0 @@
-{
-    "@context": {
-        "@base": "https://esgvoc.ipsl.fr/resource/universe/regex/",
-        "@vocab": "http://schema.org/",
-        "id": "@id",
-        "type": "@type",
-        "description":{"@id":"https://schema.org/description"}
-    }
-}

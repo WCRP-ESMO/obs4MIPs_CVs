@@ -32,11 +32,6 @@ dataset_properties:
     catalog_field_value_type: string
     is_required: true
 
-  - source_collection: null
-    catalog_field_name: external_variables
-    catalog_field_value_type: string_array
-    is_required: false
-
   - source_collection: frequency
     catalog_field_value_type: string
     is_required: true
@@ -64,7 +59,8 @@ dataset_properties:
     catalog_field_value_type: string
     is_required: true    
 
-  - source_collection: license
+  - source_collection: null
+    catalog_field_name: license # Description can be anything
     catalog_field_value_type: string
     is_required: true
 
@@ -140,11 +136,10 @@ dataset_properties:
 
   - source_collection: variant_label
     catalog_field_value_type: string
-    is_required: true
+    is_required: false
 
-  - source_collection: variant_label
+  - source_collection: null
     catalog_field_name: variant_info
-    source_collection_key: description
     catalog_field_value_type: string
     is_required: false
 
