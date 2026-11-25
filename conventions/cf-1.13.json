@@ -1,8 +1,0 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "cf-1.13",
-    "label": "CF-1.13",
-    "type": "conventions",
-    "drs_name": "CF-1.13",
-    "description": "https://cfconventions.org/Data/cf-conventions/cf-conventions-1.13/cf-conventions.html"
-}
