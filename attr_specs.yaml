@@ -57,7 +57,8 @@
 - source_collection: institution_id
   value_type: string
   is_required: true
-- source_collection: license
+- source_collection: null
+  field_name: license
   value_type: string
   is_required: true
 - source_collection: nominal_resolution
