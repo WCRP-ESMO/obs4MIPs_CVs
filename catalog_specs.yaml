@@ -138,9 +138,8 @@ dataset_properties:
     catalog_field_value_type: string
     is_required: false
 
-  - source_collection: variant_label
+  - source_collection: null
     catalog_field_name: variant_info
-    source_collection_key: description
     catalog_field_value_type: string
     is_required: false
 
