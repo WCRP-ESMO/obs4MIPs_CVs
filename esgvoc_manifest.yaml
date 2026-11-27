@@ -2,14 +2,9 @@ schema_version: '1'
 project:
   id: obs4mips
   name: obs4MIPs Controlled Vocabulary
-cv_version: 1.2.0
+cv_version: 1.2.1
 universe_version: 3.4.10
 esgvoc:
   min_version: 5.0.1
 release_notes: |
-  - attr_specs.yaml: updated
   - catalog_specs.yaml: updated
-  - license: updated collection model
-  - conventions: 4 added, 2 modified, 1 removed
-  - license: 2 removed
-  - variant_label: 1 modified
