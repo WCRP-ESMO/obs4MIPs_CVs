@@ -531,7 +531,9 @@ def test_catalog_specs_source_collections_are_cv_directories(repo_root):
 # Required CV-backed global attributes that the STAC catalog deliberately leaves out or keeps
 # optional (see "Notes for reviewer" in the README). Anything else must stay in the catalog.
 CATALOG_LEAVES_OUT = {"contact", "creation_date", "dataset_contributor", "references","variant_label"}
-CATALOG_KEEPS_OPTIONAL = {"Conventions", "has_aux_unc"}
+CATALOG_KEEPS_OPTIONAL = {"Conventions", "has_aux_unc","tracking_id"}
+
+# NOTE: Tracking ID is optional per-file in the catalog, but the catalog also has a per-item tracking ID required to be generated on publication.
 
 
 def test_required_cv_attributes_are_required_cv_properties_in_catalog(attrs, repo_root):
