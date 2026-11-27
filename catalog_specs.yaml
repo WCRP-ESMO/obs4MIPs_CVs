@@ -156,4 +156,4 @@ dataset_properties:
 file_properties:
   - source_collection: tracking_id
     catalog_field_value_type: string
-    is_required: true
+    is_required: false
